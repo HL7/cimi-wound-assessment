@@ -1,0 +1,33 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="WoundBed-example"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundBed"/>
+  </meta>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="exam"/>
+      <display value="Exam"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="89254-7"/>
+      <display value="Wound bed panel"/>
+    </coding>
+  </code>
+  <subject>
+    <display value="Adult Male1234"/>
+  </subject>
+  <encounter>
+    <display value="GP Visit"/>
+  </encounter>
+  <related>
+	<reference value="Examples/WoundBedColor-Example"/>
+  </related>
+  <related>
+	<reference value="Examples/WoundBedAppearance-Example"/>
+  </related>
+</Observation>

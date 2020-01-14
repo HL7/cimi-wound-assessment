@@ -1,0 +1,187 @@
+<Conditon xmlns="http://hl7.org/fhir">
+  <id value="WoundAssert-Example"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundAssert"/>
+  </meta>
+  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/PresentOnAdmissionExt">
+	<value>
+		<system value="http://snomed.info/sct"/>
+		<code value="373066001"/>
+		<display value="Yes"/>
+	</value>
+  </extension>
+  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/PressureUlcerAssociationExt">
+	<value>
+		<system value="http://snomed.info/sct"/>
+		<code value="449753006"/>
+		<display value="Pressure point of skin"/>
+	</value>
+  </extension>
+  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/WoundAssessmentInterpretationExt">
+	<value>
+		<system value="http://snomed.info/sct"/>
+		<code value="449501000124109"/>
+		<display value="Within defined limits"/>
+	</value>
+  </extension>
+  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/EpisodeExt">
+	<value>
+		<system value="http://snomed.info/sct"/>
+		<code value="255251009"/>
+		<display value="Acute phase"/>
+	</value>
+  </extension>
+  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/TrendExt">
+	<value>
+		<system value="http://snomed.info/sct"/>
+		<code value="90772001"/>
+		<display value="Deterioration of status"/>
+	</value>
+  </extension>
+  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/PeriwoundConditionExt">
+	<value>
+		<system value="http://snomed.info/sct"/>
+		<code value="247427007"/>
+		<display value="Fragile skin"/>
+	</value>
+  </extension>
+  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/WoundTypeEtiologyExt">
+	<value>
+		<system value="http://snomed.info/sct"/>
+		<code value="449753006"/>
+		<display value="Pressure point of skin"/>
+	</value>
+  </extension>
+  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/WoundInternalItemOrBodyStructureVisibleExt">
+	<value>
+		<system value="http://snomed.info/sct"/>
+		<code value="71966008"/>
+		<display value="Subcutaneous tissue structure"/>
+	</value>
+  </extension>
+  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/WoundGradationExt">
+	<value>
+		<system value="http://snomed.info/sct"/>
+		<code value="416462003:{258214002=258215001}"/>
+		<display value="Wound Stage=Stage One"/>
+	</value>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundRelatedObservationsPanelExt">
+	<valueReference>
+		<reference value="Observation/WoundRelatedObservationsPanelExample"/>
+	</valueReference>
+  </extension>
+  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/BodyLocationExt">
+	  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/AnatomicLocationExt">
+		<value>
+			<system value="http://snomed.info/sct"/>
+			<code value="75144006"/>
+			<display value="Skin structure of lower leg"/>
+		</value>
+	  </extension>
+	  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/BodySideExt">
+		<value>
+			<system value="http://snomed.info/sct"/>
+			<code value="85421007"/>
+			<display value="Structure of right half of body"/>
+		</value>
+	  </extension>
+	  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/BodyLocationOrientationExt">
+		<value>
+			<system value="http://snomed.info/sct"/>
+			<code value="49370004"/>
+			<display value="Lateral"/>
+		</value>
+	  </extension>
+	  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/UnderlyingAnatomicalStructureExt">
+		<value>
+			<system value="http://snomed.info/sct"/>
+			<code value="33696004"/>
+			<display value="Bone stucture of ankle"/>
+		</value>
+	  </extension>
+	  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/BodyLandmarkOrientationExt">
+		  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/BodyLandmarkDescriptionExt">
+			<value>
+				<system value="http://snomed.info/sct"/>
+				<code value="33696004"/>
+				<display value="Bone stucture of ankle"/>
+			</value>
+		  </extension>
+		  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/ClockFacePositionExt">
+			<value>
+				<system value="http://snomed.info/sct"/>
+				<code value="260326007"/>
+				<display value="12 o'clock position"/>
+			</value>
+		  </extension>
+		  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/DistanceFromLandmarkExt">
+			<value>
+				<value value="3.5"/>
+				<unit value="cm"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="cm"/>
+			</value>
+		  </extension>
+		  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/SurfaceOrientationExt">
+			<value>
+				<system value="http://snomed.info/sct"/>
+				<code value="49370004"/>
+				<display value="Lateral"/>
+			</value>
+		  </extension>
+	  </extension>
+	  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/BodyLocationQualifierExt">
+		<value>
+			<system value="http://snomed.info/sct"/>
+			<code value="11896004"/>
+			<display value="Intermediate"/>
+		</value>
+	  </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/RecurrenceExt">
+	<value>
+		<system value="http://snomed.info/sct"/>
+		<code value="255216001"/>
+		<display value="First"/>
+	</value>
+  </extension>
+  <identifier>
+	<value value="wound 1"/>
+  </identifier>
+  <clinicalStatus> 
+	<coding>
+		<code value="active"/>
+	</coding>
+  </clinicalStatus>
+  <verificationStatus>
+	<code value="confirmed"/>
+  </verificationStatus>
+  <code>
+	<coding>
+		<system value="http://snomed.info/sct"/>
+		<code value="13954005"/>
+		<display value="Ischemic ulcer"/>
+	</coding>
+  </code>
+  <subject>
+    <display value="Adult Male1234"/>
+  </subject>
+  <onsetDateTime value="2019-10-26:09:36"/>
+  <rocerdedDate value="2019-10-26:11:12"/>
+  <recorder>
+	<reference value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+	<name>
+		<family value="Assistant"/>
+		<given value="Medical"/>
+	</name>
+  </recorder>
+  <asserter>
+	<reference value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+	<name>
+		<family value="Ratchet"/>
+		<given value="Nurse"/>
+	</name>
+   </asserter>
+</Conditon>
+  

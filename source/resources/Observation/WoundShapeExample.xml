@@ -1,0 +1,35 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="WoundShape-Example"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundShape"/>
+  </meta>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="exam"/>
+      <display value="Exam"/>
+    </coding>
+  </category>
+<!-- waiting for a LOINC code to be assigned -->  
+<!--<code>
+	<coding>
+		<system value=""/>
+		<code value=""/>
+		<display value=""/>
+	</coding>
+  </code> -->
+  <subject>
+    <display value="Adult Male1234"/>
+  </subject>
+  <encounter>
+    <display value="GP Visit"/>
+  </encounter>
+  <value>
+	<coding>
+		<system value="http://snomed.info/sct"/>
+		<code value="84360004"/>
+		<display value="Ovoid shape"/>
+	</coding>
+  </value>
+</Observation>

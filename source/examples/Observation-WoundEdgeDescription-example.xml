@@ -1,0 +1,34 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="WoundEdgeDescription-example"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundEdgeDescription"/>
+  </meta>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="exam"/>
+      <display value="Exam"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="72304-9"/>
+      <display value="Edge of wound description"/>
+    </coding>
+  </code>
+  <subject>
+    <display value="Adult Male1234"/>
+  </subject>
+  <encounter>
+    <display value="GP Visit"/>
+  </encounter>
+  <value>
+	<coding>
+		<system value="http://snomed.info/sct"/>
+		<code value="427832005"/>
+		<display value="Dehiscence of wound of skin"/>
+	</coding>
+  </value>
+</Observation>

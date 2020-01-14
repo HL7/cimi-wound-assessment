@@ -1,0 +1,34 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="WoundExudateVolume-Example"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundExudateVolume"/>
+  </meta>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="exam"/>
+      <display value="Exam"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="72288-4"/>
+      <display value="Odor of Exudate from wound"/>
+    </coding>
+  </code>
+  <subject>
+    <display value="Adult Male1234"/>
+  </subject>
+  <encounter>
+    <display value="GP Visit"/>
+  </encounter>
+  <value>
+	<coding>
+		<system value="http://snomed.info/sct"/>
+		<code value="447547000"/>
+		<display value="Offensive wound odor"/>
+	</coding>
+  </value>
+</Observation>
