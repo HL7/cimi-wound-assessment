@@ -4,6 +4,7 @@ layout: default
 active: guidance
 topofpage: true
 r4: http://hl7.org/fhir/R4/
+us_r4: http://hl7.org/fhir/us/core/
 ---
 
 This section outlines important definitions, interpretations, and requirements common to all Wound Assessment actors used in this guide.

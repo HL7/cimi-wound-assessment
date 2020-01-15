@@ -19,7 +19,7 @@ active: terminology
 ### Introduction
 
 The Wound Assessment Implementation Guide is based on [FHIR Version R4] and defines an initial set of  minimum conformance requirements for implementations. This work is being conducted by the [Clinical Information Modeling Initiative (CIMI) Workgroup](https://confluence.hl7.org/display/CIMI/Clinical+Information+Modeling+Initiative) and [Patient Care Workgroup](https://confluence.hl7.org/display/PC/Patient+Care). 
-<br><br>
+<br>
 [Project PSS](https://confluence.hl7.org/display/CIC/Skin+and+Wound+PSS).
 
 <br />
