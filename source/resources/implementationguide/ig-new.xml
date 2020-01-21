@@ -19,7 +19,7 @@
   <name value="Wound Assessment Implementation Guide"/>
   <title value="Wound Assessment"/>
   <status value="draft"/>
-  <date value="2029-01-13T00:00:00-07:00"/>
+  <date value="2020-01-17T00:00:00-07:00"/>
   <publisher value="HL7 International - Clinical Information Modeling Initiative"/>
   <contact>
     <telecom>
@@ -34,7 +34,8 @@
       <code value="US"/>
     </coding>
   </jurisdiction>
-  <packageId value="hl7.fhir.us.vitalsigns"/>
+  <copyright value="Used by permission of HL7 International, all rights reserved Creative Commons License"/>
+  <packageId value="hl7.fhir.us.woundassessment"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
   <fhirVersion value="4.0.1"/>
@@ -122,6 +123,13 @@
         <reference value="StructureDefinition/BodyLandmarkDescriptionExt"/>
       </reference>
       <description value="Body Landmark Description"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/DistanceFromLandmarkMeasurementExt"/>
+      </reference>
+      <description value="Distance From Landmark Measurement"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -227,6 +235,13 @@
         <reference value="StructureDefinition/WoundGradationExt"/>
       </reference>
       <description value="Wound Gradation Extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundRelatedObservationsPanelExt"/>
+      </reference>
+      <description value="Wound Related Observations Panel Extension"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -402,6 +417,20 @@
         <reference value="StructureDefinition/WoundRelatedObservationsPanel"/>
       </reference>
       <description value="Wound Related Observations Panel"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/organization-hspc-organizationtype"/>
+      </reference>
+      <description value="HSPC Organization Type code system"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/wound-observation-type"/>
+      </reference>
+      <description value="Wound Observation Type code system (temporary)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -644,6 +673,27 @@
     </resource>
     <resource>
       <reference>
+        <reference value="ValueSet/woundObservationTypeVS"/>
+      </reference>
+      <description value="Wound Observation Type value set (temporary)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/WoundAssert-example"/>
+      </reference>
+      <description value="An example of a Wound assertion"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/WoundExudate-example"/>
+      </reference>
+      <description value="An example of a Wound Exudate assertion"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Observation/WoundBedAppearance-example"/>
       </reference>
       <description value="An example of a Wound Bed Appearance"/>
@@ -721,13 +771,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Condition/WoundExudate-example"/>
-      </reference>
-      <description value="An example of a Wound Exudate assertion"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="Observation/WoundShape-example"/>
       </reference>
       <description value="An example of a Wound Shape"/>
@@ -787,13 +830,6 @@
         <reference value="Observation/WoundRelatedObservationsPanel-example"/>
       </reference>
       <description value="An example of a Wound Related Observations Panel"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Condition/WoundAssert-example"/>
-      </reference>
-      <description value="An example of a Wound assertion"/>
       <exampleBoolean value="true"/>
     </resource>
     <page>

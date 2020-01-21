@@ -5,7 +5,7 @@
   "igtemplate-dir": "",
   "gen-examples": "false",
   "special-urls": [],
-  "npm-name": "hl7.fhir.us.vitalsigns",
+  "npm-name": "hl7.fhir.us.woundassessment",
   "publisher": "HL7 International - Clinical Information Modeling Initiative",
   "fixed-business-version": "0.1.0",
   "extraTemplates": [
@@ -92,7 +92,7 @@
     "txCache": "generated_output/txCache",
     "qa": "generated_output/qa",
     "specification": "http://hl7.org/fhir/R4",
-    "history": "http://hl7.org/fhir/hspc/woundAssessment/history.cfml",
+    "history": "http://hl7.org/fhir/hspc/woundassessment/history.cfml",
     "resources": [
       "source/resources",
       "source/examples"
@@ -104,18 +104,18 @@
   },
   "spreadsheets": [],
   "resources": {
-    "StructureDefinition/AssociatedPreconditionExt":{"base":"StructureDefinition-AssociatedPreconditionExt.html"},
 	"StructureDefinition/PresentOnAdmissionExt":{"base":"StructureDefinition-PresentOnAdmissionExt.html"},
 	"StructureDefinition/PressureUlcerAssociationExt":{"base":"StructureDefinition-PressureUlcerAssociationExt.html"},
 	"StructureDefinition/DeviceExt":{"base":"StructureDefinition-DeviceExt.html"},
-	"StructureDefinition/EstimatedIndExt":{"base":"StructureDefinition-EstimatedIndExt.html"},
-	"StructureDefinition/WoundImageStructureDefinition":{"base":"StructureDefinition-WoundImageStructureDefinition.html"},
+   	"StructureDefinition/EstimatedIndExt":{"base":"StructureDefinition-EstimatedIndExt.html"},
+    "StructureDefinition/WoundImageExtension":{"base":"StructureDefinition-WoundImageExtension.html"},
 	"StructureDefinition/BodySideExt":{"base":"StructureDefinition-BodySideExt.html"},
 	"StructureDefinition/UnderlyingAnatomicalStructureExt":{"base":"StructureDefinition-UnderlyingAnatomicalStructureExt.html"},
 	"StructureDefinition/BodyLocationOrientationExt":{"base":"StructureDefinition-BodyLocationOrientationExt.html"},
 	"StructureDefinition/BodyLocationQualifierExt":{"base":"StructureDefinition-BodyLocationQualifierExt.html"},
 	"StructureDefinition/BodyLandmarkDescriptionExt":{"base":"StructureDefinition-BodyLandmarkDescriptionExt.html"},
-	"StructureDefinition/DistanceFromLandmarkExt":{"base":"StructureDefinition-DistanceFromLandmarkExt.html"},
+    "StructureDefinition/DistanceFromLandmarkMeasurementExt":{"base":"StructureDefinition-DistanceFromLandmarkMeasurementExt.html"},
+    "StructureDefinition/DistanceFromLandmarkExt":{"base":"StructureDefinition-DistanceFromLandmarkExt.html"},
 	"StructureDefinition/ClockFacePositionExt":{"base":"StructureDefinition-ClockFacePositionExt.html"},
 	"StructureDefinition/SurfaceOrientationExt":{"base":"StructureDefinition-SurfaceOrientationExt.html"},
 	"StructureDefinition/BodyLandmarkOrientationExt":{"base":"StructureDefinition-BodyLandmarkOrientationExt.html"},
@@ -130,6 +130,7 @@
 	"StructureDefinition/WoundTypeEtiologyExt":{"base":"StructureDefinition-WoundTypeEtiologyExt.html"},
 	"StructureDefinition/WoundInternalItemOrBodyStructureVisibleExt":{"base":"StructureDefinition-WoundInternalItemOrBodyStructureVisibleExt.html"},
 	"StructureDefinition/WoundGradationExt":{"base":"StructureDefinition-WoundGradationExt.html"},
+    "StructureDefinition/WoundRelatedObservationsPanelExt":{"base":"StructureDefinition-WoundRelatedObservationsPanelExt.html"},
 
 	"StructureDefinition/organization":{"base":"StructureDefinition-organization.html"},
 	"StructureDefinition/practitioner":{"base":"StructureDefinition-practitioner.html"},
@@ -161,6 +162,9 @@
 	"StructureDefinition/WoundExudateAbsentAssert":{"base":"StructureDefinition-WoundExudateAbsentAssert.html"},
 	"StructureDefinition/WoundShape":{"base":"StructureDefinition-WoundShape.html"},
 	"StructureDefinition/WoundRelatedObservationsPanel":{"base":"StructureDefinition-WoundRelatedObservationsPanel.html"},
+	
+    "CodeSystem/organization-hspc-organizationtype":{"base":"CodeSystem-organization-hspc-organizationtype.html","source":"codesystem/organization-hspc-organizationtype.xml"},
+    "CodeSystem/wound-observation-type":{"base":"CodeSystem-wound-observation-type.html","source":"codesystem/wound-observation-type.xml"},
 	
 	"ValueSet/communicationMode":{"base":"ValueSet-communicationMode.html"},
 	"ValueSet/courseVS":{"base":"ValueSet-courseVS.html"},
@@ -196,7 +200,8 @@
 	"ValueSet/recurrenceVS":{"base":"ValueSet-recurrenceVS.html"},
 	"ValueSet/surfaceOrientationVS":{"base":"ValueSet-surfaceOrientationVS.html"},
 	"ValueSet/qualitativeWoundDepthVS":{"base":"ValueSet-qualitativeWoundDepthVS.html"},
-	"ValueSet/woundShapeVS":{"base":"ValueSet-woundShapeVS.html"},
+    "ValueSet/woundShapeVS":{"base":"ValueSet-woundShapeVS.html"},
+   	"ValueSet/woundObservationTypeVS":{"base":"ValueSet-woundObservationTypeVS.html"},
 	
 	"Observation/WoundBedAppearance-example":{"base":"Observation-WoundBedAppearance-example.html"}, 
 	"Observation/WoundBedColor-example":{"base":"Observation-WoundBedColor-example.html"},

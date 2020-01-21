@@ -8,7 +8,7 @@
   <date value="2019-06-19"/>
   <publisher value="HSPC"/>
   <description value="How often an event re-occurs."/>
-  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.1"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
@@ -31,15 +31,11 @@
       <fixedUri value="http://hl7.org/fhir/hspc/StructureDefinition/RecurrenceExt"/>
     </element>
     <element id="Extension:Recurrence.valueCodeableConcept">
-      <path value="Extension.valueCodeableConcept"/>
+      <path value="Extension.extension"/>
       <type>
-        <code value="CodeableConcept"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/hspc/StructureDefinition/RecurrenceValueExt"/>
       </type>
-      <binding>
-            <strength value="preferred"/>
-            <valueSet value="http://hl7.org/fhir/hspc/ValueSet/recurrenceVS"/>
-        </binding>
     </element>
 	<element id="Extension:Recurrence.extension:Periodicity">
 		<path value="Extension.extension"/>

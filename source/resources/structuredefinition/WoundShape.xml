@@ -9,7 +9,7 @@
     <date value="2019-09-30"/>
     <publisher value="Healthcare Services Platform Consortium"/>
     <description value="Wound Shape describes the general shape of the wound."/>
-    <fhirVersion value="4.0.0"/>
+    <fhirVersion value="4.0.1"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
     <type value="Observation"/>
@@ -21,24 +21,24 @@
 			<short value="Wound Bed Color"/>
             <definition value="Wound Shape describes the general shape of the wound."/>
         </element>
-        <!-- <element id="Observation:WoundShape.code">
+        <element id="Observation:WoundShape.code">
             <path value="Observation.code"/>
         </element>
-		<element id="Observation:WoundShape.code.coding">
-			<path value="Observation.code.coding"/>
-		</element>
-		<element id="Observation:WoundShape.code.coding.system">
-			<path value="Observation.code.coding.system"/>
-			<fixedUri value="http://loinc.org"/>
-		</element>
-		<element id="Observation:WoundShape.code.coding.code">
-			<path value="Observation.code.coding.code"/>
-			<fixedCode value=""/>
-		</element>
-		<element id="Observation:WoundShape.code.coding.display">
-			<path value="Observation.code.coding.display"/>
-			<fixedString value="Shape of Wound base"/>
-		</element> -->
+	<element id="Observation:WoundShape.code.coding">
+		<path value="Observation.code.coding"/>
+	</element>
+	<element id="Observation:WoundShape.code.coding.system">
+		<path value="Observation.code.coding.system"/>
+		<fixedUri value="http://loinc.org"/>
+	</element>
+	<element id="Observation:WoundShape.code.coding.code">
+		<path value="Observation.code.coding.code"/>
+		<fixedCode value="94086-6"/>
+	</element>
+	<element id="Observation:WoundShape.code.coding.display">
+		<path value="Observation.code.coding.display"/>
+		<fixedString value="Wound Shape"/>
+	</element>
         <element id="Observation:WoundShape.valueCodeableConcept">
             <path value="Observation.valueCodeableConcept"/>
             <short value="Wound Shape code"/>

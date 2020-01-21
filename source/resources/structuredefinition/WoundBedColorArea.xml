@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
-    <id value="WoundTunnelingLength"/>
-    <url value="http://hl7.org/fhir/hspc/StructureDefinition/WoundTunnelingLength"/>
-    <name value="Wound Tunneling Length"/>
+    <id value="WoundBedColorArea"/>
+    <url value="http://hl7.org/fhir/hspc/StructureDefinition/WoundBedColorArea"/>
+    <name value="Wound Bed Color Area"/>
     <status value="draft"/>
     <date value="2019-06-19"/>
     <publisher value="Healthcare Services Platform Consortium"/>
-    <description value="Wound Tunneling Length describes how long a wound sinus is."/>
+    <description value="Wound Bed Color Area describes how much of the wound appears in a certain color."/>
     <fhirVersion value="4.0.1"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
@@ -15,55 +15,51 @@
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
     <derivation value="constraint"/>
     <differential>
-        <element id="Observation:woundTunnelingLength">
+        <element id="Observation:hspcwoundBedColorArea">
             <path value="Observation"/>
-			<short value="Wound Tunneling Length"/>
-            <definition value="Wound Tunneling Length describes how long a wound sinus is."/>
+			<short value="Wound Bed Color"/>
+            <definition value="Wound Bed Color Area describes how much of the wound appears in a certain color."/>
         </element>
-        <element id="Observation:woundTunnelingLength.code">
+        <element id="Observation:hspcwoundBedColorArea.code">
             <path value="Observation.code"/>
         </element>
-		<element id="Observation:woundTunnelingLength.code.coding">
+		<element id="Observation:hspcwoundBedColorArea.code.coding">
 			<path value="Observation.code.coding"/>
 		</element>
-		<element id="Observation:woundTunnelingLength.code.coding.system">
+		<element id="Observation:hspcwoundBedColorArea.code.coding.system">
 			<path value="Observation.code.coding.system"/>
 			<fixedUri value="http://loinc.org"/>
 		</element>
-		<element id="Observation:woundTunnelingLength.code.coding.code">
+		<element id="Observation:hspcwoundBedColorArea.code.coding.code">
 			<path value="Observation.code.coding.code"/>
-			<fixedCode value="72296-7"/>
+			<fixedCode value="89255-4"/>
 		</element>
-		<element id="Observation:woundTunnelingLength.code.coding.display">
+		<element id="Observation:hspcwoundBedColorArea.code.coding.display">
 			<path value="Observation.code.coding.display"/>
-			<fixedString value="Tunneling [Length] of Wound"/>
+			<fixedString value="Wound bed area identified by color/Area of wound bed"/>
 		</element>
-        <element id="Observation:woundTunnelingLength.valueQuantity">
+        <element id="Observation:hspcwoundBedColorArea.valueQuantity">
             <path value="Observation.valueQuantity"/>
-            <short value="Length"/>
+            <short value="Color Area"/>
             <type>
                 <code value="Quantity"/>
             </type>
         </element>
-        <element id="Observation:woundTunnelingLength.valueQuantity.system">
-            <path value="Observation.valueQuantity.system"/>
-            <type>
+		<element id="Observation:hspcwoundBedColorArea.component.valueQuantity.system">
+			<path value="Observation.valueQuantity.system"/>
+			<type>
                 <code value="uri"/>
                 <profile value="http://hl7.org/fhir/StructureDefinition/uri"/>
             </type>
             <fixedUri value="http://unitsofmeasure.org"/>
-            <mustSupport value="false"/>
-            <isModifier value="false"/>
-        </element>
-        <element id="Observation:woundTunnelingLength.valueQuantity.code">
-            <path value="Observation.valueQuantity.code"/>
-            <type>
+		</element>
+		<element id="Observation:hspcwoundBedColorArea.component.valueQuantity.code">
+			<path value="Observation.valueQuantity.code"/>
+			<type>
                 <code value="code"/>
                 <profile value="http://hl7.org/fhir/StructureDefinition/code"/>
             </type>
-            <fixedCode value="cm"/>
-            <mustSupport value="false"/>
-            <isModifier value="false"/>
-        </element>
+            <fixedCode value="%"/>
+		</element>
     </differential>
 </StructureDefinition>

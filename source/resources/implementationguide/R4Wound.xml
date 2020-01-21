@@ -6,7 +6,7 @@
   <name value="Wound Assessment Implementation Guide" />
   <title value="Wound Assessment"/>
   <status value="draft" />
-  <date value="2029-01-13"/>
+  <date value="2020-01-17"/>
   <publisher value="HL7 International - Clinical Information Modeling Initiative"/>
   <contact>
 		<telecom>
@@ -15,7 +15,9 @@
 		</telecom>
   </contact>
   <description value="The Implementation Guide resource profile for HSPC"/>
-	<fhirVersion value="4.0.1"/>
+  <copyright value="Used by permission of HL7 International, all rights reserved Creative Commons License"/>
+  <packageId value="hl7.fhir.us.woundassessment"/>
+  <fhirVersion value="4.0.1"/>
     <definition>	
 		<grouping>
 			<name value="base"/>
@@ -98,9 +100,16 @@
 			<description value ="Body Landmark Description"/>
 			<exampleBoolean value="false"/>				
 		</resource>
-		<resource>		
-			<reference>	
-				<reference value ="StructureDefinition/DistanceFromLandmarkExt"/>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/DistanceFromLandmarkMeasurementExt"/>
+			</reference>
+			<description value="Distance From Landmark Measurement"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/DistanceFromLandmarkExt"/>
 			</reference>
 			<description value ="Distance From Landmark"/>
 			<exampleBoolean value="false"/>				
@@ -203,23 +212,30 @@
 			<description value ="Wound Gradation Extension"/>
 			<exampleBoolean value="false"/>				
 		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/WoundRelatedObservationsPanelExt"/>
+			</reference>
+			<description value="Wound Related Observations Panel Extension"/>
+			<exampleBoolean value="false"/>
+		</resource>
 		<!--================end extensions==============-->
-		
-		<!-- <resource>		
-			<exampleBoolean value="false"/>	
+		<!-- 
+		<resource>		
 			<reference>	
 				<reference value ="StructureDefinition/organization"/>
 			</reference>
 			<description value ="HSPC Organization"/>			
+			<exampleBoolean value="false"/>
 		</resource>		
 		<resource>		
-			<exampleBoolean value="false"/>	
 			<reference>	
 				<reference value ="StructureDefinition/practitioner"/>
 			</reference>
 			<description value ="HSPC Practitioner"/>			
-		</resource>	 -->
-		
+			<exampleBoolean value="false"/>
+		</resource>	 
+		-->
 		<!--=================structure defs=================-->
 		<resource>		
 			<reference>	
@@ -394,6 +410,20 @@
 				<reference value="StructureDefinition/WoundRelatedObservationsPanel"/>
 			</reference>
 			<description value="Wound Related Observations Panel"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="CodeSystem/organization-hspc-organizationtype"/>
+			</reference>
+			<description value="HSPC Organization Type code system"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="CodeSystem/wound-observation-type"/>
+			</reference>
+			<description value="Wound Observation Type code system (temporary)"/>
 			<exampleBoolean value="false"/>
 		</resource>
 		<!--===================end structure defs===================-->
@@ -636,8 +666,29 @@
 			<description value="Wound Shape value set"/>
 			<exampleBoolean value="false"/>
 		</resource>
+		<resource>
+			<reference>
+				<reference value="ValueSet/woundObservationTypeVS"/>
+			</reference>
+			<description value="Wound Observation Type value set (temporary)"/>
+			<exampleBoolean value="false"/>
+		</resource>
 		<!--======================end value sets==================-->
 		<!--======================examples========================-->
+		<resource>		
+			<reference>
+				<reference value="Condition/WoundAssert-example"/>
+			</reference>
+			<description value="An example of a Wound assertion"/>
+			<exampleBoolean value="true"/>	
+		</resource>
+		<resource>		
+			<reference>
+				<reference value="Condition/WoundExudate-example"/>
+			</reference>
+			<description value="An example of a Wound Exudate assertion"/>
+			<exampleBoolean value="true"/>	
+		</resource>
 		<resource>		
 			<reference>
 				<reference value="Observation/WoundBedAppearance-example"/>
@@ -715,13 +766,7 @@
 			<description value="An example of a Wound Exudate Volume"/>
 			<exampleBoolean value="true"/>	
 		</resource>
-		<resource>		
-			<reference>
-				<reference value="Condition/WoundExudate-example"/>
-			</reference>
-			<description value="An example of a Wound Exudate assertion"/>
-			<exampleBoolean value="true"/>	
-		</resource>
+		
 		<resource>		
 			<reference>
 				<reference value="Observation/WoundShape-example"/>
@@ -785,13 +830,7 @@
 			<description value="An example of a Wound Related Observations Panel"/>
 			<exampleBoolean value="true"/>	
 		</resource>
-		<resource>		
-			<reference>
-				<reference value="Condition/WoundAssert-example"/>
-			</reference>
-			<description value="An example of a Wound assertion"/>
-			<exampleBoolean value="true"/>	
-		</resource>
+		
 		<!--=====================end examples=================-->
 		<page>
 			<nameUrl value="index.html"/>
@@ -816,13 +855,9 @@
 				<nameUrl value="profiles.html"/>
 				<title value="Profiles and Extensions"/>
 				<generation value="markdown"/>
-			<!-- ============ Profiles =============== -->	
-				<!-- <page>
-				  <nameUrl value="StructureDefinition-BloodPressurePanel.html"/>
-				  <title value="StructureDefinition Blood Pressure Panel"/>
-				  <generation value="generated"/>
-				</page> -->
-				<!-- ============ End Profiles =============== -->
+				<!-- ============ Profiles and examples=============== -->
+				<!-- insert profiles -->
+				<!-- ============ End Profiles and examples=============== -->
 				<!-- ============ Extensions and examples =============== -->
 				<!-- insert extensions -->
 				<!-- ============ End Extensions and examples =============== -->
@@ -836,7 +871,6 @@
 				<!-- insert valuesets -->
 				<!-- ============ End ValueSet   =============== -->
 			 <!-- </page> -->
-			
 			<!-- ============ Downloads Page =============== -->
 			<page>
 				<nameUrl value="downloads.html"/>

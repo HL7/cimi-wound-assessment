@@ -22,7 +22,7 @@
   "name" : "Wound Assessment Implementation Guide",
   "title" : "Wound Assessment",
   "status" : "draft",
-  "date" : "2029-01-13T00:00:00-07:00",
+  "date" : "2020-01-17T00:00:00-07:00",
   "publisher" : "HL7 International - Clinical Information Modeling Initiative",
   "contact" : [{
     "telecom" : [{
@@ -37,7 +37,8 @@
       "code" : "US"
     }]
   }],
-  "packageId" : "hl7.fhir.us.vitalsigns",
+  "copyright" : "Used by permission of HL7 International, all rights reserved Creative Commons License",
+  "packageId" : "hl7.fhir.us.woundassessment",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1",
   "4.0.1"],
@@ -126,6 +127,13 @@
         "reference" : "StructureDefinition/BodyLandmarkDescriptionExt"
       },
       "description" : "Body Landmark Description",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/DistanceFromLandmarkMeasurementExt"
+      },
+      "description" : "Distance From Landmark Measurement",
       "exampleBoolean" : false
     },
     {
@@ -231,6 +239,13 @@
         "reference" : "StructureDefinition/WoundGradationExt"
       },
       "description" : "Wound Gradation Extension",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/WoundRelatedObservationsPanelExt"
+      },
+      "description" : "Wound Related Observations Panel Extension",
       "exampleBoolean" : false
     },
     {
@@ -406,6 +421,20 @@
         "reference" : "StructureDefinition/WoundRelatedObservationsPanel"
       },
       "description" : "Wound Related Observations Panel",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/organization-hspc-organizationtype"
+      },
+      "description" : "HSPC Organization Type code system",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/wound-observation-type"
+      },
+      "description" : "Wound Observation Type code system (temporary)",
       "exampleBoolean" : false
     },
     {
@@ -648,6 +677,27 @@
     },
     {
       "reference" : {
+        "reference" : "ValueSet/woundObservationTypeVS"
+      },
+      "description" : "Wound Observation Type value set (temporary)",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "Condition/WoundAssert-example"
+      },
+      "description" : "An example of a Wound assertion",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Condition/WoundExudate-example"
+      },
+      "description" : "An example of a Wound Exudate assertion",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
         "reference" : "Observation/WoundBedAppearance-example"
       },
       "description" : "An example of a Wound Bed Appearance",
@@ -725,13 +775,6 @@
     },
     {
       "reference" : {
-        "reference" : "Condition/WoundExudate-example"
-      },
-      "description" : "An example of a Wound Exudate assertion",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
         "reference" : "Observation/WoundShape-example"
       },
       "description" : "An example of a Wound Shape",
@@ -791,13 +834,6 @@
         "reference" : "Observation/WoundRelatedObservationsPanel-example"
       },
       "description" : "An example of a Wound Related Observations Panel",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "Condition/WoundAssert-example"
-      },
-      "description" : "An example of a Wound assertion",
       "exampleBoolean" : true
     }],
     "page" : {

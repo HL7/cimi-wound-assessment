@@ -14,9 +14,13 @@ mappings: false
 
 <h2>{{[type]}}-{{[id]}}</h2>
 
+<h3>Scope and Usage</h3>
 
+<p>
+{{site.data.structuredefinitions.{{[id]}}.description}}
+</p>
 <!-- introductiontext here-->
-<a name="introduction"> </a>
+<a name="Introduction"> </a>
 
 {% capture my-include %}{% include {{[id]}}-intro.md id="{{[id]}}" %}{% endcapture %}{{ my-include | markdownify }}
 

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="UnderlyingAnatomicalStructureExt"/>
-  <url value="http://hl7.org/fhir/hspc/StructureDefinition/UnderlyingAnatomicalStructureExt"/>
+  <id value="RecurrenceValueExt"/>
+  <url value="http://hl7.org/fhir/hspc/StructureDefinition/RecurrenceValueExt"/>
   <version value="2.0.0"/>
-  <name value="UnderlyingAnatomicalStructure"/>
+  <name value="RecurrenceValue"/>
   <status value="draft"/>
   <date value="2019-06-19"/>
-  <publisher value="CIMI"/>
-  <description value="Body structures that are beneath an observation location."/>
+  <publisher value="HSPC"/>
+  <description value="The coded value for how often an event occurs."/>
   <fhirVersion value="4.0.1"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
@@ -19,23 +19,27 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
   <differential>
-    <element id="Extension:UnderlyingAnatomicalStructureExt">
+    <element id="Extension:RecurrenceValue">
       <path value="Extension"/>
-      <definition value="Body structures that are beneath an observation location."/>
+      <definition value="The coded value for how often an event occurs."/>
       <min value="0"/>
       <max value="1"/>
       <isModifier value="false"/>
     </element>
-    <element id="Extension:UnderlyingAnatomicalStructureExt.url">
+    <element id="Extension:RecurrenceValue.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/hspc/StructureDefinition/UnderlyingAnatomicalStructureExt"/>
+      <fixedUri value="http://hl7.org/fhir/hspc/StructureDefinition/RecurrenceValueExt"/>
     </element>
-    <element id="Extension:UnderlyingAnatomicalStructureExt.valueCodeableConcept">
+    <element id="Extension:RecurrenceValue.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept"/>
       <type>
         <code value="CodeableConcept"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
       </type>
+      <binding>
+            <strength value="preferred"/>
+            <valueSet value="http://hl7.org/fhir/hspc/ValueSet/recurrenceVS"/>
+      </binding>
     </element>
   </differential>
 </StructureDefinition>

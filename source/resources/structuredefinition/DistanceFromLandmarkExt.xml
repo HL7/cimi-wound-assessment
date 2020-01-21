@@ -8,7 +8,7 @@
   <date value="2019-06-19"/>
   <publisher value="CIMI"/>
   <description value="The distance in cm a certain observation is made from a body landmark."/>
-  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.1"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
@@ -26,45 +26,30 @@
       <max value="1"/>
       <isModifier value="false"/>
     </element>
+    <element id="Extension:DistanceFromLandmarkExt.extension:DeviceExt">
+      <path value="Extension.extension"/>
+      <sliceName value="DeviceExt"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/hspc/StructureDefinition/DeviceExt"/>
+      </type>
+    </element>
+    <element id="Extension:DistanceFromLandmarkExt.extension:DistanceFromLandmarkMeasurementExt">
+      <path value="Extension.extension"/>
+      <sliceName value="MeasurementExt"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/hspc/StructureDefinition/DistanceFromLandmarkMeasurementExt"/>
+      </type>
+    </element>
     <element id="Extension:DistanceFromLandmarkExt.url">
       <path value="Extension.url"/>
       <fixedUri value="http://hl7.org/fhir/hspc/StructureDefinition/DistanceFromLandmarkExt"/>
     </element>
-    <element id="Extension:DistanceFromLandmarkExt.valueQuantity">
-      <path value="Extension.valueQuantity"/>
-      <type>
-        <code value="Quantity"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity"/>
-      </type>
+    <element id="Extension:DistanceFromLandmarkExt.value[x]">
+      <path value="Extension.value[x]"/>
+      <min value="0"/>
+      <max value="0"/>
     </element>
-	<element id="Extension:DisDistanceFromLandmarkExt.valueQuantity.system">
-		<path value="Extension.valueQuantity.system"/>
-		<type>
-            <code value="uri"/>
-            <profile value="http://hl7.org/fhir/StructureDefinition/uri"/>
-        </type>
-        <fixedUri value="http://unitsofmeasure.org"/>
-        <mustSupport value="false"/>
-        <isModifier value="false"/>
-	</element>
-	<element id="Extension:cimiDistanceFromLandmark.valueQuantity.code">
-        <path value="Extension.valueQuantity.code"/>
-        <type>
-            <code value="code"/>
-            <profile value="http://hl7.org/fhir/StructureDefinition/code"/>
-        </type>
-        <fixedCode value="cm"/>
-        <mustSupport value="false"/>
-        <isModifier value="false"/>
-    </element>
-	<element id="Extension:cimiDistanceFromLandmark.extension:device">
-		<path value="Extension.extension"/>
-		<sliceName value="Device"/>
-		<short value="Device"/>
-		<type>
-			<code value="extension"/>
-			<profile value="http://hl7.org/fhir/hspc/StructureDefinition/DeviceExt"/>
-		</type>
-	</element>
   </differential>
 </StructureDefinition>
