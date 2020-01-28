@@ -20,6 +20,14 @@
 			<short value="Wound Exudate Volume"/>
             <definition value="Wound Exudate Volume is the measured amount of wound drainage."/>
         </element>
+		<element id="Observation:cimiwoundExudateVolume.extension:EstimatedInd">
+			<path value="Observation.extension"/>
+			<short value="Estimated Indicator"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/hspc/StructureDefinition/EstimatedIndExt"/>
+			</type>
+		</element>
         <element id="Observation:cimiwoundExudateVolume.valueQuantity">
             <path value="Observation.valueQuantity"/>
             <short value="Volume"/>
@@ -43,13 +51,5 @@
             </type>
             <fixedCode value="mL"/>
         </element>
-		<element id="Observation:cimiwoundExudateVolume.extension:EstimatedInd">
-			<path value="Observation.extension"/>
-			<short value="Estimated Indicator"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/hspc/StructureDefinition/EstimatedIndExt"/>
-			</type>
-		</element>
     </differential>
 </StructureDefinition>
