@@ -320,13 +320,6 @@
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/WoundTunnelingAbsentAssert"
-      },
-      "description" : "Wound Tunneling Absent Assert",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
         "reference" : "StructureDefinition/WoundTunnelingAssert"
       },
       "description" : "Wound Tunneling Assert",
@@ -393,20 +386,6 @@
         "reference" : "StructureDefinition/WoundExudateAssert"
       },
       "description" : "Wound Exudate Assert",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/WoundUnderminingAbsentAssert"
-      },
-      "description" : "Wound Undermining Absent Assert",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/WoundExudateAbsentAssert"
-      },
-      "description" : "Wound Exudate Absent Assert",
       "exampleBoolean" : false
     },
     {

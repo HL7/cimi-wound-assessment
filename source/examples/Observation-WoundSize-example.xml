@@ -4,8 +4,7 @@
     <profile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundSize"/>
   </meta>
   <status value="final"/>
-  <extension>
-    <url value="http://hl7.org/fhir/hspc/StructureDefinition/DeviceExt"/>
+  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/DeviceExt">
 	<value>
 		<system value="http://snomed.info/sct"/>
 		<code value="44056008"/>

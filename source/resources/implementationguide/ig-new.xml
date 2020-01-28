@@ -316,13 +316,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/WoundTunnelingAbsentAssert"/>
-      </reference>
-      <description value="Wound Tunneling Absent Assert"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="StructureDefinition/WoundTunnelingAssert"/>
       </reference>
       <description value="Wound Tunneling Assert"/>
@@ -389,20 +382,6 @@
         <reference value="StructureDefinition/WoundExudateAssert"/>
       </reference>
       <description value="Wound Exudate Assert"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/WoundUnderminingAbsentAssert"/>
-      </reference>
-      <description value="Wound Undermining Absent Assert"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/WoundExudateAbsentAssert"/>
-      </reference>
-      <description value="Wound Exudate Absent Assert"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
