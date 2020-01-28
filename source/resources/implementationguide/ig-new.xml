@@ -50,13 +50,6 @@
     </grouping>
     <resource>
       <reference>
-        <reference value="StructureDefinition/AssociatedPreconditionExt"/>
-      </reference>
-      <description value="Associated Precondition"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="StructureDefinition/PresentOnAdmissionExt"/>
       </reference>
       <description value="Present on Admission"/>
@@ -183,9 +176,9 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/RecurrenceExt"/>
+        <reference value="StructureDefinition/RecurrenceValueExt"/>
       </reference>
-      <description value="Recurrence"/>
+      <description value="Recurrence Value"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -193,6 +186,13 @@
         <reference value="StructureDefinition/PeriodicityExt"/>
       </reference>
       <description value="Periodicity"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/RecurrenceExt"/>
+      </reference>
+      <description value="Recurrence"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

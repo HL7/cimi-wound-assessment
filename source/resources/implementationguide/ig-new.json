@@ -54,13 +54,6 @@
     }],
     "resource" : [{
       "reference" : {
-        "reference" : "StructureDefinition/AssociatedPreconditionExt"
-      },
-      "description" : "Associated Precondition",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
         "reference" : "StructureDefinition/PresentOnAdmissionExt"
       },
       "description" : "Present on Admission",
@@ -187,9 +180,9 @@
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/RecurrenceExt"
+        "reference" : "StructureDefinition/RecurrenceValueExt"
       },
-      "description" : "Recurrence",
+      "description" : "Recurrence Value",
       "exampleBoolean" : false
     },
     {
@@ -197,6 +190,13 @@
         "reference" : "StructureDefinition/PeriodicityExt"
       },
       "description" : "Periodicity",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/RecurrenceExt"
+      },
+      "description" : "Recurrence",
       "exampleBoolean" : false
     },
     {

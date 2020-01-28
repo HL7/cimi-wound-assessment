@@ -22,14 +22,7 @@
 		<grouping>
 			<name value="base"/>
 		</grouping>
-		<!-- ===============extensions=============-->
-		<resource>		
-			<reference>	
-				<reference value ="StructureDefinition/AssociatedPreconditionExt"/>
-			</reference>
-			<description value ="Associated Precondition"/>			
-			<exampleBoolean value="false"/>	
-		</resource>		
+		<!-- ===============extensions=============-->		
 		<resource>		
 			<reference>	
 				<reference value ="StructureDefinition/PresentOnAdmissionExt"/>
@@ -158,9 +151,9 @@
 		</resource>
 		<resource>		
 			<reference>	
-				<reference value ="StructureDefinition/RecurrenceExt"/>
+				<reference value ="StructureDefinition/RecurrenceValueExt"/>
 			</reference>
-			<description value ="Recurrence"/>	
+			<description value ="Recurrence Value"/>	
 			<exampleBoolean value="false"/>			
 		</resource>
 		<resource>		
@@ -168,6 +161,13 @@
 				<reference value ="StructureDefinition/PeriodicityExt"/>
 			</reference>
 			<description value ="Periodicity"/>	
+			<exampleBoolean value="false"/>			
+		</resource>
+ 		<resource>		
+			<reference>	
+				<reference value ="StructureDefinition/RecurrenceExt"/>
+			</reference>
+			<description value ="Recurrence"/>	
 			<exampleBoolean value="false"/>			
 		</resource>
 		<resource>		
@@ -766,7 +766,6 @@
 			<description value="An example of a Wound Exudate Volume"/>
 			<exampleBoolean value="true"/>	
 		</resource>
-		
 		<resource>		
 			<reference>
 				<reference value="Observation/WoundShape-example"/>

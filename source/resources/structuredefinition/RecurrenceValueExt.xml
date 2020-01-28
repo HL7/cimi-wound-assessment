@@ -7,7 +7,7 @@
   <status value="draft"/>
   <date value="2019-06-19"/>
   <publisher value="HSPC"/>
-  <description value="The coded value for how often an event occurs."/>
+  <description value="The coded value for how often an event re-occurs."/>
   <fhirVersion value="4.0.1"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
@@ -21,7 +21,7 @@
   <differential>
     <element id="Extension:RecurrenceValue">
       <path value="Extension"/>
-      <definition value="The coded value for how often an event occurs."/>
+      <definition value="The coded value for how often an event re-occurs."/>
       <min value="0"/>
       <max value="1"/>
       <isModifier value="false"/>
@@ -37,8 +37,8 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
       </type>
       <binding>
-            <strength value="preferred"/>
-            <valueSet value="http://hl7.org/fhir/hspc/ValueSet/recurrenceVS"/>
+        <strength value="preferred"/>
+        <valueSet value="http://hl7.org/fhir/hspc/ValueSet/recurrenceVS"/>
       </binding>
     </element>
   </differential>

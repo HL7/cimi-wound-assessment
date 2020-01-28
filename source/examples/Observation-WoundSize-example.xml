@@ -1,5 +1,5 @@
 <Observation xmlns="http://hl7.org/fhir">
-  <id value="woundsize-example"/>
+  <id value="WoundSize-Example"/>
   <meta>
     <profile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundSize"/>
   </meta>
