@@ -16,9 +16,10 @@
 	<expression value="StructureDefinition"/>
   </context>
   <mapping>
-	<uri value="http://loinc.org/72301-5"/>
-	<identity value="LOINC"/>
-	<name value="Description of Periwound"/>
+	<identity value="1"/>
+	<uri value="http://loinc.org"/>
+	<name value="LOINC"/>
+	<comment value="code=72301-5, display=Description of Periwound"/>
   </mapping>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>

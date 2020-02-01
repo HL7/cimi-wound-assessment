@@ -11,9 +11,10 @@
   <description value="A picture of the wound."/>
   <fhirVersion value="4.0.1"/>
   <mapping>
-	<uri value="http://loinc.org/72170-4"/>
-	<identity value="LOINC"/>
-	<name value="Photographic image"/>
+    <identity value="1"/>
+	<uri value="http://loinc.org"/>
+	<name value="LOINC"/>
+	<comment value="code=72170-4, display=Photographic image"/>
   </mapping>
   <kind value="complex-type"/>
   <abstract value="false"/>

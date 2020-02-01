@@ -16,9 +16,10 @@
 	<expression value="StructureDefinition"/>
   </context>
   <mapping>
-	<uri value="http://loinc.org/89250-5"/>
-	<identity value="LOINC"/>
-	<name value="Device or anatomic structure visible in wound"/>
+  <identity value="1"/>
+	<uri value="http://loinc.org"/>
+	<name value="LOINC"/>
+	<comment value="code=89250-5, display=Device or anatomic structure visible in wound"/>
   </mapping>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>

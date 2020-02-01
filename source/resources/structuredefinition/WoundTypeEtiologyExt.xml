@@ -16,9 +16,10 @@
 	<expression value="StructureDefinition"/>
   </context>
   <mapping>
+	<identity value="1"/>
 	<uri value="http://loinc.org/11373-8"/>
-	<identity value="LOINC"/>
-	<name value="Injury cause"/>
+	<name value="LOINC"/>
+	<comment value="code=11373-8, display=Injury cause"/>
   </mapping>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
