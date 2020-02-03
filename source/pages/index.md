@@ -34,12 +34,31 @@ The profiles within this wound assessment implementation guide are used to colle
 #### Use cases
 
 Use case 1: Stage Four Pressure Injury
-Peter Pepper is admitted today for treatment of a stage four pressure injury with tunneling. The wound is 3 cm X 4 cm and 3 cm deep. There is a 3 cm tunnel in the two o’clock direction. The edge of the wound is boggy.
+Peter Pepper is admitted for treatment of a stage four pressure injury with tunneling. The wound is 3 cm X 4 cm and 3 cm deep. There is a 3 cm tunnel in the two o’clock direction. The edge of the wound is boggy.
 
 {% include UseCase1.html %}
 
 
 <br />
+
+## Formal Veiw of Profile Content
+
+### Profile element and extension mappings
+
+The table below represents a set of concepts and elements needed to properly document the presence of a wound.  The LOINC and SNOMED code bindings are extensible.  It is required that systems using this profile support *at least* these elements and concepts.
+
+{% include profileloinctable.html %}
+
+### Value sets
+
+This table shows the terminology bindings used in the profile.
+
+{% include ValueSets.html %}
+
+
+## References
+
+Harris M, Heerman-Langford L, Miller H, Hook M, Dykes P, Matney SA.(2015) *Harmonizing and       Extending Standards from a Domain-Specific and Bottom-Up Approach: An Example from Development    through Use in Clinical Applications*. Journal of the American Medical Informatics Association.   22(3), 545-52.
 
 ## Acknowledgements
 
