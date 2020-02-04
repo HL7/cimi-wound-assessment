@@ -219,6 +219,13 @@
 			<description value="Wound Related Observations Panel Extension"/>
 			<exampleBoolean value="false"/>
 		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/WoundGradationPanelExt"/>
+			</reference>
+			<description value="Wound Gradation Panel Extension"/>
+			<exampleBoolean value="false"/>
+		</resource>
 		<!--================end extensions==============-->
 		<!-- 
 		<resource>		
@@ -407,11 +414,55 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="StructureDefinition/NPUAPWoundGrade"/>
+			</reference>
+			<description value="NPUAP Wound Grade"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PEDISWoundGradeTotalScore"/>
+			</reference>
+			<description value="PEDIS Wound Grade Total Score"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/SINBADWoundGradeTotalScore"/>
+			</reference>
+			<description value="SINBAD Wound Grade Total Score"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/UniversityOfTexasWoundGrade"/>
+			</reference>
+			<description value="University Of Texas Wound Grade"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/WagnerWoundGrade"/>
+			</reference>
+			<description value="Wagner Wound Grade"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/WoundGradationPanel"/>
+			</reference>
+			<description value="Wound Gradation Panel"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="StructureDefinition/WoundRelatedObservationsPanel"/>
 			</reference>
 			<description value="Wound Related Observations Panel"/>
 			<exampleBoolean value="false"/>
 		</resource>
+		<!--===================end structure defs===================-->
+		<!--======================Code Systems=======================-->
 		<resource>
 			<reference>
 				<reference value="CodeSystem/organization-hspc-organizationtype"/>
@@ -426,7 +477,14 @@
 			<description value="Wound Observation Type code system (temporary)"/>
 			<exampleBoolean value="false"/>
 		</resource>
-		<!--===================end structure defs===================-->
+		<resource>
+			<reference>
+				<reference value="CodeSystem/wound-grade-concepts"/>
+			</reference>
+			<description value="Wound Grade Concepts code system (temporary)"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<!--===================end code systems==================-->
 		<!--===================value sets===========================-->
 		<resource>		
 			<reference>	
@@ -671,6 +729,34 @@
 				<reference value="ValueSet/woundObservationTypeVS"/>
 			</reference>
 			<description value="Wound Observation Type value set (temporary)"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ValueSet/NPUAPWoundGradeVS"/>
+			</reference>
+			<description value="NPUAP Wound Grade value set (temporary)"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ValueSet/UofTWoundGradeStageVS"/>
+			</reference>
+			<description value="University of Texas Diabetic Foot Ulcer Grade value set (temporary)"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ValueSet/UofTWoundGradeVS"/>
+			</reference>
+			<description value="University of Texas Diabetic Foot Ulcer Grade Stage value set (temporary)"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ValueSet/WagnerWoundGradeVS"/>
+			</reference>
+			<description value="Wagner Diabetic Foot Ulcer Grade value set (temporary)"/>
 			<exampleBoolean value="false"/>
 		</resource>
 		<!--======================end value sets==================-->

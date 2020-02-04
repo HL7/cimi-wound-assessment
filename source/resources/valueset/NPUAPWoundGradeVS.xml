@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="NPUAPWoundGradeVS"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+	</meta>
+	<url value="http://hl7.org/fhir/hspc/ValueSet/NPUAPWoundGradeVS"/>
+	<version value="0.01"/>
+	<name value="NPUAPWoundGradeVS"/>
+	<title value="National Pressure Ulcer Advisory Panel Pressure Injury Classification System value set"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<date value="2020-02-04"/>
+	<publisher value="Logica Health"/>
+	<description value="The set of codes that define specialized pressure injury grades according to the NPUAP system.  These are temporary codes and will be replaced by Solor SNOMED CT codes when available."/>
+	<immutable value="true"/>
+	<copyright value="Used by permission of HL7 International, all rights reserved Creative Commons License"/>
+	<compose>
+		<include>
+			<system value="http://hl7.org/fhir/hspc/wound-grade-concepts"/>
+			<concept>
+				<code value="NPUAP-S1"/>
+				<display value="Stage 1 Pressure Injury: Non-blanchable erythema of intact skin"/>
+			</concept>
+			<concept>
+				<code value="NPUAP-S2"/>
+				<display value="Stage 2 Pressure Injury: Partial-thickness skin loss with exposed dermis"/>
+			</concept>
+			<concept>
+				<code value="NPUAP-S3"/>
+				<display value="Stage 3 Pressure Injury: Full-thickness skin loss"/>
+			</concept>
+			<concept>
+				<code value="NPUAP-S4"/>
+				<display value="Stage 4 Pressure Injury: Full-thickness skin and tissue loss"/>
+			</concept>
+			<concept>
+				<code value="NPUAP-UPI"/>
+				<display value="Unstageable Pressure Injury: Obscured full-thickness skin and tissue loss"/>
+			</concept>
+			<concept>
+				<code value="NPUAP-DTPI"/>
+				<display value="Deep Tissue Pressure Injury: Persistent non-blanchable deep red, maroon or purple discoloration"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

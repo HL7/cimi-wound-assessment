@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="wound-grade-concepts"/>
+	<url value="http://hl7.org/fhir/hspc/wound-grade-concepts"/>
+	<version value="0.1.0"/>
+	<name value="WoundGradeConcepts"/>
+	<title value="Wound Grade Concepts code system"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<date value="2020-02-04"/>
+	<publisher value="Logica Health"/>
+	<description value="The set of codes that define specialized concepts for wound grades.  These are temporary and will be replaced by Solor Extension SNOMED CT terms when available."/>
+	<caseSensitive value="true"/>
+	<content value="complete"/>
+	<concept>
+		<code value="G0-IS" />
+		<display value="Grade 0 – intact Skin" />
+		<definition value="Wagner Diabetic Foot Ulcer Classification system Grade 0 – intact Skin" />
+	</concept>
+	<concept>
+		<code value="G1-SUP" />
+		<display value="Grade 1 – superficial ulcer of skin or subcutaneous tissue" />
+		<definition value="Wagner Diabetic Foot Ulcer Classification system Grade 1 – superficial ulcer of skin or subcutaneous tissue" />
+	</concept>
+	<concept>
+		<code value="G2-TBC" />
+		<display value="Grade 2 – ulcers extend into tendon, bone, or capsule" />
+		<definition value="Wagner Diabetic Foot Ulcer Classification system Grade 2 – ulcers extend into tendon, bone, or capsule" />
+	</concept>
+	<concept>
+		<code value="G3-DUOA" />
+		<display value="Grade 3 – deep ulcer with osteomyelitis, or abscess" />
+		<definition value="Wagner Diabetic Foot Ulcer Classification system Grade 3 – deep ulcer with osteomyelitis, or abscess" />
+	</concept>
+	<concept>
+		<code value="G4-PGAN" />
+		<display value="Grade 4 – partial foot gangrene" />
+		<definition value="Wagner Diabetic Foot Ulcer Classification system Grade 4 – partial foot gangrene" />
+	</concept>
+	<concept>
+		<code value="G5-GAN" />
+		<display value="Grade 5 – whole foot gangrene" />
+		<definition value="Wagner Diabetic Foot Ulcer Classification system Grade 5 – whole foot gangrene" />
+	</concept>
+	<concept>
+		<code value="G0-Healed" />
+		<display value="Grade 0 – pre-or postulcerative site that has healed" />
+		<definition value="University of Texas Diabeti Foot Ulcer Classification System" />
+	</concept>
+	<concept>
+		<code value="G1-SUPER" />
+		<display value="Grade 1 – superficial wound not involving tendon, capsule, or bone" />
+		<definition value="University of Texas Diabeti Foot Ulcer Classification System Grade 1 – superficial wound not involving tendon, capsule, or bone" />
+	</concept>
+	<concept>
+		<code value="G2-PEN" />
+		<display value="Grade 2 – wound penetrating to tendon or capsule" />
+		<definition value="University of Texas Diabeti Foot Ulcer Classification System Grade 2 – wound penetrating to tendon or capsule" />
+	</concept>
+	<concept>
+		<code value="G3-BONE" />
+		<display value="Grade 3 – wound penetrating bone or joint" />
+		<definition value="University of Texas Diabeti Foot Ulcer Classification System Grade 3 – wound penetrating bone or joint" />
+	</concept>
+	<concept>
+		<code value="SA-CW" />
+		<display value="Stage A – clean wounds" />
+		<definition value="University of Texas Diabeti Foot Ulcer Classification System Stage A – clean wounds" />
+	</concept>
+	<concept>
+		<code value="SB-NI" />
+		<display value="Stage B – non-ischemic infected wounds" />
+		<definition value="University of Texas Diabeti Foot Ulcer Classification System Stage B – non-ischemic infected wounds" />
+	</concept>
+	<concept>
+		<code value="SC-INIW" />
+		<display value="Stage C – ischemic noninfected wounds" />
+		<definition value="University of Texas Diabeti Foot Ulcer Classification System Stage C – ischemic noninfected wounds" />
+	</concept>
+	<concept>
+		<code value="SD-IIF" />
+		<display value="Stage D – ischemic infected wounds" />
+		<definition value="University of Texas Diabeti Foot Ulcer Classification System Stage D – ischemic infected wounds" />
+	</concept>
+	<concept>
+		<code value="NPUAP-S1" />
+		<display value="Stage 1 Pressure Injury: Non-blanchable erythema of intact skin" />
+		<definition value="National Pressure Ulcer Advisory Panel grading system Stage 1 Pressure Injury: Non-blanchable erythema of intact skin" />
+	</concept>
+	<concept>
+		<code value="NPUAP-S2" />
+		<display value="Stage 2 Pressure Injury: Partial-thickness skin loss with exposed dermis" />
+		<definition value="National Pressure Ulcer Advisory Panel grading system Stage 2 Pressure Injury: Partial-thickness skin loss with exposed dermis" />
+	</concept>
+	<concept>
+		<code value="NPUAP-S3" />
+		<display value="Stage 3 Pressure Injury: Full-thickness skin loss" />
+		<definition value="National Pressure Ulcer Advisory Panel grading system Stage 3 Pressure Injury: Full-thickness skin loss" />
+	</concept>
+	<concept>
+		<code value="NPUAP-S4" />
+		<display value="Stage 4 Pressure Injury: Full-thickness skin and tissue loss" />
+		<definition value="National Pressure Ulcer Advisory Panel grading system Stage 4 Pressure Injury: Full-thickness skin and tissue loss" />
+	</concept>
+	<concept>
+		<code value="NPUAP-UPI" />
+		<display value="Unstageable Pressure Injury: Obscured full-thickness skin and tissue loss" />
+		<definition value="National Pressure Ulcer Advisory Panel grading system Unstageable Pressure Injury: Obscured full-thickness skin and tissue loss" />
+	</concept>
+	<concept>
+		<code value="NPUAP-DTPI" />
+		<display value="Deep Tissue Pressure Injury: Persistent non-blanchable deep red, maroon or purple discoloration" />
+		<definition value="National Pressure Ulcer Advisory Panel grading system Deep Tissue Pressure Injury: Persistent non-blanchable deep red, maroon or purple discoloration" />
+	</concept>
+</CodeSystem>

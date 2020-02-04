@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="WagnerWoundGradeVS"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+	</meta>
+	<url value="http://hl7.org/fhir/hspc/ValueSet/WagnerWoundGradeVS"/>
+	<version value="0.01"/>
+	<name value="WagnerWoundGradeVS"/>
+	<title value="Wagner Diabetic Foot Ulcer Classification System value set"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<date value="2020-02-04"/>
+	<publisher value="Logica Health"/>
+	<description value="The set of codes that define specialized diabetic foot ulcer grades according to the Wagner system.  These are temporary codes and will be replaced by Solor SNOMED CT codes when available."/>
+	<immutable value="true"/>
+	<copyright value="Used by permission of HL7 International, all rights reserved Creative Commons License"/>
+	<compose>
+		<include>
+			<system value="http://hl7.org/fhir/hspc/wound-grade-concepts"/>
+			<concept>
+				<code value="G0-IS"/>
+				<display value="Grade 0 – intact Skin"/>
+			</concept>
+			<concept>
+				<code value="G1-SUP"/>
+				<display value="Grade 1 – superficial ulcer of skin or subcutaneous tissue"/>
+			</concept>
+			<concept>
+				<code value="G2-TBC"/>
+				<display value="Grade 2 – ulcers extend into tendon, bone, or capsule"/>
+			</concept>
+			<concept>
+				<code value="G3-DUOA"/>
+				<display value="Grade 3 – deep ulcer with osteomyelitis, or abscess"/>
+			</concept>
+			<concept>
+				<code value="G4-PGAN"/>
+				<display value="Grade 4 – partial foot gangrene"/>
+			</concept>
+			<concept>
+				<code value="G5-GAN"/>
+				<display value="Grade 5 – whole foot gangrene"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

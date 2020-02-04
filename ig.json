@@ -130,7 +130,7 @@
 	"StructureDefinition/PeriwoundConditionExt":{"base":"StructureDefinition-PeriwoundConditionExt.html"},
 	"StructureDefinition/WoundTypeEtiologyExt":{"base":"StructureDefinition-WoundTypeEtiologyExt.html"},
 	"StructureDefinition/WoundInternalItemOrBodyStructureVisibleExt":{"base":"StructureDefinition-WoundInternalItemOrBodyStructureVisibleExt.html"},
-	"StructureDefinition/WoundGradationExt":{"base":"StructureDefinition-WoundGradationExt.html"},
+	"StructureDefinition/WoundGradationPanelExt":{"base":"StructureDefinition-WoundGradationPanelExt.html"},
     "StructureDefinition/WoundRelatedObservationsPanelExt":{"base":"StructureDefinition-WoundRelatedObservationsPanelExt.html"},
 
 	"StructureDefinition/organization":{"base":"StructureDefinition-organization.html"},
@@ -162,10 +162,17 @@
 	"StructureDefinition/WoundUnderminingAbsentAssert":{"base":"StructureDefinition-WoundUnderminingAbsentAssert.html"},
 	"StructureDefinition/WoundExudateAbsentAssert":{"base":"StructureDefinition-WoundExudateAbsentAssert.html"},
 	"StructureDefinition/WoundShape":{"base":"StructureDefinition-WoundShape.html"},
+	"StructureDefinition/NPUAPWoundGrade":{"base":"StructureDefinition-NPUAPWoundGrade.html"},
+	"StructureDefinition/PEDISWoundGradeTotalScore":{"base":"StructureDefinition-PEDISWoundGradeTotalScore.html"},
+	"StructureDefinition/SINBADWoundGradeTotalScore":{"base":"StructureDefinition-SINBADWoundGradeTotalScore.html"},
+	"StructureDefinition/UniversityOfTexasWoundGrade":{"base":"StructureDefinition-UniversityOfTexasWoundGrade.html"},
+	"StructureDefinition/WagnerWoundGrade":{"base":"StructureDefinition-WagnerWoundGrade.html"},
+	"StructureDefinition/WoundGradationPanel":{"base":"StructureDefinition-WoundGradationPanel.html"},
 	"StructureDefinition/WoundRelatedObservationsPanel":{"base":"StructureDefinition-WoundRelatedObservationsPanel.html"},
 	
     "CodeSystem/organization-hspc-organizationtype":{"base":"CodeSystem-organization-hspc-organizationtype.html","source":"codesystem/organization-hspc-organizationtype.xml"},
     "CodeSystem/wound-observation-type":{"base":"CodeSystem-wound-observation-type.html","source":"codesystem/wound-observation-type.xml"},
+    "CodeSystem/wound-grade-concepts":{"base":"CodeSystem-wound-grade-concepts.html","source":"codesystem/wound-grade-concepts.xml"},
 	
 	"ValueSet/communicationMode":{"base":"ValueSet-communicationMode.html"},
 	"ValueSet/courseVS":{"base":"ValueSet-courseVS.html"},
@@ -203,6 +210,10 @@
 	"ValueSet/qualitativeWoundDepthVS":{"base":"ValueSet-qualitativeWoundDepthVS.html"},
     "ValueSet/woundShapeVS":{"base":"ValueSet-woundShapeVS.html"},
    	"ValueSet/woundObservationTypeVS":{"base":"ValueSet-woundObservationTypeVS.html"},
+   	"ValueSet/NPUAPWoundGradeVS":{"base":"ValueSet-NPUAPWoundGradeVS.html"},
+   	"ValueSet/UofTWoundGradeStageVS":{"base":"ValueSet-UofTWoundGradeStageVS.html"},
+   	"ValueSet/UofTWoundGradeVS":{"base":"ValueSet-UofTWoundGradeVS.html"},
+   	"ValueSet/WagnerWoundGradeVS":{"base":"ValueSet-WagnerWoundGradeVS.html"},
 	
 	"Observation/WoundBedAppearance-example":{"base":"Observation-WoundBedAppearance-example.html"}, 
 	"Observation/WoundBedColor-example":{"base":"Observation-WoundBedColor-example.html"},

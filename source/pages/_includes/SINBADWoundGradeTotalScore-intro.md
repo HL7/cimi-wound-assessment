@@ -1,0 +1,1 @@
+﻿SINBAD Wound Grade Total Score

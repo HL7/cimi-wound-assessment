@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
 	<id value="wound-observation-type"/>
-	<url value="http://hl7.org/fhir/us/skinwoundassessment/wound-observation-type"/>
+	<url value="http://hl7.org/fhir/hspc/wound-observation-type"/>
 	<version value="0.1.0"/>
 	<name value="WoundObservationTypeCodeSystem"/>
 	<title value="Wound Observation Type Code System"/>
 	<status value="draft"/>
 	<experimental value="true"/>
-	<date value="2019-10-07"/>
-	<publisher value="HL7 International - Electronic Health Records Work Group"/>
-	<contact>
-		<telecom>
-			<system value="url"/>
-			<value value="https://confluence.hl7.org/display/EHR/Electronic+Health+Records+Work+Group"/>
-		</telecom>
-	</contact>
+	<date value="2020-02-04"/>
+	<publisher value="Logica Health"/>
 	<description value="The set of codes that define specialized observation types of a wound."/>
 	<caseSensitive value="true"/>
 	<content value="complete"/>
@@ -27,5 +21,30 @@
 		<code value="woundvolume" />
 		<display value="Volume of Wound" />
 		<definition value="An observation or observation componenet describing the volume of a wound. Temporary local code system to be replaced with LOINC code TBD." />
+	</concept>
+	<concept>
+		<code value="WagnerWoundGrade"/>
+		<display value="Wagner Diabetic Foot Ulcer Classification System"/>
+		<definition value="An observation of the Wagner diabetic foot ulcer classification system.  Temporary local code system to be replaced with LOINC code TBD."/>
+	</concept>
+	<concept>
+		<code value="NPUAPWoundGrade"/>
+		<display value="NPUAP Wound Grade System"/>
+		<definition value="An observation of the National Pressure Ulcer Advisory Panel pressure injury classification system.  Temporary local code system to be replaced with LOINC code TBD."/>
+	</concept>
+	<concept>
+		<code value="UofTWoundGrade"/>
+		<display value="University of Texas Diabetic Foot Ulcer Classification System"/>
+		<definition value="An observation of the University of Texas diabetic foot ulcer classification system.  Temporary local code system to be replaced with LOINC code TBD."/>
+	</concept>
+	<concept>
+		<code value="PEDISWoundGrade"/>
+		<display value="PEDIS (Perfusion-Extent-Depth-Infection-Sensitivity) Diabetic Foot Ulcer Classification System"/>
+		<definition value="An observation of the PEDIS diabetic foot ulcer classification system.  Temporary local code system to be replaced with LOINC code TBD."/>
+	</concept>
+	<concept>
+		<code value="SINBADWoundGrade"/>
+		<display value="SINBAD (Site-Ischemia-Neuropathy-Bacterial infection-Depth) Diabetic Foot Ulcer Classification System"/>
+		<definition value="An observation of the SINBAD diabetic foot ulcer classification system.  Temporary local code system to be replaced with LOINC code TBD."/>
 	</concept>
 </CodeSystem>

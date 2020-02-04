@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="UofTWoundGradeStageVS"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+	</meta>
+	<url value="http://hl7.org/fhir/hspc/ValueSet/UofTWoundGradeStageVS"/>
+	<version value="0.01"/>
+	<name value="UofTWoundGradeStageVS"/>
+	<title value="University of Texas Diabetic Foot Ulcer Grade Stage Classification System value set"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<date value="2020-02-04"/>
+	<publisher value="Logica Health"/>
+	<description value="The set of codes that define specialized diabetic foot ulcer grade stages according to the University of Texas system.  These are temporary codes and will be replaced by Solor SNOMED CT codes when available."/>
+	<immutable value="true"/>
+	<copyright value="Used by permission of HL7 International, all rights reserved Creative Commons License"/>
+	<compose>
+		<include>
+			<system value="http://hl7.org/fhir/hspc/wound-grade-concepts"/>
+			<concept>
+				<code value="SA-CW"/>
+				<display value="Stage A – clean wounds"/>
+			</concept>
+			<concept>
+				<code value="SB-NI"/>
+				<display value="Stage B – non-ischemic infected wounds"/>
+			</concept>
+			<concept>
+				<code value="SC-INIW"/>
+				<display value="Stage C – ischemic noninfected wounds"/>
+			</concept>
+			<concept>
+				<code value="SD-IIF"/>
+				<display value="Stage D – ischemic infected wounds"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

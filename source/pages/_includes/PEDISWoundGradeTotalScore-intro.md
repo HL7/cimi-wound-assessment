@@ -1,0 +1,1 @@
+﻿PEDIS Wound Grade Total Score

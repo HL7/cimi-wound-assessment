@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="PEDISWoundGradeTotalScore"/>
+    <url value="http://hl7.org/fhir/hspc/StructureDefinition/PEDISWoundGradeTotalScore"/>
+    <name value="PEDIS Wound Grade Total Score"/>
+    <status value="draft"/>
+    <date value="2020-02-04"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="PEDISWoundGrade is a classification system for diabetic foot ulcers and stands for Pefusion-Extent-Depth-Infection-Sensitivity. Each of these is rated according to defined scales, the individual ratings combined into a total score which is reported as the result. No LOINC code to associate with this yet."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcPEDISWoundGradeTotalScore">
+            <path value="Observation"/>
+            <definition value="PEDISWoundGrade is a classification system for diabetic foot ulcers and stands for Pefusion-Extent-Depth-Infection-Sensitivity. Each of these is rated according
+            to defined scales, the individual ratings combined into a total score which is reported as the result. No LOINC code to associate with this yet."/>
+        </element>
+		<element id="Observation:hspcNPUAPWoundGrade.code">
+			<path value="Observation.code"/>
+		</element>
+		<element id="Observation:hspcNPUAPWoundGrade.code.coding">
+			<path value="Observation.code.coding"/>
+		</element>
+		<element id="Observation:hspcNPUAPWoundGrade.code.coding.system">
+			<path value="Observation.code.coding.system"/>
+			<fixedUri value="http://hl7.org/fhir/hspc/wound-observation-type"/>
+		</element>
+		<element id="Observation:hspcNPUAPWoundGrade.code.coding.code">
+			<path value="Observation.code.coding.code"/>
+			<fixedCode value="PEDISWoundGrade"/>
+		</element>
+		<element id="Observation:hspcNPUAPWoundGrade.code.coding.display">
+			<path value="Observation.code.coding.display"/>
+			<fixedString value="PEDIS (Perfusion-Extent-Depth-Infection-Sensitivity) Diabetic Foot Ulcer Classification System"/>
+		</element>
+        <element id="Observation:hspcPEDISWoundGradeTotalScore.valueInteger">
+            <path value="Observation.valueInteger"/>
+            <short value="valueInteger"/>
+            <type>
+                <code value="integer"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

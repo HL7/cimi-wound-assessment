@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="SINBADWoundGradeTotalScore"/>
+    <url value="http://hl7.org/fhir/hspc/StructureDefinition/SINBADWoundGradeTotalScore"/>
+    <name value="SINBAD Wound Grade Total Score"/>
+    <status value="draft"/>
+    <date value="2020-02-04"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="SINBADWoundGrade is the model for the diabetic foot ulcer classification system of Site, Ischemia, Neuropathy, Bacterial infection, and Depth (SINBAD). It rates the condition of each of these areas and uses these ratings to calculate a total score."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcSINBADWoundGradeTotalScore">
+            <path value="Observation"/>
+            <definition value="SINBADWoundGrade is the model for the diabetic foot ulcer classification system of Site, Ischemia, Neuropathy, Bacterial infection, and Depth (SINBAD). It rates
+            the condition of each of these areas and uses these ratings to calculate a total score."/>
+        </element>
+		<element id="Observation:hspcNPUAPWoundGrade.code">
+			<path value="Observation.code"/>
+		</element>
+		<element id="Observation:hspcNPUAPWoundGrade.code.coding">
+			<path value="Observation.code.coding"/>
+		</element>
+		<element id="Observation:hspcNPUAPWoundGrade.code.coding.system">
+			<path value="Observation.code.coding.system"/>
+			<fixedUri value="http://hl7.org/fhir/hspc/wound-observation-type"/>
+		</element>
+		<element id="Observation:hspcNPUAPWoundGrade.code.coding.code">
+			<path value="Observation.code.coding.code"/>
+			<fixedCode value="SINBADWoundGrade"/>
+		</element>
+		<element id="Observation:hspcNPUAPWoundGrade.code.coding.display">
+			<path value="Observation.code.coding.display"/>
+			<fixedString value="SINBAD (Site-Ischemia-Neuropathy-Bacterial infection-Depth) Diabetic Foot Ulcer Classification System"/>
+		</element>
+        <element id="Observation:hspcSINBADWoundGradeTotalScore.valueInteger">
+            <path value="Observation.valueInteger"/>
+            <short value="valueInteger"/>
+            <type>
+                <code value="integer"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

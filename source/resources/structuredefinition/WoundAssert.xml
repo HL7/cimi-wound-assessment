@@ -132,10 +132,10 @@
 			<sliceName value="WoundGradation"/>
 			<short value="Wound Gradation"/>
 			<min value="0"/>
-			<max value="1"/>
+			<max value="*"/>
 			<type>
-				<code value="extension"/>
-				<profile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundGradationExt"/>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundGradationPanelExt"/>
 			</type>
 		</element>
 		<element id="Condition:HSPCWoundAssert.extension:woundRelatedObservationsPanel">
@@ -167,7 +167,7 @@
 			<min value="0"/>
 			<max value="1"/>
 			<type>
-				<code value="extension"/>
+				<code value="Extension"/>
 				<profile value="http://hl7.org/fhir/hspc/StructureDefinition/RecurrenceExt"/>
 			</type>
 		</element>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="NPUAPWoundGrade"/>
+    <url value="http://hl7.org/fhir/hspc/StructureDefinition/NPUAPWoundGrade"/>
+    <name value="NPUAP Wound Grade"/>
+    <status value="draft"/>
+    <date value="2020-02-04"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="NPUAP Wound Grade is the pressure wound grading system defined by the National Pressure Ulcer Advisory Panel."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcNPUAPWoundGrade">
+            <path value="Observation"/>
+            <definition value="NPUAPWoundGrade is the wound grading system defined by the National Pressure Ulcer Advisory Panel."/>
+        </element>
+		<element id="Observation:hspcNPUAPWoundGrade.code">
+			<path value="Observation.code"/>
+		</element>
+		<element id="Observation:hspcNPUAPWoundGrade.code.coding">
+			<path value="Observation.code.coding"/>
+		</element>
+		<element id="Observation:hspcNPUAPWoundGrade.code.coding.system">
+			<path value="Observation.code.coding.system"/>
+			<fixedUri value="http://hl7.org/fhir/hspc/wound-observation-type"/>
+		</element>
+		<element id="Observation:hspcNPUAPWoundGrade.code.coding.code">
+			<path value="Observation.code.coding.code"/>
+			<fixedCode value="NPUAPWoundGrade"/>
+		</element>
+		<element id="Observation:hspcNPUAPWoundGrade.code.coding.display">
+			<path value="Observation.code.coding.display"/>
+			<fixedString value="NPUAP Wound Grade System"/>
+		</element>
+        <element id="Observation:hspcNPUAPWoundGrade.valueCodeableConcept">
+            <path value="Observation.valueCodeableConcept"/>
+            <short value="valueCodeableConcept"/>
+            <type>
+                <code value="CodeableConcept"/>
+				<element id="Observation:hspcUniversityOfTexasWoundGrade.valueCodeableConcept"/>
+            </type>
+			<binding>
+				<strength value="required"/>
+				<valueSet value="http://hl7.org/fhir/hspc/ValueSet/NPUAPWoundGradeVS"/>
+			</binding>
+        </element>
+    </differential>
+</StructureDefinition>

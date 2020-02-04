@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="WoundGradationPanel"/>
+    <url value="http://hl7.org/fhir/hspc/StructureDefinition/WoundGradationPanel"/>
+    <name value="Wound Gradation Panel"/>
+    <status value="draft"/>
+    <date value="2020-02-04"/>
+    <publisher value="Logica Health"/>
+    <description value="Observations that describe different types of wound grades."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:cimiWoundGradationPanel">
+            <path value="Observation"/>
+            <definition value="Observations that are linked to a wound"/>
+        </element>
+		<element id="Observation:cimiWoundGradationPanel.value[x]">
+			<path value="Observation.value[x]"/>
+			<min value="0"/>
+			<max value="0"/>
+		</element>
+		<element id="Observation:cimiWoundGradationPanel.hasMember">
+			<path value="Observation.hasMember"/>
+			<sliceName value="RelatedObservations"/>
+            <slicing id="10">
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="reference.resolve"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+		</element>
+		<element id="Observation:cimiWoundGradationPanel.hasMember:Wagner">
+			<path value="Observation.hasMember"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/WagnerWoundGrade"/>
+			</type>
+		</element>
+		<element id="Observation:cimiWoundGradationPanel.hasMember:UofT">
+			<path value="Observation.hasMember"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/UniversityOfTexasWoundGrade"/>
+			</type>
+		</element>
+		<element id="Observation:cimiWoundGradationPanel.hasMember:NPUAP">
+			<path value="Observation.hasMember"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/NPUAPWoundGrade"/>
+			</type>
+		</element>
+		<element id="Observation:cimiWoundGradationPanel.hasMember:PEDIS">
+			<path value="Observation.hasMember"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/PEDISWoundGradeTotalScore"/>
+			</type>
+		</element>
+		<element id="Observation:cimiWoundGradationPanel.hasMember:SINBAD">
+			<path value="Observation.hasMember"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/SINBADWoundGradeTotalScore"/>
+			</type>
+		</element>
+    </differential>
+</StructureDefinition>

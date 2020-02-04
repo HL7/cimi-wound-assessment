@@ -250,6 +250,13 @@
     },
     {
       "reference" : {
+        "reference" : "StructureDefinition/WoundGradationPanelExt"
+      },
+      "description" : "Wound Gradation Panel Extension",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "StructureDefinition/WoundAssert"
       },
       "description" : "Wound Assertion",
@@ -397,6 +404,48 @@
     },
     {
       "reference" : {
+        "reference" : "StructureDefinition/NPUAPWoundGrade"
+      },
+      "description" : "NPUAP Wound Grade",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/PEDISWoundGradeTotalScore"
+      },
+      "description" : "PEDIS Wound Grade Total Score",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/SINBADWoundGradeTotalScore"
+      },
+      "description" : "SINBAD Wound Grade Total Score",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/UniversityOfTexasWoundGrade"
+      },
+      "description" : "University Of Texas Wound Grade",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/WagnerWoundGrade"
+      },
+      "description" : "Wagner Wound Grade",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/WoundGradationPanel"
+      },
+      "description" : "Wound Gradation Panel",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "StructureDefinition/WoundRelatedObservationsPanel"
       },
       "description" : "Wound Related Observations Panel",
@@ -414,6 +463,13 @@
         "reference" : "CodeSystem/wound-observation-type"
       },
       "description" : "Wound Observation Type code system (temporary)",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/wound-grade-concepts"
+      },
+      "description" : "Wound Grade Concepts code system (temporary)",
       "exampleBoolean" : false
     },
     {
@@ -659,6 +715,34 @@
         "reference" : "ValueSet/woundObservationTypeVS"
       },
       "description" : "Wound Observation Type value set (temporary)",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/NPUAPWoundGradeVS"
+      },
+      "description" : "NPUAP Wound Grade value set (temporary)",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/UofTWoundGradeStageVS"
+      },
+      "description" : "University of Texas Diabetic Foot Ulcer Grade value set (temporary)",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/UofTWoundGradeVS"
+      },
+      "description" : "University of Texas Diabetic Foot Ulcer Grade Stage value set (temporary)",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/WagnerWoundGradeVS"
+      },
+      "description" : "Wagner Diabetic Foot Ulcer Grade value set (temporary)",
       "exampleBoolean" : false
     },
     {
