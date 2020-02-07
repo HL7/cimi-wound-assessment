@@ -22,22 +22,14 @@
         </element>
         <element id="Observation:hspcwoundBedAppearanceArea.code">
             <path value="Observation.code"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="72370-0"/>
+					<display value="Area of identified wound bed appearance/Area of wound bed of Wound base"/>
+				</coding>
+			</patternCodeableConcept>
         </element>
-		<element id="Observation:hspcwoundBedAppearanceArea.code.coding">
-			<path value="Observation.code.coding"/>
-		</element>
-		<element id="Observation:hspcwoundBedAppearanceArea.code.coding.system">
-			<path value="Observation.code.coding.system"/>
-			<fixedUri value="http://loinc.org"/>
-		</element>
-		<element id="Observation:hspcwoundBedAppearanceArea.code.coding.code">
-			<path value="Observation.code.coding.code"/>
-			<fixedCode value="72370-0"/>
-		</element>
-		<element id="Observation:hspcwoundBedAppearanceArea.code.coding.display">
-			<path value="Observation.code.coding.display"/>
-			<fixedString value="Area of identified wound bed appearance/Area of wound bed of Wound base"/>
-		</element>
         <element id="Observation:hspcwoundBedAppearanceArea.valueQuantity">
             <path value="Observation.valueQuantity"/>
             <short value="Appearance Area"/>

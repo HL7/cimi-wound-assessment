@@ -21,23 +21,14 @@
             <definition value="Wound Undermining Length describes how long the erosion under the wound edge is."/>
         </element>
         <element id="Observation:woundUnderminingLength.code">
-            <path value="Observation.code"/>
+            <path value="Observation.code"/><patternCodeableConcept>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="72293-4"/>
+					<display value="Undermining [Length] of Wound"/>
+				</coding>
+			</patternCodeableConcept>
         </element>
-		<element id="Observation:woundUnderminingLength.code.coding">
-			<path value="Observation.code.coding"/>
-		</element>
-		<element id="Observation:woundUnderminingLength.code.coding.system">
-			<path value="Observation.code.coding.system"/>
-			<fixedUri value="http://loinc.org"/>
-		</element>
-		<element id="Observation:woundUnderminingLength.code.coding.code">
-			<path value="Observation.code.coding.code"/>
-			<fixedCode value="72293-4"/>
-		</element>
-		<element id="Observation:woundUnderminingLength.code.coding.display">
-			<path value="Observation.code.coding.display"/>
-			<fixedString value="Undermining [Length] of Wound"/>
-		</element>
         <element id="Observation:woundUnderminingLength.valueQuantity">
             <path value="Observation.valueQuantity"/>
             <short value="Length"/>

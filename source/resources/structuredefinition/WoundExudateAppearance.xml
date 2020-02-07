@@ -22,22 +22,14 @@
         </element>
         <element id="Observation:cimiwoundExudateAppearance.code">
             <path value="Observation.code"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="72290-0"/>
+					<display value="Appearance of Exudate from wound"/>
+				</coding>
+			</patternCodeableConcept>
         </element>
-		<element id="Observation:cimiwoundExudateAppearance.code.coding">
-			<path value="Observation.code.coding"/>
-		</element>
-		<element id="Observation:cimiwoundExudateAppearance.code.coding.system">
-			<path value="Observation.code.coding.system"/>
-			<fixedUri value="http://loinc.org"/>
-		</element>
-		<element id="Observation:cimiwoundExudateAppearance.code.coding.code">
-			<path value="Observation.code.coding.code"/>
-			<fixedCode value="72290-0"/>
-		</element>
-		<element id="Observation:cimiwoundExudateAppearance.code.coding.display">
-			<path value="Observation.code.coding.display"/>
-			<fixedString value="Appearance of Exudate from wound"/>
-		</element>
         <element id="Observation:cimiwoundExudateAppearance.valueCodeableConcept">
             <path value="Observation.valueCodeableConcept"/>
             <short value="Wound Exudate Appearance code"/>

@@ -22,22 +22,14 @@
         </element>
         <element id="Observation:hspcwoundSize.code">
             <path value="Observation.code"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="72287-6"/>
+					<display value="Wound size panel"/>
+				</coding>
+			</patternCodeableConcept>
         </element>
-		<element id="Observation:hspcwoundSize.code.coding">
-			<path value="Observation.code.coding"/>
-		</element>
-		<element id="Observation:hspcwoundSize.code.coding.system">
-			<path value="Observation.code.coding.system"/>
-			<fixedUri value="http://loinc.org"/>
-		</element>
-		<element id="Observation:hspcwoundSize.code.coding.code">
-			<path value="Observation.code.coding.code"/>
-			<fixedCode value="72287-6"/>
-		</element>
-		<element id="Observation:hspcwoundSize.code.coding.display">
-			<path value="Observation.code.coding.display"/>
-			<fixedString value="Wound size panel"/>
-		</element>
         <element id="Observation:hspcwoundSize.value[x]">
             <path value="Observation.value[x]"/>
 			<min value="0"/>
@@ -65,22 +57,14 @@
 		</element>
         <element id="Observation:hspcwoundSize.coomponent.code:woundLength">
             <path value="Observation.component.code"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="39126-8"/>
+					<display value="Length of Wound"/>
+				</coding>
+			</patternCodeableConcept>
         </element>
-		<element id="Observation:hspcwoundSize.code.coding:woundLength">
-			<path value="Observation.component.code.coding"/>
-		</element>
-		<element id="Observation:hspcwoundSize.code.coding.system:woundLength">
-			<path value="Observation.component.code.coding.system"/>
-			<fixedUri value="http://loinc.org"/>
-		</element>
-		<element id="Observation:hspcwoundSize.code.coding.code:woundLength">
-			<path value="Observation.component.code.coding.code"/>
-			<fixedCode value="39126-8"/>
-		</element>
-		<element id="Observation:hspcwoundSize.code.coding.display:woundLength">
-			<path value="Observation.component.code.coding.display"/>
-			<fixedString value="Length of Wound"/>
-		</element>
         <element id="Observation:hspcwoundSize.valueQuantity:woundLength">
             <path value="Observation.component.valueQuantity"/>
             <type>
@@ -116,22 +100,14 @@
 		</element>
         <element id="Observation:hspcwoundSize.coomponent.code:woundWidth">
             <path value="Observation.component.code"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="39125-0"/>
+					<display value="Width of Wound"/>
+				</coding>
+			</patternCodeableConcept>
         </element>
-		<element id="Observation:hspcwoundSize.code.coding:woundWidth">
-			<path value="Observation.component.code.coding"/>
-		</element>
-		<element id="Observation:hspcwoundSize.code.coding.system:woundWidth">
-			<path value="Observation.component.code.coding.system"/>
-			<fixedUri value="http://loinc.org"/>
-		</element>
-		<element id="Observation:hspcwoundSize.code.coding.code:woundWidth">
-			<path value="Observation.component.code.coding.code"/>
-			<fixedCode value="39125-0"/>
-		</element>
-		<element id="Observation:hspcwoundSize.code.coding.display:woundWidth">
-			<path value="Observation.component.code.coding.display"/>
-			<fixedString value="Width of Wound"/>
-		</element>
         <element id="Observation:hspcwoundSize.valueQuantity:woundWidth">
             <path value="Observation.component.valueQuantity"/>
             <type>
@@ -167,22 +143,14 @@
 		</element>
         <element id="Observation:hspcwoundSize.coomponent.code:woundDepth">
             <path value="Observation.component.code"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="39127-6"/>
+					<display value="Depth of Wound"/>
+				</coding>
+			</patternCodeableConcept>
         </element>
-		<element id="Observation:hspcwoundSize.code.coding:woundDepth">
-			<path value="Observation.component.code.coding"/>
-		</element>
-		<element id="Observation:hspcwoundSize.code.coding.system:woundDepth">
-			<path value="Observation.component.code.coding.system"/>
-			<fixedUri value="http://loinc.org"/>
-		</element>
-		<element id="Observation:hspcwoundSize.code.coding.code:woundDepth">
-			<path value="Observation.component.code.coding.code"/>
-			<fixedCode value="39127-6"/>
-		</element>
-		<element id="Observation:hspcwoundSize.code.coding.display:woundDepth">
-			<path value="Observation.component.code.coding.display"/>
-			<fixedString value="Depth of Wound"/>
-		</element>
         <element id="Observation:hspcwoundSize.valueQuantity:woundDepth">
             <path value="Observation.component.valueQuantity"/>
             <type>
@@ -218,22 +186,14 @@
 		</element>
         <element id="Observation:hspcwoundSize.component.code:woundArea">
             <path value="Observation.component.code"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="89260-4"/>
+					<display value="Area of wound"/>
+				</coding>
+			</patternCodeableConcept>
         </element>
-		<element id="Observation:hspcwoundSize.component.code.coding:woundArea">
-			<path value="Observation.component.code.coding"/>
-		</element>
-		<element id="Observation:hspcwoundSize.component.code.coding.system:woundArea">
-			<path value="Observation.component.code.coding.system"/>
-			<fixedUri value="http://loinc.org"/>
-		</element>
-		<element id="Observation:hspcwoundSize.component.code.coding.code:woundArea">
-			<path value="Observation.component.code.coding.code"/>
-			<fixedCode value="89260-4"/>
-		</element>
-		<element id="Observation:hspcwoundSize.component.code.coding.display:woundArea">
-			<path value="Observation.component.code.coding.display"/>
-			<fixedString value="Area of wound"/>
-		</element>
         <element id="Observation:hspcwoundSize.component.valueQuantity:woundArea">
             <path value="Observation.component.valueQuantity"/>
             <type>
@@ -269,22 +229,14 @@
 		</element>
         <element id="Observation:hspcwoundSize.component.code:qualitativeWoundDepth">
             <path value="Observation.component.code"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="39114-4"/>
+					<display value="Depth of Wound - nominal"/>
+				</coding>
+			</patternCodeableConcept>
         </element>
-		<element id="Observation:hspcwoundSize.component.code.coding:qualitativeWoundDepth">
-			<path value="Observation.component.code.coding"/>
-		</element>
-		<element id="Observation:hspcwoundSize.component.code.coding.system:qualitativeWoundDepth">
-			<path value="Observation.component.code.coding.system"/>
-			<fixedUri value="http://loinc.org"/>
-		</element>
-		<element id="Observation:hspcwoundSize.component.code.coding.code:qualitativeWoundDepth">
-			<path value="Observation.component.code.coding.code"/>
-			<fixedCode value="39114-4"/>
-		</element>
-		<element id="Observation:hspcwoundSize.component.code.coding.display:qualitativeWoundDepth">
-			<path value="Observation.component.code.coding.display"/>
-			<fixedString value="Depth of Wound - nominal"/>
-		</element>
 		<element id="Observation:hspcwoundSize.component.valueCodeableConcept:qualitativeWoundDepth">
 			<path value="Observation.component.valueCodeableConcept"/>
 			<sliceName value="qualitativeWoundDepthCode"/>

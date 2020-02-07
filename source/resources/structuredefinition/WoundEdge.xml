@@ -22,22 +22,14 @@
         </element>
         <element id="Observation:hspcwoundEdge.code">
             <path value="Observation.code"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="89256-2"/>
+					<display value="Wound edge panel"/>
+				</coding>
+			</patternCodeableConcept>
         </element>
-		<element id="Observation:hspcwoundEdge.code.coding">
-			<path value="Observation.code.coding"/>
-		</element>
-		<element id="Observation:hspcwoundEdge.code.coding.system">
-			<path value="Observation.code.coding.system"/>
-			<fixedUri value="http://loinc.org"/>
-		</element>
-		<element id="Observation:hspcwoundEdge.code.coding.code">
-			<path value="Observation.code.coding.code"/>
-			<fixedCode value="89256-2"/>
-		</element>
-		<element id="Observation:hspcwoundEdge.code.coding.display">
-			<path value="Observation.code.coding.display"/>
-			<fixedString value="Wound edge panel"/>
-		</element>
         <element id="Observation:hspcwoundEdge.valueCodeableConcept">
             <path value="Observation.valueCodeableConcept"/>
             <short value="Observation:hspcwoundEdge.valueCodeableConcept"/>

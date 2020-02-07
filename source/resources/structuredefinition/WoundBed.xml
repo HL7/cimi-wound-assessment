@@ -22,22 +22,14 @@
         </element>
         <element id="Observation:hspcwoundBed.code">
             <path value="Observation.code"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="89254-7"/>
+					<display value="89254-7"/>
+				</coding>
+			</patternCodeableConcept>
         </element>
-		<element id="Observation:hspcwoundBed.code.coding">
-			<path value="Observation.code.coding"/>
-		</element>
-		<element id="Observation:hspcwoundBed.code.coding.system">
-			<path value="Observation.code.coding.system"/>
-			<fixedUri value="http://loinc.org"/>
-		</element>
-		<element id="Observation:hspcwoundBed.code.coding.code">
-			<path value="Observation.code.coding.code"/>
-			<fixedCode value="89254-7"/>
-		</element>
-		<element id="Observation:hspcwoundBed.code.coding.display">
-			<path value="Observation.code.coding.display"/>
-			<fixedString value="Wound bed panel"/>
-		</element>
         <element id="Observation:hspcwoundBed.value[x]">
             <path value="Observation.value[x]"/>
 			<min value="0"/>

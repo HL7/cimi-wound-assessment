@@ -23,22 +23,14 @@
         </element>
         <element id="Observation:WoundShape.code">
             <path value="Observation.code"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="94086-6"/>
+					<display value="Wound Shape"/>
+				</coding>
+			</patternCodeableConcept>
         </element>
-	<element id="Observation:WoundShape.code.coding">
-		<path value="Observation.code.coding"/>
-	</element>
-	<element id="Observation:WoundShape.code.coding.system">
-		<path value="Observation.code.coding.system"/>
-		<fixedUri value="http://loinc.org"/>
-	</element>
-	<element id="Observation:WoundShape.code.coding.code">
-		<path value="Observation.code.coding.code"/>
-		<fixedCode value="94086-6"/>
-	</element>
-	<element id="Observation:WoundShape.code.coding.display">
-		<path value="Observation.code.coding.display"/>
-		<fixedString value="Wound Shape"/>
-	</element>
         <element id="Observation:WoundShape.valueCodeableConcept">
             <path value="Observation.valueCodeableConcept"/>
             <short value="Wound Shape code"/>

@@ -22,22 +22,14 @@
         </element>
         <element id="Observation:woundTunnelingLength.code">
             <path value="Observation.code"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="72296-7"/>
+					<display value="Tunneling [Length] of Wound"/>
+				</coding>
+			</patternCodeableConcept>
         </element>
-		<element id="Observation:woundTunnelingLength.code.coding">
-			<path value="Observation.code.coding"/>
-		</element>
-		<element id="Observation:woundTunnelingLength.code.coding.system">
-			<path value="Observation.code.coding.system"/>
-			<fixedUri value="http://loinc.org"/>
-		</element>
-		<element id="Observation:woundTunnelingLength.code.coding.code">
-			<path value="Observation.code.coding.code"/>
-			<fixedCode value="72296-7"/>
-		</element>
-		<element id="Observation:woundTunnelingLength.code.coding.display">
-			<path value="Observation.code.coding.display"/>
-			<fixedString value="Tunneling [Length] of Wound"/>
-		</element>
         <element id="Observation:woundTunnelingLength.valueQuantity">
             <path value="Observation.valueQuantity"/>
             <short value="Length"/>

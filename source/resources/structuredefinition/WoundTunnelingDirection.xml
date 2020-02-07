@@ -22,22 +22,14 @@
         </element>
         <element id="Observation:cimiWoundTunnelingDirection.code">
             <path value="Observation.code"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="72297-5"/>
+					<display value="Tunneling clock position of Wound"/>
+				</coding>
+			</patternCodeableConcept>
         </element>
-		<element id="Observation:cimiWoundTunnelingDirection.code.coding">
-			<path value="Observation.code.coding"/>
-		</element>
-		<element id="Observation:cimiWoundTunnelingDirection.code.coding.system">
-			<path value="Observation.code.coding.system"/>
-			<fixedUri value="http://loinc.org"/>
-		</element>
-		<element id="Observation:cimiWoundTunnelingDirection.code.coding.code">
-			<path value="Observation.code.coding.code"/>
-			<fixedCode value="72297-5"/>
-		</element>
-		<element id="Observation:cimiWoundTunnelingDirection.code.coding.display">
-			<path value="Observation.code.coding.display"/>
-			<fixedString value="Tunneling clock position of Wound"/>
-		</element>
         <element id="Observation:cimiWoundTunnelingDirection.valueCodeableConcept">
             <path value="Observation.valueCodeableConcept"/>
             <short value="Tunneling Direction code"/>
