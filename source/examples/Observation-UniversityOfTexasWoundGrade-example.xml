@@ -1,0 +1,48 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="UniversityOfTexasWoundGrade-example"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/hspc/StructureDefinition/UniversityOfTexasWoundGrade"/>
+  </meta>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="exam"/>
+      <display value="Exam"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/hspc/wound-observation-type"/>
+      <code value="UofTWoundGrade"/>
+      <display value="University of Texas Diabetic Foot Ulcer Classification System"/>
+    </coding>
+  </code>
+  <subject>
+    <display value="Adult Male1234"/>
+  </subject>
+  <encounter>
+    <display value="GP Visit"/>
+  </encounter>
+  <value>
+	<coding>
+		<system value="http://hl7.org/fhir/hspc/wound-grade-concepts"/>
+		<code value="G2-SUPER"/>
+		<display value="Grade 1 – superficial wound not involving tendon, capsule, or bone"/>
+	</coding>
+  </value>
+  <component>
+	<code>
+		<coding>
+			<system value="http://hl7.org/fhir/hspc/wound-observation-type"/>
+			<code value="UofTWoundGradeStage"/>
+			<display value="University of Texas Diabetic Foot Ulcer Grade Stage Classification System"/>
+		</coding>
+	</code>
+	<valueCodeableConcept>
+		<system value="http://hl7.org/fhir/hspc/wound-grade-concepts"/>
+		<code value="SC-INIW"/>
+		<display value="Stage C – ischemic noninfected wounds"/>
+	</valueCodeableConcept>
+  </component>
+</Observation>

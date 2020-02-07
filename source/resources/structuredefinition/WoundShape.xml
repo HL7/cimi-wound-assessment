@@ -18,7 +18,7 @@
     <differential>
         <element id="Observation:WoundShape">
             <path value="Observation"/>
-			<short value="Wound Bed Color"/>
+			<short value="Wound Shape"/>
             <definition value="Wound Shape describes the general shape of the wound."/>
         </element>
         <element id="Observation:WoundShape.code">

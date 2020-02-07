@@ -1,0 +1,31 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="SINBADWoundGradeTotalScore-example"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/hspc/StructureDefinition/SINBADWoundGradeTotalScore"/>
+  </meta>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="exam"/>
+      <display value="Exam"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/hspc/wound-observation-type"/>
+      <code value="SINBADWoundGrade"/>
+      <display value="SINBAD (Site-Ischemia-Neuropathy-Bacterial infection-Depth) Diabetic Foot Ulcer Classification System"/>
+    </coding>
+    <text value="SINBAD Total Score"/>
+  </code>
+  <subject>
+    <display value="Adult Male1234"/>
+  </subject>
+  <encounter>
+    <display value="GP Visit"/>
+  </encounter>
+  <value>
+	<integer value="3"/>
+  </value>
+</Observation>

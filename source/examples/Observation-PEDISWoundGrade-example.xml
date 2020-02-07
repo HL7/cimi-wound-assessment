@@ -1,0 +1,31 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="PEDISWoundGradeTotalScore-example"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/hspc/StructureDefinition/PEDISWoundGradeTotalScore"/>
+  </meta>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="exam"/>
+      <display value="Exam"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/hspc/wound-observation-type"/>
+      <code value="PEDISWoundGrade"/>
+      <display value="PEDIS (Perfusion-Extent-Depth-Infection-Sensitivity) Diabetic Foot Ulcer Classification System"/>
+    </coding>
+    <text value="PEDIS (Perfusion-Extent-Depth-Infection-Sensitivity) Diabetic Foot Ulcer Classification System"/>
+  </code>
+  <subject>
+    <display value="Adult Male1234"/>
+  </subject>
+  <encounter>
+    <display value="GP Visit"/>
+  </encounter>
+  <value>
+	<integer value="1"/>
+  </value>
+</Observation>

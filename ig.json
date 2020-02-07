@@ -174,10 +174,6 @@
     "CodeSystem/wound-observation-type":{"base":"CodeSystem-wound-observation-type.html","source":"codesystem/wound-observation-type.xml"},
     "CodeSystem/wound-grade-concepts":{"base":"CodeSystem-wound-grade-concepts.html","source":"codesystem/wound-grade-concepts.xml"},
 	
-	"ValueSet/communicationMode":{"base":"ValueSet-communicationMode.html"},
-	"ValueSet/courseVS":{"base":"ValueSet-courseVS.html"},
-	"ValueSet/organizationtypeVS":{"base":"ValueSet-organizationtypeVS.html"},
-	"ValueSet/communicationModeVS":{"base":"ValueSet-communicationModeVS.html"},
 	"ValueSet/periwoundConditionVS":{"base":"ValueSet-periwoundConditionVS.html"},
 	"ValueSet/woundAssessmentInterpretationVS":{"base":"ValueSet-woundAssessmentInterpretationVS.html"},
 	"ValueSet/episodeVS":{"base":"ValueSet-episodeVS.html"},
@@ -236,6 +232,11 @@
 	"Observation/WoundUnderminingLength-example":{"base":"Observation-WoundUnderminingLength-example.html"},
 	"Condition/WoundUndermining-example":{"base":"Condition-WoundUndermining-example.html"},
 	"Observation/WoundRelatedObservationsPanel-example":{"base":"Observation-WoundRelatedObservationsPanel-example.html"},
-	"Condition/WoundAssert-example":{"base":"Condition-WoundAssert-example.html"}
+	"Condition/WoundAssert-example":{"base":"Condition-WoundAssert-example.html"},
+	"Observation/NPUAPWoundGrade-example":{"base":"Observation-NPUAPWoundGrade-example.html"},
+	"Observation/PEDISWoundGrade-example":{"base":"Observation-PEDISWoundGrade-example.html"},
+	"Observation/SINBADWoundGradeTotalScore-example":{"base":"Observation-SINBADWoundGradeTotalScore-example.html"},
+	"Observation/UniversityOfTexasWoundGrade-example":{"base":"Observation-UniversityOfTexasWoundGrade-example.html"},
+	"Observation/WagnerWoundGrade-example":{"base":"Observation-WagnerWoundGrade-example.html"}
   }
 }

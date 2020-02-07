@@ -486,27 +486,6 @@
 		</resource>
 		<!--===================end code systems==================-->
 		<!--===================value sets===========================-->
-		<resource>		
-			<reference>	
-				<reference value ="ValueSet/communicationModeVS"/>
-			</reference>
-			<description value ="Communication Mode value set"/>
-			<exampleBoolean value="false"/>				
-		</resource>	
-		<resource>		
-			<reference>	
-				<reference value ="ValueSet/courseVS"/>
-			</reference>
-			<description value ="Course value set"/>
-			<exampleBoolean value="false"/>				
-		</resource>
-		<resource>		
-			<reference>	
-				<reference value ="ValueSet/organizationtypeVS"/>
-			</reference>
-			<description value ="Organization Type value set"/>	
-			<exampleBoolean value="false"/>			
-		</resource>
 		<resource>
 			<reference>
 				<reference value="ValueSet/periwoundConditionVS"/>
@@ -913,6 +892,41 @@
 				<reference value="Observation/WoundRelatedObservationsPanel-example"/>
 			</reference>
 			<description value="An example of a Wound Related Observations Panel"/>
+			<exampleBoolean value="true"/>	
+		</resource>
+		<resource>		
+			<reference>
+				<reference value="Observation/NPUAPWoundGrade-example"/>
+			</reference>
+			<description value="An example of a NPUAP Wound Grade observation"/>
+			<exampleBoolean value="true"/>	
+		</resource>
+		<resource>		
+			<reference>
+				<reference value="Observation/PEDISWoundGrade-example"/>
+			</reference>
+			<description value="An example of a PEDIS Wound Grade observation"/>
+			<exampleBoolean value="true"/>	
+		</resource>
+		<resource>		
+			<reference>
+				<reference value="Observation/SINBADWoundGradeTotalScore-example"/>
+			</reference>
+			<description value="An example of a SINBAD Wound Grade Total Score observation"/>
+			<exampleBoolean value="true"/>	
+		</resource>
+		<resource>		
+			<reference>
+				<reference value="Observation/UniversityOfTexasWoundGrade-example"/>
+			</reference>
+			<description value="An example of a University of Texas Wound Grade observation"/>
+			<exampleBoolean value="true"/>	
+		</resource>
+		<resource>		
+			<reference>
+				<reference value="Observation/WagnerWoundGrade-example"/>
+			</reference>
+			<description value="An example of a Wagner Wound Grade observation"/>
 			<exampleBoolean value="true"/>	
 		</resource>
 		

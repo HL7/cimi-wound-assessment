@@ -474,27 +474,6 @@
     },
     {
       "reference" : {
-        "reference" : "ValueSet/communicationModeVS"
-      },
-      "description" : "Communication Mode value set",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "ValueSet/courseVS"
-      },
-      "description" : "Course value set",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "ValueSet/organizationtypeVS"
-      },
-      "description" : "Organization Type value set",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
         "reference" : "ValueSet/periwoundConditionVS"
       },
       "description" : "Periwound Condition value set",
@@ -897,6 +876,41 @@
         "reference" : "Observation/WoundRelatedObservationsPanel-example"
       },
       "description" : "An example of a Wound Related Observations Panel",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/NPUAPWoundGrade-example"
+      },
+      "description" : "An example of a NPUAP Wound Grade observation",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/PEDISWoundGrade-example"
+      },
+      "description" : "An example of a PEDIS Wound Grade observation",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/SINBADWoundGradeTotalScore-example"
+      },
+      "description" : "An example of a SINBAD Wound Grade Total Score observation",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/UniversityOfTexasWoundGrade-example"
+      },
+      "description" : "An example of a University of Texas Wound Grade observation",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/WagnerWoundGrade-example"
+      },
+      "description" : "An example of a Wagner Wound Grade observation",
       "exampleBoolean" : true
     }],
     "page" : {

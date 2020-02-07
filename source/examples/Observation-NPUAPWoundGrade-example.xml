@@ -1,0 +1,35 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="NPUAPWoundGrade-example"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/hspc/StructureDefinition/NPUAPWoundGrade"/>
+  </meta>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="exam"/>
+      <display value="Exam"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/hspc/wound-observation-type"/>
+      <code value="NPUAPWoundGrade"/>
+      <display value="NPUAP Wound Grade System"/>
+    </coding>
+    <text value="National Pressure Ulcer Advisory Panel Pressure Injury Grade System"/>
+  </code>
+  <subject>
+    <display value="Adult Male1234"/>
+  </subject>
+  <encounter>
+    <display value="GP Visit"/>
+  </encounter>
+  <value>
+	<coding>
+		<system value="http://hl7.org/fhir/hspc/wound-grade-concepts"/>
+		<code value="NPUAP-S2"/>
+		<display value="Stage 2 Pressure Injury: Partial-thickness skin loss with exposed dermis"/>
+	</coding>
+  </value>
+</Observation>
