@@ -1,0 +1,29 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="WoundGradationPanel-example"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundAssert"/>
+  </meta>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="exam"/>
+      <display value="Exam"/>
+    </coding>
+  </category>
+  <code>
+	<coding>
+		<system value="http://hl7.org/fhir/hspc/wound-observation-type"/>
+		<code value="WoundGradePan"/>
+		<display value="A collection of observations related to the classification of wound grades.  Temporary local code system to be replaced with LOINC code TBD."/>
+	</coding>
+  </code>
+  <subject>
+    <display value="Adult Male1234"/>
+  </subject>
+  <hasMember>
+	<reference value="Observation/NPUAPWoundGrade-example"/>
+	<display value="Wound Grade"/>
+  </hasMember>
+</Observation>
+  

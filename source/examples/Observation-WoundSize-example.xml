@@ -1,16 +1,18 @@
 <Observation xmlns="http://hl7.org/fhir">
-  <id value="WoundSize-Example"/>
+  <id value="WoundSize-example"/>
   <meta>
     <profile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundSize"/>
   </meta>
-  <status value="final"/>
   <extension url="http://hl7.org/fhir/hspc/StructureDefinition/DeviceExt">
-	<value>
+	<valueCodeableConcept>
+	  <coding>
 		<system value="http://snomed.info/sct"/>
 		<code value="44056008"/>
 		<display value="Caliper"/>
-	</value>
+	  </coding>
+	</valueCodeableConcept>
   </extension>
+  <status value="final"/>
   <category>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
@@ -39,12 +41,12 @@
 			<display value="Length of Wound"/>
 		</coding>
 	</code>
-	<value>
+	<valueQuantity>
 		<value value="4.5"/>
 		<unit value="cm"/>
 		<system value="http://unitsofmeasure.org"/>
 		<code value="cm"/>
-	</value>
+	</valueQuantity>
   </component>
   <component>
 	<code>
@@ -54,12 +56,12 @@
 			<display value="Width of Wound"/>
 		</coding>
 	</code>
-	<value>
+	<valueQuantity>
 		<value value="3.5"/>
 		<unit value="cm"/>
 		<system value="http://unitsofmeasure.org"/>
 		<code value="cm"/>
-	</value>
+	</valueQuantity>
   </component>
   <component>
 	<code>
@@ -69,12 +71,12 @@
 			<display value="Depth of Wound"/>
 		</coding>
 	</code>
-	<value>
+	<valueQuantity>
 		<value value="0.15"/>
 		<unit value="cm"/>
 		<system value="http://unitsofmeasure.org"/>
 		<code value="cm"/>
-	</value>
+	</valueQuantity>
   </component>
   <component>
 	<code>
@@ -84,12 +86,12 @@
 			<display value="Area of wound"/>
 		</coding>
 	</code>
-	<value>
+	<valueQuantity>
 		<value value="2.3"/>
 		<unit value="cm2"/>
 		<system value="http://unitsofmeasure.org"/>
 		<code value="cm2"/>
-	</value>
+	</valueQuantity>
   </component>
   <component>
 	<code>
@@ -100,18 +102,27 @@
 		</coding>
 		<text value="Qualitative Wound Depth"/>
 	</code>
-	<value>
+	<valueCodeableConcept>
+	  <coding>
 		<system value="http://snomed.info/sct"/>
 		<code value="26283006"/>
 		<display value="Superficial"/>
-	</value>
+	  </coding>
+	</valueCodeableConcept>
   </component>
   <component>
-	<value>
+    <code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="94083-3"/>
+			<display value="Wound volume"/>
+		</coding>
+	</code>
+	<valueQuantity>
 		<value value="3.3"/>
 		<unit value="mL"/>
 		<system value="http://unitsofmeasure.org"/>
 		<code value="mL"/>
-	</value>
+	</valueQuantity>
   </component>
 </Observation>

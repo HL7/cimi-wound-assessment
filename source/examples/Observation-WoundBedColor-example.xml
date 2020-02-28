@@ -25,24 +25,26 @@
   <encounter>
     <display value="GP Visit"/>
   </encounter>
-  <value>
+  <valueCodeableConcept>
 	<coding>
 		<system value="http://snomed.info/sct"/>
 		<code value="371240000"/>
 		<display value="Red color"/>
 	</coding>
-  </value>
+  </valueCodeableConcept>
   <component>
-	<code>
-		<system value="http://loinc.org"/>
-		<code value="89255-4"/>
-		<display value="Wound bed area identified by color/Area of wound bed"/>
+    <code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="89255-4"/>
+			<display value="Wound bed area identified by color/Area of wound bed"/>
+		</coding>
 	</code>
-	<value>
+	<valueQuantity>
 		<value value="30"/>
 		<unit value="%"/>
 		<system value="http://unitsofmeasure.org"/>
 		<code value="%"/>
-	</value>
+	</valueQuantity>
   </component>
 </Observation>

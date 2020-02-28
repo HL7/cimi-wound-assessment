@@ -25,7 +25,5 @@
   <encounter>
     <display value="GP Visit"/>
   </encounter>
-  <value>
-	<integer value="3"/>
-  </value>
+  <valueInteger value="3"/>
 </Observation>

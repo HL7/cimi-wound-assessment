@@ -41,6 +41,19 @@
                 <valueSet value="http://hl7.org/fhir/hspc/ValueSet/woundBedAppearanceVS"/>
             </binding>
         </element>
+		<element id="Observation:hspcwoundBedAppearance.component">
+			<path value="Observation.component"/>
+			<slicing>
+                <discriminator>
+                    <type value="pattern"/>
+                    <path value="code"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+			<min value="0"/>
+			<max value="1"/>
+		</element>
 		<element id="Observation:hspcwoundBedAppearance.component:WoundBedAppearanceArea">
 			<path value="Observation.component"/>
 			<sliceName value="WoundBedAppearanceArea"/>
@@ -48,21 +61,13 @@
 		</element>
 		<element id="Observation:hspcwoundBedAppearance.component.code">
 			<path value="Observation.component.code"/>
-		</element>
-		<element id="Observation:hspcwoundBedAppearance.component.code.coding">
-			<path value="Observation.component.code.coding"/>
-		</element>
-		<element id="Observation:hspcwoundBedAppearance.component.code.coding.system">
-			<path value="Observation.component.code.coding.system"/>
-			<fixedUri value="http://loinc.org"/>
-		</element>
-		<element id="Observation:hspcwoundBedAppearance.component.code.coding.code">
-			<path value="Observation.component.code.coding.code"/>
-			<fixedCode value="72370-0"/>
-		</element>
-		<element id="Observation:hspcwoundBedAppearance.component.code.coding.display">
-			<path value="Observation.component.code.coding.display"/>
-			<fixedString value="Area of identified wound bed appearance/Area of wound bed of Wound base"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="72370-0"/>
+					<display value="Area of identified wound bed appearance/Area of wound bed of Wound base"/>
+				</coding>
+			</patternCodeableConcept>
 		</element>
 		<element id="Observation:hspcwoundBedAppearance.component.valueQuantity">
 			<path value="Observation.component.valueQuantity"/>

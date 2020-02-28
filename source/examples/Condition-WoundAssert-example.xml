@@ -4,147 +4,192 @@
     <profile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundAssert"/>
   </meta>
   <extension url="http://hl7.org/fhir/hspc/StructureDefinition/PresentOnAdmissionExt">
-	<value>
+	<valueCodeableConcept>
+	  <coding>
 		<system value="http://snomed.info/sct"/>
 		<code value="373066001"/>
 		<display value="Yes"/>
-	</value>
+	  </coding>
+	</valueCodeableConcept>
   </extension>
   <extension url="http://hl7.org/fhir/hspc/StructureDefinition/PressureUlcerAssociationExt">
-	<value>
+	<valueCodeableConcept>
+	  <coding>
 		<system value="http://snomed.info/sct"/>
 		<code value="449753006"/>
 		<display value="Pressure point of skin"/>
-	</value>
+	  </coding>
+	</valueCodeableConcept>
   </extension>
   <extension url="http://hl7.org/fhir/hspc/StructureDefinition/WoundAssessmentInterpretationExt">
-	<value>
+	<valueCodeableConcept>
+	  <coding>
 		<system value="http://snomed.info/sct"/>
 		<code value="449501000124109"/>
 		<display value="Within defined limits"/>
-	</value>
+	  </coding>
+	</valueCodeableConcept>
   </extension>
   <extension url="http://hl7.org/fhir/hspc/StructureDefinition/EpisodeExt">
-	<value>
+	<valueCodeableConcept>
+	  <coding>
 		<system value="http://snomed.info/sct"/>
 		<code value="255251009"/>
 		<display value="Acute phase"/>
-	</value>
+	  </coding>
+	</valueCodeableConcept>
   </extension>
   <extension url="http://hl7.org/fhir/hspc/StructureDefinition/TrendExt">
-	<value>
+	<valueCodeableConcept>
+	  <coding>
 		<system value="http://snomed.info/sct"/>
 		<code value="90772001"/>
 		<display value="Deterioration of status"/>
-	</value>
+	  </coding>
+	</valueCodeableConcept>
   </extension>
   <extension url="http://hl7.org/fhir/hspc/StructureDefinition/PeriwoundConditionExt">
-	<value>
+	<valueCodeableConcept>
+	  <coding>
 		<system value="http://snomed.info/sct"/>
 		<code value="247427007"/>
 		<display value="Fragile skin"/>
-	</value>
+	  </coding>
+	</valueCodeableConcept>
   </extension>
   <extension url="http://hl7.org/fhir/hspc/StructureDefinition/WoundTypeEtiologyExt">
-	<value>
+	<valueCodeableConcept>
+	  <coding>
 		<system value="http://snomed.info/sct"/>
 		<code value="449753006"/>
 		<display value="Pressure point of skin"/>
-	</value>
+	  </coding>
+	</valueCodeableConcept>
   </extension>
   <extension url="http://hl7.org/fhir/hspc/StructureDefinition/WoundInternalItemOrBodyStructureVisibleExt">
-	<value>
+	<valueCodeableConcept>
+	  <coding>
 		<system value="http://snomed.info/sct"/>
 		<code value="71966008"/>
 		<display value="Subcutaneous tissue structure"/>
-	</value>
+	  </coding>
+	</valueCodeableConcept>
   </extension>
-  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/WoundGradationExt">
-	<value>
-		<system value="http://snomed.info/sct"/>
-		<code value="416462003:{258214002=258215001}"/>
-		<display value="Wound Stage=Stage One"/>
-	</value>
+  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/WoundGradationPanelExt">
+	<valueReference>
+		<reference value="Observation/WoundGradationPanel-example"/>
+	</valueReference>
   </extension>
-  <extension url="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundRelatedObservationsPanelExt">
+  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/WoundRelatedObservationsPanelExt">
 	<valueReference>
 		<reference value="Observation/WoundRelatedObservationsPanel-example"/>
 	</valueReference>
   </extension>
   <extension url="http://hl7.org/fhir/hspc/StructureDefinition/BodyLocationExt">
 	  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/AnatomicLocationExt">
-		<value>
+		<valueCodeableConcept>
+		  <coding>
 			<system value="http://snomed.info/sct"/>
 			<code value="75144006"/>
 			<display value="Skin structure of lower leg"/>
-		</value>
+		  </coding>
+		</valueCodeableConcept>
 	  </extension>
 	  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/BodySideExt">
-		<value>
+		<valueCodeableConcept>
+		  <coding>
 			<system value="http://snomed.info/sct"/>
 			<code value="85421007"/>
 			<display value="Structure of right half of body"/>
-		</value>
+		  </coding>
+		</valueCodeableConcept>
 	  </extension>
 	  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/BodyLocationOrientationExt">
-		<value>
+		<valueCodeableConcept>
+		  <coding>
 			<system value="http://snomed.info/sct"/>
 			<code value="49370004"/>
 			<display value="Lateral"/>
-		</value>
+		  </coding>
+		</valueCodeableConcept>
 	  </extension>
 	  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/UnderlyingAnatomicalStructureExt">
-		<value>
+		<valueCodeableConcept>
+		  <coding>
 			<system value="http://snomed.info/sct"/>
 			<code value="33696004"/>
 			<display value="Bone stucture of ankle"/>
-		</value>
+		  </coding>
+		</valueCodeableConcept>
 	  </extension>
 	  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/BodyLandmarkOrientationExt">
 		  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/BodyLandmarkDescriptionExt">
-			<value>
+			<valueCodeableConcept>
+			  <coding>
 				<system value="http://snomed.info/sct"/>
 				<code value="33696004"/>
 				<display value="Bone stucture of ankle"/>
-			</value>
+			  </coding>
+			</valueCodeableConcept>
 		  </extension>
 		  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/ClockFacePositionExt">
-			<value>
+			<valueCodeableConcept>
+			  <coding>
 				<system value="http://snomed.info/sct"/>
 				<code value="260326007"/>
 				<display value="12 o'clock position"/>
-			</value>
+			  </coding>
+			</valueCodeableConcept>
 		  </extension>
 		  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/DistanceFromLandmarkExt">
-			<value>
-				<value value="3.5"/>
-				<unit value="cm"/>
-				<system value="http://unitsofmeasure.org"/>
-				<code value="cm"/>
-			</value>
+			<extension url="http://hl7.org/fhir/hspc/StructureDefinition/DeviceExt">
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="102304005"/>
+						<display value="easuring ruler, device"/>
+					</coding>
+				</valueCodeableConcept>
+			</extension>
+			<extension url="http://hl7.org/fhir/hspc/StructureDefinition/DistanceFromLandmarkMeasurementExt">
+				<valueQuantity>
+					<value value="3.5"/>
+					<unit value="cm"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="cm"/>
+				</valueQuantity>
+			</extension>
 		  </extension>
 		  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/SurfaceOrientationExt">
-			<value>
+			<valueCodeableConcept>
+			  <coding>
 				<system value="http://snomed.info/sct"/>
 				<code value="49370004"/>
 				<display value="Lateral"/>
-			</value>
+			  </coding>
+			</valueCodeableConcept>
 		  </extension>
 	  </extension>
 	  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/BodyLocationQualifierExt">
-		<value>
+		<valueCodeableConcept>
+		  <coding>
 			<system value="http://snomed.info/sct"/>
 			<code value="11896004"/>
 			<display value="Intermediate"/>
-		</value>
+		  </coding>
+		</valueCodeableConcept>
 	  </extension>
   </extension>
   <extension url="http://hl7.org/fhir/hspc/StructureDefinition/RecurrenceExt">
-	<value>
-		<system value="http://snomed.info/sct"/>
-		<code value="255216001"/>
-		<display value="First"/>
-	</value>
+    <extension url="http://hl7.org/fhir/hspc/StructureDefinition/RecurrenceValueExt">
+		<valueCodeableConcept>
+		  <coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="255216001"/>
+			<display value="First"/>
+		  </coding>
+		</valueCodeableConcept>
+	</extension>
   </extension>
   <identifier>
 	<value value="wound 1"/>
@@ -155,7 +200,9 @@
 	</coding>
   </clinicalStatus>
   <verificationStatus>
-	<code value="confirmed"/>
+	<coding>
+		<code value="confirmed"/>
+	</coding>
   </verificationStatus>
   <code>
 	<coding>
@@ -167,21 +214,13 @@
   <subject>
     <display value="Adult Male1234"/>
   </subject>
-  <onsetDateTime value="2019-10-26:09:36"/>
-  <rocerdedDate value="2019-10-26:11:12"/>
+  <onsetDateTime value="2019-10-26T09:36:00-06:00"/>
+  <recordedDate value="2019-10-26T11:12:00-06:00"/>
   <recorder>
-	<reference value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
-	<name>
-		<family value="Assistant"/>
-		<given value="Medical"/>
-	</name>
+	<reference value="Practitioner/Recorder-example"/>
   </recorder>
   <asserter>
-	<reference value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
-	<name>
-		<family value="Ratchet"/>
-		<given value="Nurse"/>
-	</name>
-   </asserter>
+	<reference value="Practitioner/Asserter-example"/>
+  </asserter>
 </Condition>
   

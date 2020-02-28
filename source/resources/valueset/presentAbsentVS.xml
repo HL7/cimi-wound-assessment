@@ -23,8 +23,8 @@
 				<display value ="Present"/>
 			</concept>	
 			<concept>	
-				<code value ="272519000"/>
-				<display value ="Absence findings"/>
+				<code value ="2667000"/>
+				<display value ="Absent"/>
 			</concept>
 		</include>
     </compose>

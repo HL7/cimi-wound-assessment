@@ -24,10 +24,10 @@
   <encounter>
     <display value="GP Visit"/>
   </encounter>
-  <related>
-	<reference value="Examples/WoundEdgeColor-Example"/>
-  </related>
-  <related>
-	<reference value="Examples/WoundEdgeDescription-Example"/>
-  </related>
+  <hasMember>
+	<reference value="Observation/WoundEdgeColor-example"/>
+  </hasMember>
+  <hasMember>
+	<reference value="Observation/WoundEdgeDescription-example"/>
+  </hasMember>
 </Observation>

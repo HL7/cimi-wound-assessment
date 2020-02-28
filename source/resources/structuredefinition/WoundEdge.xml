@@ -41,13 +41,13 @@
 			<slicing>
                 <discriminator>
                     <type value="value"/>
-                    <path value="Observation.hasMember"/>
+                    <path value="reference"/>
                 </discriminator>
                 <ordered value="false"/>
                 <rules value="open"/>
             </slicing>
 			<min value="0"/>
-			<max value="1"/>
+			<max value="2"/>
 		</element>
 		<element id="Observation:hspcwoundEdge.hasMember:woundEdgeColor">
 			<path value="Observation.hasMember"/>
@@ -55,10 +55,10 @@
 			<short value="Wound Edge Color"/>
 			<min value="0"/>
 			<max value="1"/>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundEdgeColor"/>
-			</type>
+		</element>
+		<element id="Observation:hspcwoundEdge.hasMember.reference:woundEdgeColor">
+			<path value="Observation.hasMember.reference"/>
+			<fixedString value="http://hl7.org/fhir/hspc/StructureDefinition/WoundEdgeColor"/>
 		</element>
 		<element id="Observation:hspcwoundEdge.hasMember:woundEdgeDescription">
 			<path value="Observation.hasMember"/>
@@ -66,10 +66,10 @@
 			<short value="Wound Edge Description"/>
 			<min value="0"/>
 			<max value="1"/>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundEdgeDescription"/>
-			</type>
+		</element>
+		<element id="Observation:hspcwoundEdge.hasMember.reference:woundEdgeDescription">
+			<path value="Observation.hasMember.reference"/>
+			<fixedString value="http://hl7.org/fhir/hspc/StructureDefinition/WoundEdgeDescription"/>
 		</element>
     </differential>
 </StructureDefinition>

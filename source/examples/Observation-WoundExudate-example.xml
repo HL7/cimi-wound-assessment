@@ -1,0 +1,113 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="WoundExudate-example"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundExudate"/>
+  </meta>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="exam"/>
+      <display value="Exam"/>
+    </coding>
+  </category>
+  <code>
+	<coding>
+		<system value="http://loinc.org"/>
+		<code value="89259-6"/>
+		<display value="Presence of wound exudate"/>
+	</coding>
+  </code>
+  <subject>
+    <display value="Adult Male1234"/>
+  </subject>
+  <encounter>
+    <display value="GP Visit"/>
+  </encounter>
+  <valueCodeableConcept>
+	<coding>
+		<system value="http://snomed.info/sct"/>
+		<code value="52101004"/>
+		<display value="Present"/>
+	</coding>
+  </valueCodeableConcept>
+  <component>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="39116-9"/>
+			<display value="Drainage amount of Wound"/>
+		</coding>
+	</code>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="263865001"/>
+			<display value="Scanty"/>
+		</coding>
+	</valueCodeableConcept>
+  </component>
+  <component>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="72290-0"/>
+			<display value="Appearance of Exudate from wound"/>
+		</coding>
+	</code>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="447112000"/>
+			<display value="Serous discharge from wound"/>
+		</coding>
+	</valueCodeableConcept>
+  </component>
+  <component>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="72289-2"/>
+			<display value="Color of Exudate from wound"/>
+		</coding>
+	</code>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="263716002"/>
+			<display value="Colorless"/>
+		</coding>
+	</valueCodeableConcept>
+  </component>
+  <component>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="72288-4"/>
+			<display value="Odor of Exudate from wound"/>
+		</coding>
+	</code>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="1411000124109"/>
+			<display value="Wound Exudate Odor Absent"/>
+		</coding>
+	</valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="72291-8"/>
+			<display value="Drainage amount from device of Exudate from wound"/>
+		</coding>
+	</code>
+	<valueQuantity>
+		<value value="2.3"/>
+		<unit value="mL"/>
+		<system value="http://unitsofmeasure.org"/>
+		<code value="mL"/>
+	</valueQuantity>
+  </component>
+</Observation>

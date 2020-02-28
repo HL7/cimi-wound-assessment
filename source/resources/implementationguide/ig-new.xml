@@ -232,13 +232,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/WoundGradationExt"/>
-      </reference>
-      <description value="Wound Gradation Extension"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="StructureDefinition/WoundRelatedObservationsPanelExt"/>
       </reference>
       <description value="Wound Related Observations Panel Extension"/>
@@ -249,13 +242,6 @@
         <reference value="StructureDefinition/WoundGradationPanelExt"/>
       </reference>
       <description value="Wound Gradation Panel Extension"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/WoundAssert"/>
-      </reference>
-      <description value="Wound Assertion"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -281,13 +267,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/WoundEdge"/>
-      </reference>
-      <description value="Wound Edge"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="StructureDefinition/WoundSize"/>
       </reference>
       <description value="Wound Size"/>
@@ -309,86 +288,30 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/WoundTunnelingDirection"/>
+        <reference value="StructureDefinition/WoundEdge"/>
       </reference>
-      <description value="Wound Tunneling Direction"/>
+      <description value="Wound Edge"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/WoundTunnelingLength"/>
+        <reference value="StructureDefinition/WoundTunneling"/>
       </reference>
-      <description value="Wound Tunneling Length"/>
+      <description value="Wound Tunneling"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/WoundTunnelingAssert"/>
+        <reference value="StructureDefinition/WoundUndermining"/>
       </reference>
-      <description value="Wound Tunneling Assert"/>
+      <description value="Wound Undermining"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/WoundUnderminingDirection"/>
+        <reference value="StructureDefinition/WoundExudate"/>
       </reference>
-      <description value="Wound Undermining Direction"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/WoundUnderminingLength"/>
-      </reference>
-      <description value="Wound Undermining Length"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/WoundUnderminingAssert"/>
-      </reference>
-      <description value="Wound Undermining Assert"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/WoundExudateAmountDescription"/>
-      </reference>
-      <description value="Wound Exudate Amount Description"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/WoundExudateAppearance"/>
-      </reference>
-      <description value="Wound Exudate Appearance"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/WoundExudateColor"/>
-      </reference>
-      <description value="Wound Exudate Color"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/WoundExudateOdor"/>
-      </reference>
-      <description value="Wound Exudate Odor"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/WoundExudateVolume"/>
-      </reference>
-      <description value="Wound Exudate Volume"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/WoundExudateAssert"/>
-      </reference>
-      <description value="Wound Exudate Assert"/>
+      <description value="Wound Exudate"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -445,6 +368,13 @@
         <reference value="StructureDefinition/WoundRelatedObservationsPanel"/>
       </reference>
       <description value="Wound Related Observations Panel"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundAssert"/>
+      </reference>
+      <description value="Wound Assertion"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -557,13 +487,6 @@
         <reference value="ValueSet/woundMeasurementDeviceVS"/>
       </reference>
       <description value="Wound Measurement Device value set"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/woundGradationVS"/>
-      </reference>
-      <description value="Wound Gradation value set"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -729,7 +652,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Condition/WoundExudate-example"/>
+        <reference value="Observation/WoundExudate-example"/>
       </reference>
       <description value="An example of a Wound Exudate assertion"/>
       <exampleBoolean value="true"/>
@@ -778,41 +701,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Observation/WoundExudateAmountDescription-example"/>
-      </reference>
-      <description value="An example of a Wound Exudate Amount Description"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/WoundExudateAppearance-example"/>
-      </reference>
-      <description value="An example of a Wound Exudate Appearance"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/WoundExudateColor-example"/>
-      </reference>
-      <description value="An example of a Wound Exudate Color"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/WoundExudateOdor-example"/>
-      </reference>
-      <description value="An example of a Wound Exudate Odor"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/WoundExudateVolume-example"/>
-      </reference>
-      <description value="An example of a Wound Exudate Volume"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="Observation/WoundShape-example"/>
       </reference>
       <description value="An example of a Wound Shape"/>
@@ -827,42 +715,14 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Observation/WoundTunnelingDirection-example"/>
-      </reference>
-      <description value="An example of a Wound Tunneling Direction"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/WoundTunnelingLength-example"/>
-      </reference>
-      <description value="An example of a Wound Tunneling Length"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Condition/WoundTunneling-example"/>
+        <reference value="Observation/WoundTunneling-example"/>
       </reference>
       <description value="An example of a Wound Tunneling assertion"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
-        <reference value="Observation/WoundUnderminingDirection-example"/>
-      </reference>
-      <description value="An example of a Wound Undermining Direction"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/WoundUnderminingLength-example"/>
-      </reference>
-      <description value="An example of a Wound Undermining Length"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Condition/WoundUndermining-example"/>
+        <reference value="Observation/WoundUndermining-example"/>
       </reference>
       <description value="An example of a Wound Undermining assertion"/>
       <exampleBoolean value="true"/>
@@ -883,7 +743,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Observation/PEDISWoundGrade-example"/>
+        <reference value="Observation/PEDISWoundGradeTotalScore-example"/>
       </reference>
       <description value="An example of a PEDIS Wound Grade observation"/>
       <exampleBoolean value="true"/>
@@ -907,6 +767,27 @@
         <reference value="Observation/WagnerWoundGrade-example"/>
       </reference>
       <description value="An example of a Wagner Wound Grade observation"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/WoundGradationPanel-example"/>
+      </reference>
+      <description value="An example of a Wagner Wound Grade observation"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Practitioner/Asserter-example"/>
+      </reference>
+      <description value="An example of a practioner with the role of &#39;asserter&#39;."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Practitioner/Recorder-example"/>
+      </reference>
+      <description value="An example of a practioner with the role of &#39;recorder&#39;."/>
       <exampleBoolean value="true"/>
     </resource>
     <page>

@@ -35,7 +35,7 @@
             <min value="0"/>
             <max value="1"/>
             <type>
-                <code value="extension"/>
+                <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/hspc/StructureDefinition/PresentOnAdmissionExt"/>
             </type>
         </element>
@@ -46,7 +46,7 @@
             <min value="0"/>
             <max value="1"/>
             <type>
-                <code value="extension"/>
+                <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/hspc/StructureDefinition/PressureUlcerAssociationExt"/>
             </type>
         </element>
@@ -57,7 +57,7 @@
 			<min value="0"/>
 			<max value="1"/>
 			<type>
-				<code value="extension"/>
+				<code value="Extension"/>
 				<profile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundAssessmentInterpretationExt"/>
 			</type>
 		</element>
@@ -68,7 +68,7 @@
 			<min value="0"/>
 			<max value="1"/>
 			<type>
-				<code value="extension"/>
+				<code value="Extension"/>
 				<profile value="http://hl7.org/fhir/hspc/StructureDefinition/EpisodeExt"/>
 			</type>
 		</element>
@@ -79,7 +79,7 @@
 			<min value="0"/>
 			<max value="1"/>
 			<type>
-				<code value="extension"/>
+				<code value="Extension"/>
 				<profile value="http://hl7.org/fhir/hspc/StructureDefinition/TrendExt"/>
 			</type>
 		</element>
@@ -90,7 +90,7 @@
 			<min value="0"/>
 			<max value="1"/>
 			<type>
-				<code value="extension"/>
+				<code value="Extension"/>
 				<profile value="http://hl7.org/fhir/hspc/StructureDefinition/PeriwoundConditionExt"/>
 			</type>
 		</element>
@@ -101,7 +101,7 @@
 			<min value="0"/>
 			<max value="1"/>
 			<type>
-				<code value="extension"/>
+				<code value="Extension"/>
 				<profile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundTypeEtiologyExt"/>
 			</type>
 		</element>
@@ -110,9 +110,9 @@
 			<sliceName value="WoundImage"/>
 			<short value="Wound Image"/>
 			<min value="0"/>
-			<max value="*"/>
+			<max value="1"/>
 			<type>
-				<code value="extension"/>
+				<code value="Extension"/>
 				<profile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundImageExtension"/>
 			</type>
 		</element>
@@ -123,7 +123,7 @@
 			<min value="0"/>
 			<max value="1"/>
 			<type>
-				<code value="extension"/>
+				<code value="Extension"/>
 				<profile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundInternalItemOrBodyStructureVisibleExt"/>
 			</type>
 		</element>
@@ -132,7 +132,7 @@
 			<sliceName value="WoundGradation"/>
 			<short value="Wound Gradation"/>
 			<min value="0"/>
-			<max value="*"/>
+			<max value="1"/>
 			<type>
 				<code value="Extension"/>
 				<profile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundGradationPanelExt"/>
@@ -143,9 +143,9 @@
 			<sliceName value="woundRelatedObservationsPanel"/>
 			<short value="Wound Related Observations Panel"/>
 			<min value="0"/>
-			<max value="*"/>
+			<max value="1"/>
 			<type>
-				<code value="reference"/>
+				<code value="Extension"/>
 				<profile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundRelatedObservationsPanelExt"/>
 			</type>
 		</element>

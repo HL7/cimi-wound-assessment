@@ -1,0 +1,65 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="WoundUndermining-example"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundUndermining"/>
+  </meta>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="exam"/>
+      <display value="Exam"/>
+    </coding>
+  </category>
+  <code>
+	<coding>
+		<system value="http://loinc.org"/>
+		<code value="72295-9"/>
+		<display value="Undermining of Wound"/>
+	</coding>
+  </code>
+  <subject>
+    <display value="Adult Male1234"/>
+  </subject>
+  <encounter>
+    <display value="GP Visit"/>
+  </encounter>
+  <valueCodeableConcept>
+	<coding>
+		<system value="http://snomed.info/sct"/>
+		<code value="52101004"/>
+		<display value="Present"/>
+	</coding>
+  </valueCodeableConcept>
+  <component>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="72294-2"/>
+			<display value="Undermining clock position of Wound"/>
+		</coding>
+	</code>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="260341007"/>
+			<display value="8 o'clock position"/>
+		</coding>
+	</valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="72293-4"/>
+			<display value="Undermining [Length] of Wound"/>
+		</coding>
+	</code>
+	<valueQuantity>
+		<value value="2.3"/>
+		<unit value="cm"/>
+		<system value="http://unitsofmeasure.org"/>
+		<code value="cm"/>
+	</valueQuantity>
+  </component>
+</Observation>

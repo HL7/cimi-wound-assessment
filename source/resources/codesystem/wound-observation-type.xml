@@ -15,12 +15,12 @@
 	<concept>
 		<code value="woundshape" />
 		<display value="Shape of Wound" />
-		<definition value="An observation or observation componenet describing the shape of a wound. Temporary local code system to be replaced with LOINC code TBD." />
+		<definition value="An observation or observation component describing the shape of a wound. Temporary local code system to be replaced with LOINC code TBD." />
 	</concept>
 	<concept>
 		<code value="woundvolume" />
 		<display value="Volume of Wound" />
-		<definition value="An observation or observation componenet describing the volume of a wound. Temporary local code system to be replaced with LOINC code TBD." />
+		<definition value="An observation or observation component describing the volume of a wound. Temporary local code system to be replaced with LOINC code TBD." />
 	</concept>
 	<concept>
 		<code value="WagnerWoundGrade"/>
@@ -51,5 +51,15 @@
 		<code value="SINBADWoundGrade"/>
 		<display value="SINBAD (Site-Ischemia-Neuropathy-Bacterial infection-Depth) Diabetic Foot Ulcer Classification System"/>
 		<definition value="An observation of the SINBAD diabetic foot ulcer classification system.  Temporary local code system to be replaced with LOINC code TBD."/>
+	</concept>
+	<concept>
+		<code value="WoundRelObsPan"/>
+		<display value="Wound Related Observations Panel"/>
+		<definition value="A collection of observations related to wounds.  Temporary local code system to be replaced with LOINC code TBD."/>
+	</concept>
+	<concept>
+		<code value="WoundGradePan"/>
+		<display value="Wound Gradation Panel"/>
+		<definition value="A collection of observations related to the classification of wound grades.  Temporary local code system to be replaced with LOINC code TBD."/>
 	</concept>
 </CodeSystem>

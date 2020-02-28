@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="WoundUndermining"/>
+    <url value="http://hl7.org/fhir/hspc/StructureDefinition/WoundUndermining"/>
+    <name value="Wound Undermining"/>
+    <status value="draft"/>
+    <date value="2019-06-19"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="Wound Edge describes the if undermining exists in a wound and if it does, its direction and length."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcwoundUndermining">
+            <path value="Observation"/>
+			<short value="Wound Undermining"/>
+            <definition value="Wound Edge describes the if undermining exists in a wound and if it does, its direction and length."/>
+        </element>
+        <element id="Observation:hspcwoundUndermining.code">
+            <path value="Observation.code"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="72295-9"/>
+					<display value="Undermining of Wound"/>
+				</coding>
+			</patternCodeableConcept>
+        </element>
+        <element id="Observation:hspcwoundUndermining.valueCodeableConcept">
+            <path value="Observation.valueCodeableConcept"/>
+            <short value="Present/Absent"/>
+			<type>
+                <code value="CodeableConcept"/>
+            </type>
+			<binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/hspc/ValueSet/presentAbsentVS"/>
+            </binding>
+        </element>
+		<element id="Observation:hspcwoundUndermining.component">
+			<path value="Observation.component"/>
+			<slicing>
+                <discriminator>
+                    <type value="pattern"/>
+                    <path value="code"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+			<min value="0"/>
+			<max value="2"/>
+		</element>
+		<element id="Observation:hspcwoundUndermining.component:woundUnderminingDirection">
+			<path value="Observation.component"/>
+			<sliceName value="woundUnderminingDirection"/>
+			<short value="Wound Undermining Direction"/>
+			<min value="0"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation:hspcwoundUndermining.component.code:woundUnderminingDirection">
+			<path value="Observation.component.code"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="72294-2"/>
+					<display value="Undermining clock position of Wound"/>
+				</coding>
+			</patternCodeableConcept>
+		</element>
+		<element id="Observation:hspcwoundUndermining.component.value:woundUnderminingDirection">
+			<path value="Observation.component.value"/>
+            <short value="Undermining Direction code"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+			<binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/hspc/ValueSet/clockFacePositionVS"/>
+			</binding>
+		</element>
+		<element id="Observation:hspcwoundUndermining.component:woundUnderminingLength">
+			<path value="Observation.component"/>
+			<sliceName value="woundUnderminingLength"/>
+			<short value="Wound Undermining Length"/>
+			<min value="0"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation:hspcwoundUndermining.component.code:woundUnderminingLength">
+			<path value="Observation.component.code"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="72293-4"/>
+					<display value="Undermining [Length] of Wound"/>
+				</coding>
+			</patternCodeableConcept>
+		</element>
+		<element id="Observation:hspcwoundUndermining.component.valueQuantity:woundUnderminingLength">
+			<path value="Observation.component.valueQuantity"/>
+			<type>
+				<code value="Quantity"/>
+			</type>
+		</element>
+		<element id="Observation:hspcwoundUndermining.component.valueQuantity.value:woundUnderminingLength">
+			<path value="Observation.component.valueQuantity.value"/>
+			<min value="1"/>
+			<max value="1"/>
+		</element>
+		<element id="Observation:hspcwoundUndermining.component.valueQuantity.system:woundUnderminingLength">
+			<path value="Observation.component.valueQuantity.system"/>
+            <type>
+                <code value="uri"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/uri"/>
+            </type>
+            <fixedUri value="http://unitsofmeasure.org"/>
+		</element>
+		<element id="Observation:hspcwoundUndermining.component.valueQuantity.code:woundUnderminingLength">
+			<path value="Observation.component.valueQuantity.code"/>
+            <type>
+                <code value="code"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/code"/>
+            </type>
+            <fixedCode value="cm"/>
+		</element>
+    </differential>
+</StructureDefinition>

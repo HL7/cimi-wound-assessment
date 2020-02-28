@@ -19,11 +19,20 @@ active: terminology
 ## Introduction
 
 The efforts to standardized clinical assessment data has been ongoing for many years. In 2009, the Office of Nursing Services (ONS) within the Department of Veterans Affairs (VA) initiated an effort to standardize the clinical data documented by VA nurses for wound assessments, eventually expanding that effort to a collaboration chartered by nursing leaders at both VA and Kaiser Permanente. This work resulted in the HL7 Pressure Ulcer Risk domain analysis model (DAM) that passed ballot at HL7 in 2011 (Harris et al, 2015). 
-The Skin and Wound Assessment work was continued in 2016 under the direction of the HL7 [Clinical Information Modeling Initiative (CIMI) Workgroup](https://confluence.hl7.org/display/CIMI/Clinical+Information+Modeling+Initiative) and [Logica Health (formerly Health Services Platform Consortrium (HSPC))](https://www.logicahealth.org/). The content development and modeling work was performed in collaboration with Intermountain Healthcare and the Veteran’s Administration (VA). Wound assessment nurses from the VA and the National Pressure Ulcer Advisory Panel (NPUAP) were the validating subject matter experts.
+The Skin and Wound Assessment work was continued in 2016 under the direction of the HL7 Clinical Information Modeling Initiative [(CIMI)](https://confluence.hl7.org/display/CIMI/Clinical+Information+Modeling+Initiative) Workgroup and [Logica Health](https://www.logicahealth.org/), formerly Health Services Platform Consortrium (HSPC). The content development and modeling work was performed in collaboration with Intermountain Healthcare and the Veteran’s Administration (VA). Wound assessment nurses from the VA and the National Pressure Ulcer Advisory Panel (NPUAP) were the validating subject matter experts.
 CIMI took on this work in 2017. 
 The [Patient Care Workgroup](https://confluence.hl7.org/display/PC/Patient+Care) is the primary sponsor for this work.  The PSS can be found [here](https://confluence.hl7.org/display/CIC/Skin+and+Wound+PSS).
 
-## Overview
+
+## Formal Veiw of Profile Content
+
+### Profile element and extension mappings
+
+The table below represents a set of concepts and elements needed to properly document the presence of a wound.  The LOINC and SNOMED code bindings are extensible.  It is required that systems using this profile support *at least* these elements and concepts.
+
+{% include profileloinctable.html %}
+
+<br/>
 
 ### Scope and Usage
 
@@ -38,16 +47,6 @@ Peter Pepper is admitted for treatment of a stage four pressure injury with tunn
 
 {% include UseCase1.html %}
 
-
-<br />
-
-## Formal Veiw of Profile Content
-
-### Profile element and extension mappings
-
-The table below represents a set of concepts and elements needed to properly document the presence of a wound.  The LOINC and SNOMED code bindings are extensible.  It is required that systems using this profile support *at least* these elements and concepts.
-
-{% include profileloinctable.html %}
 
 ### Value sets
 

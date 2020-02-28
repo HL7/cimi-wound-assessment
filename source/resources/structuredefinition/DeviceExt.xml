@@ -13,7 +13,19 @@
   <abstract value="false"/>
   <context>
 	<type value="element"/>
+	<expression value="Extension"/>
+  </context>
+  <context>
+	<type value="element"/>
+	<expression value="Condition"/>
+  </context>
+  <context>
+	<type value="element"/>
 	<expression value="StructureDefinition"/>
+  </context>
+  <context>
+	<type value="element"/>
+	<expression value="Observation"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>

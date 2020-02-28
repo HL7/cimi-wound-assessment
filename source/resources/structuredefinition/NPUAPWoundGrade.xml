@@ -42,7 +42,6 @@
             <short value="valueCodeableConcept"/>
             <type>
                 <code value="CodeableConcept"/>
-				<element id="Observation:hspcUniversityOfTexasWoundGrade.valueCodeableConcept"/>
             </type>
 			<binding>
 				<strength value="required"/>

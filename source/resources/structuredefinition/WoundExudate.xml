@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="WoundExudate"/>
+    <url value="http://hl7.org/fhir/hspc/StructureDefinition/WoundExudate"/>
+    <name value="Wound Exudate"/>
+    <status value="draft"/>
+    <date value="2019-06-19"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="Wound Exudate describes the color, volume, appearance, odor, and qualitative amount of substance issuing from a wound."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcwoundExudate">
+            <path value="Observation"/>
+			<short value="Wound Exudate"/>
+            <definition value="Wound Exudate describes the color, volume, appearance, odor, and qualitative amount of substance issuing from a wound."/>
+        </element>
+        <element id="Observation:hspcwoundExudate.code">
+            <path value="Observation.code"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="89259-6"/>
+					<display value="Presence of wound exudate"/>
+				</coding>
+			</patternCodeableConcept>
+        </element>
+        <element id="Observation:hspcwoundExudate.valueCodeableConcept">
+            <path value="Observation.valueCodeableConcept"/>
+            <short value="Present/Absent"/>
+			<type>
+                <code value="CodeableConcept"/>
+            </type>
+			<binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/hspc/ValueSet/presentAbsentVS"/>
+            </binding>
+        </element>
+		<element id="Observation:hspcwoundExudate.component">
+			<path value="Observation.component"/>
+			<slicing>
+                <discriminator>
+                    <type value="pattern"/>
+                    <path value="code"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+			<min value="0"/>
+			<max value="*"/>
+		</element>
+		<element id="Observation:hspcwoundExudate.component:woundExudateAmountDescription">
+			<path value="Observation.component"/>
+			<sliceName value="WoundExudateAmountDescription"/>
+			<short value="Wound Exudate Amount Description"/>
+			<min value="0"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation:hspcwoundExudate.component.code:woundExudateAmountDescription">
+			<path value="Observation.component.code"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="39116-9"/>
+					<display value="Drainage amount of Wound"/>
+				</coding>
+			</patternCodeableConcept>
+		</element>
+		<element id="Observation:hspcwoundExudate.component.value:woundExudateAmountDescription">
+			<path value="Observation.component.value"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+			<binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/hspc/ValueSet/woundExudateAmountDescriptionVS"/>
+			</binding>
+		</element>
+		<element id="Observation:hspcwoundExudate.component:woundExudateAppearance">
+			<path value="Observation.component"/>
+			<sliceName value="woundExudateAppearance"/>
+			<short value="Wound Exudate Appearance"/>
+			<min value="0"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation:hspcwoundExudate.component.code:woundExudateAppearance">
+			<path value="Observation.component.code"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="72290-0"/>
+					<display value="Appearance of Exudate from wound"/>
+				</coding>
+			</patternCodeableConcept>
+		</element>
+		<element id="Observation:hspcwoundExudate.component.value:woundExudateAppearance">
+			<path value="Observation.component.value"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+			<binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/hspc/ValueSet/woundExudateAppearanceVS"/>
+			</binding>
+		</element>
+		<element id="Observation:hspcwoundExudate.component:woundExudateColor">
+			<path value="Observation.component"/>
+			<sliceName value="woundExudateColor"/>
+			<short value="Wound Exudate Color"/>
+			<min value="0"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation:hspcwoundExudate.component.code:woundExudateColor">
+			<path value="Observation.component.code"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="72289-2"/>
+					<display value="Color of Exudate from wound"/>
+				</coding>
+			</patternCodeableConcept>
+		</element>
+		<element id="Observation:hspcwoundExudate.component.value:woundExudateColor">
+			<path value="Observation.component.value"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+			<binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/hspc/ValueSet/woundExudateColorVS"/>
+			</binding>
+		</element>
+		<element id="Observation:hspcwoundExudate.component:woundExudateOdor">
+			<path value="Observation.component"/>
+			<sliceName value="woundExudateOdor"/>
+			<short value="Wound Exudate Odor"/>
+			<min value="0"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation:hspcwoundExudate.component.code:woundExudateOdor">
+			<path value="Observation.component.code"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="72288-4"/>
+					<display value="Odor of Exudate from wound"/>
+				</coding>
+			</patternCodeableConcept>
+		</element>
+		<element id="Observation:hspcwoundExudate.component.value:woundExudateOdor">
+			<path value="Observation.component.value"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+			<binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/hspc/ValueSet/woundExudateOdorVS"/>
+			</binding>
+		</element>
+		<element id="Observation:hspcwoundExudate.component:woundExudateVolume">
+			<path value="Observation.component"/>
+			<sliceName value="woundExudateVolume"/>
+			<short value="Wound Exudate Volume"/>
+			<min value="0"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation:hspcwoundExudate.component.code:woundExudateVolume">
+			<path value="Observation.component.code"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="72291-8"/>
+					<display value="Drainage amount from device of Exudate from wound"/>
+				</coding>
+			</patternCodeableConcept>
+		</element>
+		<element id="Observation:hspcwoundUndermining.component.valueQuantity:woundExudateVolume">
+			<path value="Observation.component.valueQuantity"/>
+			<type>
+				<code value="Quantity"/>
+			</type>
+		</element>
+		<element id="Observation:hspcwoundUndermining.component.valueQuantity.value:woundExudateVolume">
+			<path value="Observation.component.valueQuantity.value"/>
+			<min value="1"/>
+			<max value="1"/>
+		</element>
+		<element id="Observation:hspcwoundUndermining.component.valueQuantity.system:woundExudateVolume">
+			<path value="Observation.component.valueQuantity.system"/>
+            <type>
+                <code value="uri"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/uri"/>
+            </type>
+            <fixedUri value="http://unitsofmeasure.org"/>
+		</element>
+		<element id="Observation:hspcwoundUndermining.component.valueQuantity.code:woundExudateVolume">
+			<path value="Observation.component.valueQuantity.code"/>
+            <type>
+                <code value="code"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/code"/>
+            </type>
+            <fixedCode value="mL"/>
+		</element>
+    </differential>
+</StructureDefinition>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Practitioner xmlns="http://hl7.org/fhir">
+	<id value="Asserter-example"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+	</meta>
+	<identifier>
+		<system value="http://fakeurl.comm"/>
+		<value value="1234"/>
+	</identifier>
+	<name>
+		<family value="Ratchet"/>
+		<given value="Nurse"/>
+	</name>
+</Practitioner>

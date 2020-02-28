@@ -1,5 +1,5 @@
 <Observation xmlns="http://hl7.org/fhir">
-  <id value="WoundShape-Example"/>
+  <id value="WoundShape-example"/>
   <meta>
     <profile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundShape"/>
   </meta>
@@ -10,26 +10,25 @@
       <code value="exam"/>
       <display value="Exam"/>
     </coding>
-  </category>
-<!-- waiting for a LOINC code to be assigned -->  
-<!--<code>
+  </category> 
+  <code>
 	<coding>
-		<system value=""/>
-		<code value=""/>
-		<display value=""/>
+		<system value="http://loinc.org"/>
+		<code value="94086-6"/>
+		<display value="Wound Shape"/>
 	</coding>
-  </code> -->
+  </code>
   <subject>
     <display value="Adult Male1234"/>
   </subject>
   <encounter>
     <display value="GP Visit"/>
   </encounter>
-  <value>
+  <valueCodeableConcept>
 	<coding>
 		<system value="http://snomed.info/sct"/>
 		<code value="84360004"/>
 		<display value="Ovoid shape"/>
 	</coding>
-  </value>
+  </valueCodeableConcept>
 </Observation>

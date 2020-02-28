@@ -1,0 +1,65 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="WoundTunneling-example"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundTunneling"/>
+  </meta>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="exam"/>
+      <display value="Exam"/>
+    </coding>
+  </category>
+  <code>
+	<coding>
+		<system value="http://loinc.org"/>
+		<code value="72298-3"/>
+		<display value="Tunneling of Wound"/>
+	</coding>
+  </code>
+  <subject>
+    <display value="Adult Male1234"/>
+  </subject>
+  <encounter>
+    <display value="GP Visit"/>
+  </encounter>
+  <valueCodeableConcept>
+	<coding>
+		<system value="http://snomed.info/sct"/>
+		<code value="52101004"/>
+		<display value="Present"/>
+	</coding>
+  </valueCodeableConcept>
+  <component>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="72297-5"/>
+			<display value="Tunneling clock position of Wound"/>
+		</coding>
+	</code>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="260330005"/>
+			<display value="3 o'clock position"/>
+		</coding>
+	</valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="72296-7"/>
+			<display value="Tunneling [Length] of Wound"/>
+		</coding>
+	</code>
+	<valueQuantity>
+		<value value="3"/>
+		<unit value="cm"/>
+		<system value="http://unitsofmeasure.org"/>
+		<code value="cm"/>
+	</valueQuantity>
+  </component>
+</Observation>

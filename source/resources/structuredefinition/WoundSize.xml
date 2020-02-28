@@ -20,6 +20,18 @@
 			<short value="Wound Size"/>
             <definition value="Wound Size describes the dimensions of a wound."/>
         </element>
+		<element id="Observation:hspcwoundSize.extension:device">
+			<path value="Observation.extension"/>
+			<short value="Measurement Device"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/hspc/StructureDefinition/DeviceExt"/>
+			</type>
+			<binding>
+				<strength value="preferred"/>
+				<valueSet value="http://hl7.org/fhir/hspc/ValueSet/woundMeasurementDeviceVS"/>
+			</binding>
+		</element>
         <element id="Observation:hspcwoundSize.code">
             <path value="Observation.code"/>
 			<patternCodeableConcept>
@@ -39,14 +51,14 @@
 			<path value="Observation.component"/>
 			<slicing>
                 <discriminator>
-                    <type value="value"/>
-                    <path value="Observation.component"/>
+                    <type value="pattern"/>
+                    <path value="code"/>
                 </discriminator>
                 <ordered value="false"/>
                 <rules value="open"/>
             </slicing>
 			<min value="0"/>
-			<max value="1"/>
+			<max value="*"/>
 		</element>
 		<element id="Observation:hspcwoundSize.component:woundLength">
 			<path value="Observation.component"/>
@@ -257,8 +269,18 @@
 			<min value="0"/>
 			<max value="1"/>
 		</element>
-		<element id="Observation:hspcwoundSize.component.valueCodeableConcept:woundVolume">
-			<path value="Observation.component.valueCodeableConcept"/>
+		<element id="Observation.hspcwoundSize.component.code:woundVolume">
+			<path value="Observation.component.code"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="94083-3"/>
+					<display value="Wound volume"/>
+				</coding>
+			</patternCodeableConcept>
+		</element>
+		<element id="Observation:hspcwoundSize.component.valueQuantity:woundVolume">
+			<path value="Observation.component.valueQuantity"/>
 			<type>
 				<code value="Quantity"/>
 			</type>
@@ -281,17 +303,5 @@
             </type>
             <fixedCode value="mL"/>
         </element>
-		<element id="Observation:hspcwoundSize.extension:device">
-			<path value="Observation.extension"/>
-			<short value="Measurement Device"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/hspc/StructureDefinition/DeviceExt"/>
-			</type>
-			<binding>
-				<strength value="preferred"/>
-				<valueSet value="http://hl7.org/fhir/hspc/ValueSet/woundMeasurementDeviceVS"/>
-			</binding>
-		</element>
     </differential>
 </StructureDefinition>

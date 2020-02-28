@@ -1,5 +1,5 @@
 <Observation xmlns="http://hl7.org/fhir">
-  <id value="WoundRelatedObservationsPanel-Example"/>
+  <id value="WoundRelatedObservationsPanel-example"/>
   <meta>
     <profile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundRelatedObservationsPanel"/>
   </meta>
@@ -11,6 +11,13 @@
       <display value="Exam"/>
     </coding>
   </category>
+  <code>
+	<coding>
+		<system value="http://hl7.org/fhir/hspc/wound-observation-type"/>
+		<code value="WoundRelObsPan"/>
+		<display value="A collection of observations related to wounds.  Temporary local code system to be replaced with LOINC code TBD."/>
+	</coding>
+  </code>
   <subject>
     <display value="Adult Male1234"/>
   </subject>
@@ -18,31 +25,24 @@
     <display value="GP Visit"/>
   </encounter>
   <hasMember>
-	<reference value="Observation/WoundBedExample"/>
-	<display value="Wound Bed"/>
+	<reference value="Observation/WoundBed-example"/>
   </hasMember>
   <hasMember>
-	<reference value="Observation/WoundEdgeExample"/>
-	<display value="Wound Edge"/>
+	<reference value="Observation/WoundEdge-example"/>
   </hasMember>
   <hasMember>
-	<reference value="Condition/WoundTunnelingExample"/>
-	<display value="Wound Tunneling"/>
+	<reference value="Observation/WoundTunneling-example"/>
   </hasMember>
   <hasMember>
-	<reference value="Condition/WoundUnderminingExample"/>
-	<display value="Wound Undermining"/>
+	<reference value="Observation/WoundUndermining-example"/>
   </hasMember>
   <hasMember>
-	<reference value="Condition/WoundExudateExample"/>
-	<display value="Wound Exudate"/>
+	<reference value="Observation/WoundExudate-example"/>
   </hasMember>
   <hasMember>
-	<reference value="Observation/WoundSizeExample"/>
-	<display value="Wound Size"/>
+	<reference value="Observation/WoundSize-example"/>
   </hasMember>
   <hasMember>
-	<reference value="Observation/WoundShapeExample"/>
-	<display value="Wound Shape"/>
+	<reference value="Observation/WoundShape-example"/>
   </hasMember>
 </Observation>

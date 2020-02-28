@@ -236,13 +236,6 @@
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/WoundGradationExt"
-      },
-      "description" : "Wound Gradation Extension",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
         "reference" : "StructureDefinition/WoundRelatedObservationsPanelExt"
       },
       "description" : "Wound Related Observations Panel Extension",
@@ -253,13 +246,6 @@
         "reference" : "StructureDefinition/WoundGradationPanelExt"
       },
       "description" : "Wound Gradation Panel Extension",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/WoundAssert"
-      },
-      "description" : "Wound Assertion",
       "exampleBoolean" : false
     },
     {
@@ -285,13 +271,6 @@
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/WoundEdge"
-      },
-      "description" : "Wound Edge",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
         "reference" : "StructureDefinition/WoundSize"
       },
       "description" : "Wound Size",
@@ -313,86 +292,30 @@
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/WoundTunnelingDirection"
+        "reference" : "StructureDefinition/WoundEdge"
       },
-      "description" : "Wound Tunneling Direction",
+      "description" : "Wound Edge",
       "exampleBoolean" : false
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/WoundTunnelingLength"
+        "reference" : "StructureDefinition/WoundTunneling"
       },
-      "description" : "Wound Tunneling Length",
+      "description" : "Wound Tunneling",
       "exampleBoolean" : false
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/WoundTunnelingAssert"
+        "reference" : "StructureDefinition/WoundUndermining"
       },
-      "description" : "Wound Tunneling Assert",
+      "description" : "Wound Undermining",
       "exampleBoolean" : false
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/WoundUnderminingDirection"
+        "reference" : "StructureDefinition/WoundExudate"
       },
-      "description" : "Wound Undermining Direction",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/WoundUnderminingLength"
-      },
-      "description" : "Wound Undermining Length",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/WoundUnderminingAssert"
-      },
-      "description" : "Wound Undermining Assert",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/WoundExudateAmountDescription"
-      },
-      "description" : "Wound Exudate Amount Description",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/WoundExudateAppearance"
-      },
-      "description" : "Wound Exudate Appearance",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/WoundExudateColor"
-      },
-      "description" : "Wound Exudate Color",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/WoundExudateOdor"
-      },
-      "description" : "Wound Exudate Odor",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/WoundExudateVolume"
-      },
-      "description" : "Wound Exudate Volume",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/WoundExudateAssert"
-      },
-      "description" : "Wound Exudate Assert",
+      "description" : "Wound Exudate",
       "exampleBoolean" : false
     },
     {
@@ -449,6 +372,13 @@
         "reference" : "StructureDefinition/WoundRelatedObservationsPanel"
       },
       "description" : "Wound Related Observations Panel",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/WoundAssert"
+      },
+      "description" : "Wound Assertion",
       "exampleBoolean" : false
     },
     {
@@ -561,13 +491,6 @@
         "reference" : "ValueSet/woundMeasurementDeviceVS"
       },
       "description" : "Wound Measurement Device value set",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "ValueSet/woundGradationVS"
-      },
-      "description" : "Wound Gradation value set",
       "exampleBoolean" : false
     },
     {
@@ -733,7 +656,7 @@
     },
     {
       "reference" : {
-        "reference" : "Condition/WoundExudate-example"
+        "reference" : "Observation/WoundExudate-example"
       },
       "description" : "An example of a Wound Exudate assertion",
       "exampleBoolean" : true
@@ -782,41 +705,6 @@
     },
     {
       "reference" : {
-        "reference" : "Observation/WoundExudateAmountDescription-example"
-      },
-      "description" : "An example of a Wound Exudate Amount Description",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "Observation/WoundExudateAppearance-example"
-      },
-      "description" : "An example of a Wound Exudate Appearance",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "Observation/WoundExudateColor-example"
-      },
-      "description" : "An example of a Wound Exudate Color",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "Observation/WoundExudateOdor-example"
-      },
-      "description" : "An example of a Wound Exudate Odor",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "Observation/WoundExudateVolume-example"
-      },
-      "description" : "An example of a Wound Exudate Volume",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
         "reference" : "Observation/WoundShape-example"
       },
       "description" : "An example of a Wound Shape",
@@ -831,42 +719,14 @@
     },
     {
       "reference" : {
-        "reference" : "Observation/WoundTunnelingDirection-example"
-      },
-      "description" : "An example of a Wound Tunneling Direction",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "Observation/WoundTunnelingLength-example"
-      },
-      "description" : "An example of a Wound Tunneling Length",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "Condition/WoundTunneling-example"
+        "reference" : "Observation/WoundTunneling-example"
       },
       "description" : "An example of a Wound Tunneling assertion",
       "exampleBoolean" : true
     },
     {
       "reference" : {
-        "reference" : "Observation/WoundUnderminingDirection-example"
-      },
-      "description" : "An example of a Wound Undermining Direction",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "Observation/WoundUnderminingLength-example"
-      },
-      "description" : "An example of a Wound Undermining Length",
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "Condition/WoundUndermining-example"
+        "reference" : "Observation/WoundUndermining-example"
       },
       "description" : "An example of a Wound Undermining assertion",
       "exampleBoolean" : true
@@ -887,7 +747,7 @@
     },
     {
       "reference" : {
-        "reference" : "Observation/PEDISWoundGrade-example"
+        "reference" : "Observation/PEDISWoundGradeTotalScore-example"
       },
       "description" : "An example of a PEDIS Wound Grade observation",
       "exampleBoolean" : true
@@ -911,6 +771,27 @@
         "reference" : "Observation/WagnerWoundGrade-example"
       },
       "description" : "An example of a Wagner Wound Grade observation",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/WoundGradationPanel-example"
+      },
+      "description" : "An example of a Wagner Wound Grade observation",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Practitioner/Asserter-example"
+      },
+      "description" : "An example of a practioner with the role of 'asserter'.",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Practitioner/Recorder-example"
+      },
+      "description" : "An example of a practioner with the role of 'recorder'.",
       "exampleBoolean" : true
     }],
     "page" : {

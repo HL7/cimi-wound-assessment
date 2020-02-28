@@ -26,7 +26,7 @@
 				<coding>
 					<system value="http://loinc.org"/>
 					<code value="89254-7"/>
-					<display value="89254-7"/>
+					<display value="Wound bed panel"/>
 				</coding>
 			</patternCodeableConcept>
         </element>
@@ -40,34 +40,34 @@
 			<slicing>
                 <discriminator>
                     <type value="value"/>
-                    <path value="Observation.hasMember"/>
+                    <path value="reference"/>
                 </discriminator>
                 <ordered value="false"/>
                 <rules value="open"/>
             </slicing>
 			<short value="Wound Bed Observations"/>
 			<min value="0"/>
-			<max value="1"/>
+			<max value="2"/>
 		</element>
 		<element id="Observation:hspcwoundBed.hasMember:woundBedAppearance">
 			<path value="Observation.hasMember"/>
 			<sliceName value="woundBedAppearance"/>
 			<min value="0"/>
 			<max value="1"/>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundBedAppearance"/>
-			</type>
+		</element>
+		<element id="Observation:hspcwoundBed.hasMember.reference:woundBedAppearance">
+			<path value="Observation.hasMember.reference"/>
+			<fixedString value="http://hl7.org/fhir/hspc/StructureDefinition/WoundBedAppearance"/>
 		</element>
 		<element id="Observation:hspcwoundBed.hasMember:woundBedColor">
 			<path value="Observation.hasMember"/>
 			<sliceName value="woundBedColor"/>
 			<min value="0"/>
 			<max value="1"/>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundBedColor"/>
-			</type>
+		</element>
+		<element id="Observation:hspcwoundBed.hasMember.reference:woundBedColor">
+			<path value="Observation.hasMember.reference"/>
+			<fixedString value="http://hl7.org/fhir/hspc/StructureDefinition/WoundBedColor"/>
 		</element>
     </differential>
 </StructureDefinition>

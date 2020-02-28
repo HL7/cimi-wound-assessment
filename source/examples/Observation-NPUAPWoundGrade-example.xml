@@ -25,11 +25,11 @@
   <encounter>
     <display value="GP Visit"/>
   </encounter>
-  <value>
+  <valueCodeableConcept>
 	<coding>
-		<system value="http://hl7.org/fhir/hspc/wound-grade-concepts"/>
+		<system value="http://hl7.org/fhir/hspc/CodeSystem/wound-grade-concepts"/>
 		<code value="NPUAP-S2"/>
 		<display value="Stage 2 Pressure Injury: Partial-thickness skin loss with exposed dermis"/>
 	</coding>
-  </value>
+  </valueCodeableConcept>
 </Observation>

@@ -2,7 +2,7 @@
 
 ## Example
 
-[Wound Exudate example](Condition-WoundExudate-example.html)
+[Wound Exudate example](Observation-WoundExudate-example.html)
 
 
 {% include link-list.md %}

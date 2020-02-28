@@ -24,11 +24,11 @@
   <encounter>
     <display value="GP Visit"/>
   </encounter>
-  <value>
+  <valueCodeableConcept>
 	<coding>
 		<system value="http://snomed.info/sct"/>
 		<code value="427832005"/>
 		<display value="Dehiscence of wound of skin"/>
 	</coding>
-  </value>
+  </valueCodeableConcept>
 </Observation>

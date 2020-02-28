@@ -3,7 +3,8 @@
     <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
     <id value="WoundRelatedObservationsPanel"/>
     <url value="http://hl7.org/fhir/hspc/StructureDefinition/WoundRelatedObservationsPanel"/>
-    <name value="Wound Related Observations Panel"/>
+    <name value="WoundRelatedObservationsPanel"/>
+	<title value="Wound Related Observations Panel"/>
     <status value="draft"/>
     <date value="2019-06-19"/>
     <publisher value="CIMI"/>
@@ -19,6 +20,16 @@
             <path value="Observation"/>
             <definition value="Observations that are linked to a wound"/>
         </element>
+        <element id="Observation:cimiWoundRelatedObservationsPanel.code">
+            <path value="Observation.code"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://hl7.org/fhir/hspc/wound-observation-type"/>
+					<code value="WoundRelObsPan"/>
+					<display value="A collection of observations related to wounds.  Temporary local code system to be replaced with LOINC code TBD."/>
+				</coding>
+			</patternCodeableConcept>
+        </element>
 		<element id="Observation:cimiWoundRelatedObservationsPanel.value[x]">
 			<path value="Observation.value[x]"/>
 			<min value="0"/>
@@ -30,7 +41,7 @@
             <slicing id="10">
                 <discriminator>
                     <type value="profile"/>
-                    <path value="reference.resolve"/>
+                    <path value="hasMember.reference.resolve"/>
                 </discriminator>
                 <ordered value="false"/>
                 <rules value="open"/>
@@ -40,6 +51,7 @@
 		</element>
 		<element id="Observation:cimiWoundRelatedObservationsPanel.hasMember:woundBed">
 			<path value="Observation.hasMember"/>
+			<sliceName value="woundBed"/>			
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundBed"/>
@@ -47,6 +59,7 @@
 		</element>
 		<element id="Observation:cimiWoundRelatedObservationsPanel.hasMember:woundEdge">
 			<path value="Observation.hasMember"/>
+			<sliceName value="woundEdge"/>			
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundEdge"/>
@@ -54,27 +67,31 @@
 		</element>
 		<element id="Observation:cimiWoundRelatedObservationsPanel.hasMember:woundTunneling">
 			<path value="Observation.hasMember"/>
+			<sliceName value="woundTunneling"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundTunnelingAssert"/>
+				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundTunneling"/>
 			</type>
 		</element>
 		<element id="Observation:cimiWoundRelatedObservationsPanel.hasMember:woundUndermining">
 			<path value="Observation.hasMember"/>
+			<sliceName value="woundUndermining"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundUnderminingAssert"/>
+				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundUndermining"/>
 			</type>
 		</element>
 		<element id="Observation:cimiWoundRelatedObservationsPanel.hasMember:woundExudate">
 			<path value="Observation.hasMember"/>
+			<sliceName value="woundExudate"/>			
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundExudateAssert"/>
+				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundExudate"/>
 			</type>
 		</element>
 		<element id="Observation:cimiWoundRelatedObservationsPanel.hasMember:woundSize">
 			<path value="Observation.hasMember"/>
+			<sliceName value="woundSize"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundSize"/>
@@ -82,6 +99,7 @@
 		</element>
 		<element id="Observation:cimiWoundRelatedObservationsPanel.hasMember:woundShape">
 			<path value="Observation.hasMember"/>
+			<sliceName value="woundShape"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundShape"/>

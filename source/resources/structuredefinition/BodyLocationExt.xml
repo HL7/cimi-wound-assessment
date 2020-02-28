@@ -13,6 +13,10 @@
   <abstract value="false"/>
   <context>
 	<type value="element"/>
+	<expression value="Condition"/>
+  </context>
+  <context>
+	<type value="element"/>
 	<expression value="StructureDefinition"/>
   </context>
   <type value="Extension"/>
@@ -26,15 +30,6 @@
       <max value="1"/>
       <isModifier value="false"/>
     </element>
-    <element id="Extension:BodyLocationExt.url">
-      <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/hspc/StructureDefinition/BodyLocationExt"/>
-    </element>
-	<element id="Extension:BodyLocationExt.value">
-		<path value="Extension.value[x]"/>
-		<min value="0"/>
-		<max value="0"/>
-	</element>
 	<element id="Extension:BodyLocationExt.extension:AnatomicLocation">
 		<path value="Extension.extension"/>
 		<sliceName value="PrecoordinatedAnitomicLocation"/>
@@ -88,6 +83,15 @@
 			<code value="Extension"/>
 			<profile value="http://hl7.org/fhir/hspc/StructureDefinition/BodyLocationQualifierExt"/>
 		</type>
+	</element>
+    <element id="Extension:BodyLocationExt.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/hspc/StructureDefinition/BodyLocationExt"/>
+    </element>
+	<element id="Extension:BodyLocationExt.value">
+		<path value="Extension.value[x]"/>
+		<min value="0"/>
+		<max value="0"/>
 	</element>
   </differential>
 </StructureDefinition>

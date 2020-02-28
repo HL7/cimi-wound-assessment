@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
 	<id value="wound-grade-concepts"/>
-	<url value="http://hl7.org/fhir/hspc/wound-grade-concepts"/>
+	<url value="http://hl7.org/fhir/hspc/CodeSystem/wound-grade-concepts"/>
 	<version value="0.1.0"/>
 	<name value="WoundGradeConcepts"/>
 	<title value="Wound Grade Concepts code system"/>

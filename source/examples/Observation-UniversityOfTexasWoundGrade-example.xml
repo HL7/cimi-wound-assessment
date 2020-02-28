@@ -24,13 +24,13 @@
   <encounter>
     <display value="GP Visit"/>
   </encounter>
-  <value>
+  <valueCodeableConcept>
 	<coding>
-		<system value="http://hl7.org/fhir/hspc/wound-grade-concepts"/>
-		<code value="G2-SUPER"/>
-		<display value="Grade 1 – superficial wound not involving tendon, capsule, or bone"/>
+		<system value="http://hl7.org/fhir/hspc/CodeSystem/wound-grade-concepts"/>
+		<code value="G1-SUPER"/>
+		<display value="Grade 1 – superficial wound not involving tendon, capsule, or bone"/>
 	</coding>
-  </value>
+  </valueCodeableConcept>
   <component>
 	<code>
 		<coding>
@@ -40,9 +40,11 @@
 		</coding>
 	</code>
 	<valueCodeableConcept>
-		<system value="http://hl7.org/fhir/hspc/wound-grade-concepts"/>
-		<code value="SC-INIW"/>
-		<display value="Stage C – ischemic noninfected wounds"/>
+	  <coding>
+		<system value="http://hl7.org/fhir/hspc/CodeSystem/wound-grade-concepts"/>
+		<code value="SB-NI"/>
+		<display value="Stage B – non-ischemic infected wounds"/>
+	  </coding>
 	</valueCodeableConcept>
   </component>
 </Observation>

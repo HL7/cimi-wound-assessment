@@ -24,11 +24,11 @@
   <encounter>
     <display value="GP Visit"/>
   </encounter>
-  <value>
+  <valueCodeableConcept>
 	<coding>
 		<system value="http://snomed.info/sct"/>
 		<code value="371252007"/>
 		<display value="Black color"/>
 	</coding>
-  </value>
+  </valueCodeableConcept>
 </Observation>
