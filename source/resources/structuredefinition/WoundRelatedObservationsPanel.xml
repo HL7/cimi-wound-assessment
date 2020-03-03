@@ -26,7 +26,7 @@
 				<coding>
 					<system value="http://hl7.org/fhir/hspc/wound-observation-type"/>
 					<code value="WoundRelObsPan"/>
-					<display value="A collection of observations related to wounds.  Temporary local code system to be replaced with LOINC code TBD."/>
+					<display value="Wound Related Observations Panel"/>
 				</coding>
 			</patternCodeableConcept>
         </element>

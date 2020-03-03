@@ -38,6 +38,11 @@
 		<definition value="An observation of the University of Texas diabetic foot ulcer classification system.  Temporary local code system to be replaced with LOINC code TBD."/>
 	</concept>
 	<concept>
+		<code value="UofTGradeStage"/>
+		<display value="University of Texas Diabetic Foot Ulcer Grade Stage Classification System"/>
+		<definition value="An observation of the University of Texas diabetic foot ulcer grade stage classification system.  Temporary local code system to be replaced with LOINC code TBD."/>
+	</concept>
+	<concept>
 		<code value="UofTWoundGradeStage"/>
 		<display value="University of Texas Diabetic Foot Ulcer Grade Stage Classification System"/>
 		<definition value="An observation of the University of Texas diabetic foot ulcer classification system that assigns stages to grades.  Temporary local code system to be replaced with LOINC code TBD."/>

@@ -3,8 +3,8 @@
   <id value="woundAssessment" />
   <url value="http://hl7.org/fhir/hspc/ImplementationGuide/woundAssessment"/>
   <version value="0.1.0"/>
-  <name value="Wound Assessment Implementation Guide" />
-  <title value="Wound Assessment"/>
+  <name value="WoundAssessmentImplementationGuide" />
+  <title value="Wound Assessment Implementation Guide"/>
   <status value="draft" />
   <date value="2020-01-17"/>
   <publisher value="HL7 International - Clinical Information Modeling Initiative"/>
@@ -363,7 +363,8 @@
 			</reference>
 			<description value="Wound Related Observations Panel"/>
 			<exampleBoolean value="false"/>
-		</resource>		<resource>		
+		</resource>		
+		<resource>		
 			<reference>	
 				<reference value ="StructureDefinition/WoundAssert"/>
 			</reference>
@@ -644,13 +645,6 @@
 		<!--======================examples========================-->
 		<resource>		
 			<reference>
-				<reference value="Condition/WoundAssert-example"/>
-			</reference>
-			<description value="An example of a Wound assertion"/>
-			<exampleBoolean value="true"/>	
-		</resource>
-		<resource>		
-			<reference>
 				<reference value="Observation/WoundExudate-example"/>
 			</reference>
 			<description value="An example of a Wound Exudate assertion"/>
@@ -787,6 +781,13 @@
 				<reference value="Practitioner/Recorder-example"/>
 			</reference>
 			<description value="An example of a practioner with the role of 'recorder'."/>
+			<exampleBoolean value="true"/>	
+		</resource>
+		<resource>		
+			<reference>
+				<reference value="Condition/WoundAssert-example"/>
+			</reference>
+			<description value="An example of a Wound assertion"/>
 			<exampleBoolean value="true"/>	
 		</resource>
 		

@@ -3,7 +3,8 @@
     <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
     <id value="WoundEdgeDescription"/>
     <url value="http://hl7.org/fhir/hspc/StructureDefinition/WoundEdgeDescription"/>
-    <name value="Wound Edge Description"/>
+    <name value="WoundEdgeDescription"/>
+    <title value="Wound Edge Description"/>
     <status value="draft"/>
     <date value="2019-06-19"/>
     <publisher value="Healthcare Services Platform Consortium"/>

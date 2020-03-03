@@ -25,9 +25,9 @@
     <display value="GP Visit"/>
   </encounter>
   <hasMember>
-	<reference value="Observation/WoundBedColor-example"/>
+	<reference value="Observation/WoundBedAppearance-example"/>
   </hasMember>
   <hasMember>
-	<reference value="Observation/WoundBedAppearance-example"/>
+	<reference value="Observation/WoundBedColor-example"/>
   </hasMember>
 </Observation>

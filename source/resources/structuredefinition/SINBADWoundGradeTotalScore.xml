@@ -3,7 +3,8 @@
     <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
     <id value="SINBADWoundGradeTotalScore"/>
     <url value="http://hl7.org/fhir/hspc/StructureDefinition/SINBADWoundGradeTotalScore"/>
-    <name value="SINBAD Wound Grade Total Score"/>
+    <name value="SINBADWoundGradeTotalScore"/>
+    <title value="SINBAD Wound Grade Total Score"/>
     <status value="draft"/>
     <date value="2020-02-04"/>
     <publisher value="Healthcare Services Platform Consortium"/>
@@ -22,6 +23,14 @@
         </element>
 		<element id="Observation:hspcNPUAPWoundGrade.code">
 			<path value="Observation.code"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://hl7.org/fhir/hspc/wound-observation-type"/>
+                    <code value="SINBADWoundGrade"/>
+                    <display value="SINBAD (Site-Ischemia-Neuropathy-Bacterial infection-Depth) Diabetic Foot Ulcer Classification System"/>
+                </coding>
+            </patternCodeableConcept>
+        </element><!-- 
 		</element>
 		<element id="Observation:hspcNPUAPWoundGrade.code.coding">
 			<path value="Observation.code.coding"/>
@@ -37,7 +46,7 @@
 		<element id="Observation:hspcNPUAPWoundGrade.code.coding.display">
 			<path value="Observation.code.coding.display"/>
 			<fixedString value="SINBAD (Site-Ischemia-Neuropathy-Bacterial infection-Depth) Diabetic Foot Ulcer Classification System"/>
-		</element>
+		</element> -->
         <element id="Observation:hspcSINBADWoundGradeTotalScore.valueInteger">
             <path value="Observation.valueInteger"/>
             <short value="valueInteger"/>

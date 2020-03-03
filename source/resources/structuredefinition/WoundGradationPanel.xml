@@ -3,7 +3,7 @@
     <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
     <id value="WoundGradationPanel"/>
     <url value="http://hl7.org/fhir/hspc/StructureDefinition/WoundGradationPanel"/>
-    <name value="Wound Gradation Panel"/>
+    <name value="WoundGradationPanel"/>
     <status value="draft"/>
     <date value="2020-02-04"/>
     <publisher value="Logica Health"/>
@@ -25,7 +25,7 @@
 				<coding>
 					<system value="http://hl7.org/fhir/hspc/wound-observation-type"/>
 					<code value="WoundGradePan"/>
-					<display value="A collection of observations related to the classification of wound grades.  Temporary local code system to be replaced with LOINC code TBD."/>
+					<display value="Wound Gradation Panel"/>
 				</coding>
 			</patternCodeableConcept>
         </element>

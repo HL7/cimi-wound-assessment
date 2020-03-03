@@ -15,15 +15,15 @@
 	<coding>
 		<system value="http://hl7.org/fhir/hspc/wound-observation-type"/>
 		<code value="WoundGradePan"/>
-		<display value="A collection of observations related to the classification of wound grades.  Temporary local code system to be replaced with LOINC code TBD."/>
+		<display value="Wound Gradation Panel"/>
 	</coding>
   </code>
   <subject>
     <display value="Adult Male1234"/>
   </subject>
   <hasMember>
-	<reference value="Observation/NPUAPWoundGrade-example"/>
-	<display value="Wound Grade"/>
+    <reference value="Observation/NPUAPWoundGrade-example"/>
+    <display value="Wound Grade"/>
   </hasMember>
 </Observation>
   

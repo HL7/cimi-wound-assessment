@@ -32,19 +32,19 @@
 	</coding>
   </valueCodeableConcept>
   <component>
-	<code>
-		<coding>
-			<system value="http://hl7.org/fhir/hspc/wound-observation-type"/>
-			<code value="UofTWoundGradeStage"/>
-			<display value="University of Texas Diabetic Foot Ulcer Grade Stage Classification System"/>
-		</coding>
-	</code>
-	<valueCodeableConcept>
-	  <coding>
-		<system value="http://hl7.org/fhir/hspc/CodeSystem/wound-grade-concepts"/>
-		<code value="SB-NI"/>
-		<display value="Stage B – non-ischemic infected wounds"/>
-	  </coding>
-	</valueCodeableConcept>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/hspc/wound-observation-type"/>
+        <code value="UofTGradeStage"/>
+        <display value="University of Texas Diabetic Foot Ulcer Grade Stage Classification System"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+      <system value="http://hl7.org/fhir/hspc/CodeSystem/wound-grade-concepts"/>
+      <code value="SB-NI"/>
+      <display value="Stage B – non-ischemic infected wounds"/>
+      </coding>
+    </valueCodeableConcept>
   </component>
 </Observation>

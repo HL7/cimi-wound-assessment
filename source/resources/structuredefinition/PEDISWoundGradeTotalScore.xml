@@ -3,7 +3,8 @@
     <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
     <id value="PEDISWoundGradeTotalScore"/>
     <url value="http://hl7.org/fhir/hspc/StructureDefinition/PEDISWoundGradeTotalScore"/>
-    <name value="PEDIS Wound Grade Total Score"/>
+    <name value="PEDISWoundGradeTotalScore"/>
+    <title value="PEDIS Wound Grade Total Score"/>
     <status value="draft"/>
     <date value="2020-02-04"/>
     <publisher value="Healthcare Services Platform Consortium"/>

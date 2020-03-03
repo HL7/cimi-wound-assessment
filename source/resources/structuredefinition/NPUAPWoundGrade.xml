@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
     <id value="NPUAPWoundGrade"/>
     <url value="http://hl7.org/fhir/hspc/StructureDefinition/NPUAPWoundGrade"/>
-    <name value="NPUAP Wound Grade"/>
+    <name value="NPUAPWoundGrade"/>
+    <title value="NPUAP Wound Grade"/>
     <status value="draft"/>
     <date value="2020-02-04"/>
     <publisher value="Healthcare Services Platform Consortium"/>
@@ -21,7 +21,15 @@
         </element>
 		<element id="Observation:hspcNPUAPWoundGrade.code">
 			<path value="Observation.code"/>
-		</element>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://hl7.org/fhir/hspc/wound-observation-type"/>
+                    <code value="NPUAPWoundGrade"/>
+                    <display value="NPUAP Wound Grade System"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+		<!-- </element>
 		<element id="Observation:hspcNPUAPWoundGrade.code.coding">
 			<path value="Observation.code.coding"/>
 		</element>
@@ -36,7 +44,7 @@
 		<element id="Observation:hspcNPUAPWoundGrade.code.coding.display">
 			<path value="Observation.code.coding.display"/>
 			<fixedString value="NPUAP Wound Grade System"/>
-		</element>
+		</element> -->
         <element id="Observation:hspcNPUAPWoundGrade.valueCodeableConcept">
             <path value="Observation.valueCodeableConcept"/>
             <short value="valueCodeableConcept"/>
