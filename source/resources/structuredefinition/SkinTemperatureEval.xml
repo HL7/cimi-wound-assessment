@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="SkinTemperatureEval"/>
+    <url value="http://hl7.org/fhir/hspc/StructureDefinition/SkinTemperatureEval"/>
+	<version value="0.1.0"/>
+    <name value="SkinTemperatureEval"/>
+    <status value="draft"/>
+    <date value="2019-06-19"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="SkinTemperatureEval model is an evaluation the temperature of a patient's skin."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcSkinTemperatureEval">
+            <path value="Observation"/>
+            <definition value="SkinTemperatureEval model is an evaluation the temperature of a patient's skin."/>
+        </element>
+        <element id="Observation:hspcSkinTemperatureEval:associatedPrecondition">
+            <path value="Observation.extension"/>
+            <sliceName value="associatedPrecondition"/>
+            <short value="Associated Precondition"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="extension"/>
+                <profile value="http://hl7.org/fhir/hspc/StructureDefinition/AssociatedPreconditionExt"/>
+            </type>
+            <binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/hspc/ValueSet/skinTemperatureAssociatedPreconditionVS"/>
+            </binding>
+        </element>
+        <element id="Observation:hspcSkinTemperatureEval.key">
+            <path value="Observation.code"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="39106-0"/>
+                    <display value="Temperature of Skin"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Observation:hspcSkinTemperatureEval.valueCodeableConcept">
+            <path value="Observation.valueCodeableConcept"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/hspc/ValueSet/skinTemperatureVS"/>
+            </binding>
+        </element>
+        <element id="Observation:hspcSkinTemperatureEval.bodyLocation">
+            <path value="Observation.bodySite"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/hspc/ValueSet/skinTempBodyLocationVS"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

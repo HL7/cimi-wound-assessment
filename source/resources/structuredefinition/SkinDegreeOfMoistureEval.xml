@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="SkinDegreeOfMoistureEval"/>
+    <url value="http://hl7.org/fhir/hspc/StructureDefinition/SkinDegreeOfMoistureEval"/>
+	<version value="0.1.0"/>
+    <name value="SkinDegreeOfMoistureEval"/>
+    <status value="draft"/>
+    <date value="2019-06-19"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="SkinDegreeOfMoistureEval is an evaluation of the degree of moisture in the patient's skin."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcSkinDegreeOfMoistureEval">
+            <path value="Observation"/>
+            <definition value="SkinDegreeOfMoistureEval is an evaluation of the degree of moisture in the patient's skin."/>
+        </element>
+        <element id="Observation:hspcSkinDegreeOfMoistureEval.key">
+            <path value="Observation.code"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="39129-2"/>
+                    <display value="Moisture of Skin"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Observation:hspcSkinDegreeOfMoistureEval.valueCodeableConcept">
+            <path value="Observation.valueCodeableConcept"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/hspc/ValueSet/skinDegreeOfMoistureVS"/>
+            </binding>
+        </element>
+        <element id="Observation:hspcSkinDegreeOfMoistureEval.bodyLocation">
+            <path value="Observation.bodySite"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/hspc/ValueSet/skinBodyLocationPrecoordVS"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

@@ -30,23 +30,7 @@
                     <display value="SINBAD (Site-Ischemia-Neuropathy-Bacterial infection-Depth) Diabetic Foot Ulcer Classification System"/>
                 </coding>
             </patternCodeableConcept>
-        </element><!-- 
-		</element>
-		<element id="Observation:hspcNPUAPWoundGrade.code.coding">
-			<path value="Observation.code.coding"/>
-		</element>
-		<element id="Observation:hspcNPUAPWoundGrade.code.coding.system">
-			<path value="Observation.code.coding.system"/>
-			<fixedUri value="http://hl7.org/fhir/hspc/wound-observation-type"/>
-		</element>
-		<element id="Observation:hspcNPUAPWoundGrade.code.coding.code">
-			<path value="Observation.code.coding.code"/>
-			<fixedCode value="SINBADWoundGrade"/>
-		</element>
-		<element id="Observation:hspcNPUAPWoundGrade.code.coding.display">
-			<path value="Observation.code.coding.display"/>
-			<fixedString value="SINBAD (Site-Ischemia-Neuropathy-Bacterial infection-Depth) Diabetic Foot Ulcer Classification System"/>
-		</element> -->
+        </element>
         <element id="Observation:hspcSINBADWoundGradeTotalScore.valueInteger">
             <path value="Observation.valueInteger"/>
             <short value="valueInteger"/>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="MucousMembraneIntegrityEval"/>
+    <url value="http://hl7.org/fhir/hspc/StructureDefinition/MucousMembraneIntegrityEval"/>
+	<version value="0.1.0"/>
+    <name value="MucousMembraneIntegrityEval"/>
+    <title value="Mucous Membrane Integrity Evaluation"/>
+    <status value="draft"/>
+    <date value="2019-06-19"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="Mucous Membrane Integrity captures how intact one's mucus membranes are."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcMucousMembraneIntegrityEval">
+            <path value="Observation"/>
+            <definition value="Mucous Membrane Integrity captures how intact one's mucus membranes are."/>
+        </element>
+        <element id="Observation:hspcMucousMembraneIntegrityEval.key">
+            <path value="Observation.code"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="80347-8"/>
+                    <display value="Mucous membrane integrity of Mucous membrane"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Observation:hspcMucousMembraneIntegrityEval.valueCodeableConcept">
+            <path value="Observation.valueCodeableConcept"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/hspc/ValueSet/intactnessVS"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

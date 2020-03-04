@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="SkinAssessmentPanel"/>
+    <url value="http://hl7.org/fhir/hspc/StructureDefinition/SkinAssessmentPanel"/>
+	<version value="0.1.0"/>
+    <name value="SkinAssessmentPanel"/>
+    <status value="draft"/>
+    <date value="2019-06-19"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="SkinAssessmentPanel contains all of the necessary elements needed for a skin nursing assessment."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcSkinAssessmentPanel">
+            <path value="Observation"/>
+            <definition value="SkinAssessmentPanel contains all of the necessary elements needed for a skin nursing assessment."/>
+        </element>
+        <element id="Observation:hspcSkinAssessmentPanel.key">
+            <path value="Observation.code"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="72284-3"/>
+                    <display value="Skin assessment panel"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+		<element id="Observation:hspcSkinAssessmentPanel.hasMember">
+			<path value="Observation.hasMember"/>
+			<sliceName value="RelatedObservations"/>
+            <slicing id="10">
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="target.reference.resolve"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+		</element>
+		<element id="Observation:hspcSkinAssessmentPanel.hasMember:skinColorEval">
+			<path value="Observation.hasMember"/>
+			<sliceName value="SkinColorEval"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/SkinColorEval"/>
+			</type>
+		</element>
+		<element id="Observation:hspcSkinAssessmentPanel.hasMember:skinDegreeOfMoistureEval">
+			<path value="Observation.hasMember"/>
+			<sliceName value="SkinDegreeofMoistureEval"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/SkinDegreeOfMoistureEval"/>
+			</type>
+		</element>
+		<element id="Observation:hspcSkinAssessmentPanel.hasMember:skinTemperatureEval">
+			<path value="Observation.hasMember"/>
+			<sliceName value="SkinTemperatureEval"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/SkinTemperatureEval"/>
+			</type>
+		</element>
+		<element id="Observation:hspcSkinAssessmentPanel.hasMember:skinTurgorEval">
+			<path value="Observation.hasMember"/>
+			<sliceName value="SkinTurgorEval"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/SkinTurgorEval"/>
+			</type>
+		</element>
+		<element id="Observation:hspcSkinAssessmentPanel.hasMember:skinIntegrityEval">
+			<path value="Observation.hasMember"/>
+			<sliceName value="SkinIntegrityEval"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/SkinIntegrityEval"/>
+			</type>
+		</element>
+		<element id="Observation:hspcSkinAssessmentPanel.hasMember:mucousMembraneIntegrityEval">
+			<path value="Observation.hasMember"/>
+			<sliceName value="MucousMembraneItegrityEval"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/MucousMembraneIntegrityEval"/>
+			</type>
+		</element>
+		<element id="Observation:hspcSkinAssessmentPanel.hasMember:pressurePointsExamined">
+			<path value="Observation.hasMember"/>
+			<sliceName value="PressurePointsExamined"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/PressurePointsExamined"/>
+			</type>
+		</element>
+    </differential>
+</StructureDefinition>

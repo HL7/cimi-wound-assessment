@@ -30,23 +30,7 @@
 					<display value="University of Texas Diabetic Foot Ulcer Classification System"/>
 				</coding>
 			</patternCodeableConcept>
-		</element><!-- 
 		</element>
-		<element id="Observation:hspcNPUAPWoundGrade.code.coding">
-			<path value="Observation.code.coding"/>
-		</element>
-		<element id="Observation:hspcNPUAPWoundGrade.code.coding.system">
-			<path value="Observation.code.coding.system"/>
-			<fixedUri value="http://hl7.org/fhir/hspc/wound-observation-type"/>
-		</element>
-		<element id="Observation:hspcNPUAPWoundGrade.code.coding.code">
-			<path value="Observation.code.coding.code"/>
-			<fixedCode value="UofTWoundGrade"/>
-		</element>
-		<element id="Observation:hspcNPUAPWoundGrade.code.coding.display">
-			<path value="Observation.code.coding.display"/>
-			<fixedString value="University of Texas Diabetic Foot Ulcer Classification System"/>
-		</element> -->
 		<element id="Observation:hspcUniversityOfTexasWoundGrade.valueCodeableConcept">
 			<path value="Observation.valueCodeableConcept"/>
 			<type>

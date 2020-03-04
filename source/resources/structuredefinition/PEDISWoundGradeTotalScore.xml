@@ -23,21 +23,13 @@
         </element>
 		<element id="Observation:hspcNPUAPWoundGrade.code">
 			<path value="Observation.code"/>
-		</element>
-		<element id="Observation:hspcNPUAPWoundGrade.code.coding">
-			<path value="Observation.code.coding"/>
-		</element>
-		<element id="Observation:hspcNPUAPWoundGrade.code.coding.system">
-			<path value="Observation.code.coding.system"/>
-			<fixedUri value="http://hl7.org/fhir/hspc/wound-observation-type"/>
-		</element>
-		<element id="Observation:hspcNPUAPWoundGrade.code.coding.code">
-			<path value="Observation.code.coding.code"/>
-			<fixedCode value="PEDISWoundGrade"/>
-		</element>
-		<element id="Observation:hspcNPUAPWoundGrade.code.coding.display">
-			<path value="Observation.code.coding.display"/>
-			<fixedString value="PEDIS (Perfusion-Extent-Depth-Infection-Sensitivity) Diabetic Foot Ulcer Classification System"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://hl7.org/fhir/hspc/wound-observation-type"/>
+                    <code value="PEDISWoundGrade"/>
+                    <display value="PEDIS (Perfusion-Extent-Depth-Infection-Sensitivity) Diabetic Foot Ulcer Classification System"/>
+                </coding>
+            </patternCodeableConcept>
 		</element>
         <element id="Observation:hspcPEDISWoundGradeTotalScore.valueInteger">
             <path value="Observation.valueInteger"/>

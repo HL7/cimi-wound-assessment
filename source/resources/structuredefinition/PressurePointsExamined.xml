@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="PressurePointsExamined"/>
+    <url value="http://hl7.org/fhir/hspc/StructureDefinition/PressurePointsExamined"/>
+	<version value="0.1.0"/>
+    <name value="PressurePointsExamined"/>
+    <status value="draft"/>
+    <date value="2019-06-19"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="PressurePointsExamined describes specific locations on the body where pressure ulcers may occur"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcPressurePointsExamined">
+            <path value="Observation"/>
+            <definition value="PressurePointsExamined describes specific locations on the body where pressure ulcers may occur"/>
+        </element>
+        <element id="Observation:hspcPressurePointsExamined.key">
+            <path value="Observation.code"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="80345-2"/>
+                    <display value="Pressure points examined"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Observation:hspcPressurePointsExamined.valueCodeableConcept">
+            <path value="Observation.valueCodeableConcept"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/hspc/ValueSet/pressurePointsVS"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>
