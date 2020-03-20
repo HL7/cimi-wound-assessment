@@ -27,7 +27,7 @@
             <min value="0"/>
             <max value="1"/>
             <type>
-                <code value="extension"/>
+                <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/hspc/StructureDefinition/AssociatedPreconditionExt"/>
             </type>
             <binding>

@@ -38,22 +38,30 @@
         <profile value="http://hl7.org/fhir/hspc/StructureDefinition/RecurrenceValueExt"/>
       </type>
     </element>
-	<element id="Extension:Recurrence.extension:Periodicity">
-	  <path value="Extension.extension"/>
-	  <sliceName value="Periodicity"/>
-	  <type>
-		<code value="Extension"/>
-		<profile value="http://hl7.org/fhir/hspc/StructureDefinition/PeriodicityExt"/>
-	  </type>
-	</element>
+	  <element id="Extension:Recurrence.extension:Periodicity">
+	    <path value="Extension.extension"/>
+	    <sliceName value="Periodicity"/>
+	   <type>
+		  <code value="Extension"/>
+		  <profile value="http://hl7.org/fhir/hspc/StructureDefinition/PeriodicityExt"/>
+	   </type>
+	  </element>
+    <element id="Extension:Recurrence.extension:PreviousOcurrance">
+      <path value="Extension.extension"/>
+      <sliceName value="PreviousOccurance"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/hspc/StructureDefinition/PreviousOccurrenceExt"/>
+      </type>
+    </element>
     <element id="Extension:Recurrence.url">
       <path value="Extension.url"/>
       <fixedUri value="http://hl7.org/fhir/hspc/StructureDefinition/RecurrenceExt"/>
     </element>
-	<element id="Extension:Recurrence.value[x]">
-	  <path value="Extension.value[x]"/>
-	  <min value="0"/>
-	  <max value="0"/>
-	</element>
+	  <element id="Extension:Recurrence.value[x]">
+	    <path value="Extension.value[x]"/>
+	    <min value="0"/>
+	    <max value="0"/>
+	  </element>
   </differential>
 </StructureDefinition>

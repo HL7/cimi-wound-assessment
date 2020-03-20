@@ -54,6 +54,13 @@
     }],
     "resource" : [{
       "reference" : {
+        "reference" : "StructureDefinition/AssociatedPreconditionExt"
+      },
+      "description" : "Associated Precondition",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "StructureDefinition/PresentOnAdmissionExt"
       },
       "description" : "Present on Admission",
@@ -190,6 +197,13 @@
         "reference" : "StructureDefinition/PeriodicityExt"
       },
       "description" : "Periodicity",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/PreviousOccurrenceExt"
+      },
+      "description" : "Previous Occurrence Extension",
       "exampleBoolean" : false
     },
     {
@@ -379,6 +393,62 @@
         "reference" : "StructureDefinition/WoundAssert"
       },
       "description" : "Wound Assertion",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/MucousMembraneIntegrityEval"
+      },
+      "description" : "Mucous Membrane Integrity",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/PressurePointsExamined"
+      },
+      "description" : "Pressure Points Examined",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/SkinColorEval"
+      },
+      "description" : "Skin Color Eval",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/SkinDegreeOfMoistureEval"
+      },
+      "description" : "Skin Degree Of Moisture",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/SkinIntegrityEval"
+      },
+      "description" : "Skin Integrity",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/SkinTemperatureEval"
+      },
+      "description" : "Skin Temperature",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/SkinTurgorEval"
+      },
+      "description" : "Skin Turgor",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/SkinAssessmentPanel"
+      },
+      "description" : "Skin Assessment Panel",
       "exampleBoolean" : false
     },
     {
@@ -649,6 +719,90 @@
     },
     {
       "reference" : {
+        "reference" : "ValueSet/intactnessVS"
+      },
+      "description" : "Intactness value set",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/skinBodyLocationPrecoordVS"
+      },
+      "description" : "Skin Body Location Precoordinated value set",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/skinColorAssociatedPreconditionVS"
+      },
+      "description" : "Skin Color Associated Precondition value set",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/skinColorVS"
+      },
+      "description" : "Skin Color value set",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/skinDegreeOfMoistureVS"
+      },
+      "description" : "Skin Degree Of Moisture value set",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/skinIntegrityVS"
+      },
+      "description" : "Skin Integrity value set",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/skinTempBodyLocationVS"
+      },
+      "description" : "Skin Temp Body Location value set",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/skinTemperatureAssociatedPreconditionVS"
+      },
+      "description" : "Skin Temperature Associated Precondition value set",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/skinTemperatureVS"
+      },
+      "description" : "Skin Temperature value set",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/skinTurgorVS"
+      },
+      "description" : "Skin Turgor value set",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/turgorBodyLocationVS"
+      },
+      "description" : "Turgor Body Location value set",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/pressurePointsVS"
+      },
+      "description" : "Pressure Points value set",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "Observation/WoundExudate-example"
       },
       "description" : "An example of a Wound Exudate assertion",
@@ -792,6 +946,62 @@
         "reference" : "Condition/WoundAssert-example"
       },
       "description" : "An example of a Wound assertion",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/MucousMembraneIntegrityEval-example"
+      },
+      "description" : "An example of a Mucous Membrane Integrity evaluation",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/PressurePointsExamined-example"
+      },
+      "description" : "An example of a Pressure Points Examined evaluation",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/SkinColorEval-example"
+      },
+      "description" : "An example of a Skin Color evaluation",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/SkinDegreeOfMoistureEval-example"
+      },
+      "description" : "An example of a Skin Degree of Moisture evaluation",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/SkinIntegrityEval-example"
+      },
+      "description" : "An example of a Skin Integrity evaluation",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/SkinTemperatureEval-example"
+      },
+      "description" : "An example of a Skin Temperature evaluation",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/SkinTurgorEval-example"
+      },
+      "description" : "An example of a Skin Turgor evaluation",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/SkinAssessmentPanel-example"
+      },
+      "description" : "An example of a Skin Assessment Panel",
       "exampleBoolean" : true
     }],
     "page" : {

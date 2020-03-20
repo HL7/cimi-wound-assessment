@@ -26,7 +26,7 @@
   </encounter>
   <hasMember>
 	<reference value="Observation/WoundBed-example"/>
-  </hasMember><!-- 
+  </hasMember>
   <hasMember>
 	<reference value="Observation/WoundEdge-example"/>
   </hasMember>
@@ -44,5 +44,5 @@
   </hasMember>
   <hasMember>
 	<reference value="Observation/WoundShape-example"/>
-  </hasMember> -->
+  </hasMember>
 </Observation>

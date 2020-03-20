@@ -13,9 +13,9 @@
   </category>
   <code>
     <coding>
-      <system value="http://hl7.org/fhir/hspc/wound-observation-type"/>
-      <code value="NPUAPWoundGrade"/>
-      <display value="NPUAP Wound Grade System"/>
+      <system value="http://loinc.org"/>
+      <code value="72527-5"/>
+      <display value="Pressure ulcer stage NPUAP"/>
     </coding>
     <text value="National Pressure Ulcer Advisory Panel Pressure Injury Grade System"/>
   </code>

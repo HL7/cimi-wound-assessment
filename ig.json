@@ -123,6 +123,7 @@
 	"StructureDefinition/WoundAssessmentInterpretationExt":{"base":"StructureDefinition-WoundAssessmentInterpretationExt.html"},
 	"StructureDefinition/RecurrenceValueExt":{"base":"StructureDefinition-RecurrenceValueExt.html"},
 	"StructureDefinition/PeriodicityExt":{"base":"StructureDefinition-PeriodicityExt.html"},
+  "StructureDefinition/PreviousOccurrenceExt":{"base":"StructureDefinition-PreviousOccurrenceExt.html"},
 	"StructureDefinition/RecurrenceExt":{"base":"StructureDefinition-RecurrenceExt.html"},
 	"StructureDefinition/AnatomicLocationExt":{"base":"StructureDefinition-AnatomicLocationExt.html"},
 	"StructureDefinition/BodyLocationExt":{"base":"StructureDefinition-BodyLocationExt.html"},
@@ -215,6 +216,7 @@
   "ValueSet/skinTemperatureVS":{"base":"ValueSet-skinTemperatureVS.html"},
   "ValueSet/skinTurgorVS":{"base":"ValueSet-skinTurgorVS.html"},
   "ValueSet/turgorBodyLocationVS":{"base":"ValueSet-turgorBodyLocationVS.html"},
+  "ValueSet/pressurePointsVS":{"base":"ValueSet-pressurePointsVS.html"},
 	
 	"Observation/WoundBedAppearance-example":{"base":"Observation-WoundBedAppearance-example.html"}, 
 	"Observation/WoundBedColor-example":{"base":"Observation-WoundBedColor-example.html"},
@@ -241,6 +243,14 @@
 	"Observation/WagnerWoundGrade-example":{"base":"Observation-WagnerWoundGrade-example.html"},
 	"Observation/WoundGradationPanel-example":{"base":"Observation-WoundGradationPanel-example.html"},
 	"Practitioner/Asserter-example":{"base":"Practitioner-Asserter-example.html"},
-	"Practitioner/Recorder-example":{"base":"Practitioner-Recorder-example.html"}
+	"Practitioner/Recorder-example":{"base":"Practitioner-Recorder-example.html"},
+	"Observation/MucousMembraneIntegrityEval-example":{"base":"Observation-MucousMembraneIntegrityEval-example.html"},
+	"Observation/PressurePointsExamined-example":{"base":"Observation-PressurePointsExamined-example.html"},
+	"Observation/SkinColorEval-example":{"base":"Observation-SkinColorEval-example.html"},
+	"Observation/SkinDegreeOfMoistureEval-example":{"base":"Observation-SkinDegreeOfMoistureEval-example.html"},
+	"Observation/SkinIntegrityEval-example":{"base":"Observation-SkinIntegrityEval-example.html"},
+	"Observation/SkinTemperatureEval-example":{"base":"Observation-SkinTemperatureEval-example.html"},
+	"Observation/SkinTurgorEval-example":{"base":"Observation-SkinTurgorEval-example.html"},
+	"Observation/SkinAssessmentPanel-example":{"base":"Observation-SkinAssessmentPanel-example.html"}
   }
 }

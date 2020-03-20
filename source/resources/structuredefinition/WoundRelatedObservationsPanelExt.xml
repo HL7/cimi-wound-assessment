@@ -37,7 +37,7 @@
     <element id="Extension:WoundRelatedObservationsPanelExt.valueReference">
       <path value="Extension.valueReference"/>
       <type>
-        <code value="Reference"/>
+        <code value="Reference"/> 
         <profile value="http://hl7.org/fhir/StructureDefinition/Reference"/>
         <targetProfile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundRelatedObservationsPanel"/>
       </type>

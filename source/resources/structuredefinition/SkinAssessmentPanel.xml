@@ -30,13 +30,18 @@
                 </coding>
             </patternCodeableConcept>
         </element>
+		<element id="Observation:hspcSkinAssessmentPanel.value[x]">
+			<path value="Observation.value[x]"/>
+			<min value="0"/>
+			<max value="0"/>
+		</element>
 		<element id="Observation:hspcSkinAssessmentPanel.hasMember">
 			<path value="Observation.hasMember"/>
 			<sliceName value="RelatedObservations"/>
             <slicing id="10">
                 <discriminator>
                     <type value="profile"/>
-                    <path value="target.reference.resolve"/>
+                    <path value="reference.resolve"/>
                 </discriminator>
                 <ordered value="false"/>
                 <rules value="open"/>

@@ -41,7 +41,7 @@
             <slicing id="10">
                 <discriminator>
                     <type value="profile"/>
-                    <path value="hasMember.reference.resolve"/>
+                    <path value="reference.resolve"/>
                 </discriminator>
                 <ordered value="false"/>
                 <rules value="open"/>

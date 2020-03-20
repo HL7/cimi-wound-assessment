@@ -50,6 +50,13 @@
     </grouping>
     <resource>
       <reference>
+        <reference value="StructureDefinition/AssociatedPreconditionExt"/>
+      </reference>
+      <description value="Associated Precondition"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/PresentOnAdmissionExt"/>
       </reference>
       <description value="Present on Admission"/>
@@ -186,6 +193,13 @@
         <reference value="StructureDefinition/PeriodicityExt"/>
       </reference>
       <description value="Periodicity"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/PreviousOccurrenceExt"/>
+      </reference>
+      <description value="Previous Occurrence Extension"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -375,6 +389,62 @@
         <reference value="StructureDefinition/WoundAssert"/>
       </reference>
       <description value="Wound Assertion"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/MucousMembraneIntegrityEval"/>
+      </reference>
+      <description value="Mucous Membrane Integrity"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/PressurePointsExamined"/>
+      </reference>
+      <description value="Pressure Points Examined"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/SkinColorEval"/>
+      </reference>
+      <description value="Skin Color Eval"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/SkinDegreeOfMoistureEval"/>
+      </reference>
+      <description value="Skin Degree Of Moisture"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/SkinIntegrityEval"/>
+      </reference>
+      <description value="Skin Integrity"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/SkinTemperatureEval"/>
+      </reference>
+      <description value="Skin Temperature"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/SkinTurgorEval"/>
+      </reference>
+      <description value="Skin Turgor"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/SkinAssessmentPanel"/>
+      </reference>
+      <description value="Skin Assessment Panel"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -645,6 +715,90 @@
     </resource>
     <resource>
       <reference>
+        <reference value="ValueSet/intactnessVS"/>
+      </reference>
+      <description value="Intactness value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/skinBodyLocationPrecoordVS"/>
+      </reference>
+      <description value="Skin Body Location Precoordinated value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/skinColorAssociatedPreconditionVS"/>
+      </reference>
+      <description value="Skin Color Associated Precondition value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/skinColorVS"/>
+      </reference>
+      <description value="Skin Color value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/skinDegreeOfMoistureVS"/>
+      </reference>
+      <description value="Skin Degree Of Moisture value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/skinIntegrityVS"/>
+      </reference>
+      <description value="Skin Integrity value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/skinTempBodyLocationVS"/>
+      </reference>
+      <description value="Skin Temp Body Location value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/skinTemperatureAssociatedPreconditionVS"/>
+      </reference>
+      <description value="Skin Temperature Associated Precondition value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/skinTemperatureVS"/>
+      </reference>
+      <description value="Skin Temperature value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/skinTurgorVS"/>
+      </reference>
+      <description value="Skin Turgor value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/turgorBodyLocationVS"/>
+      </reference>
+      <description value="Turgor Body Location value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/pressurePointsVS"/>
+      </reference>
+      <description value="Pressure Points value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Observation/WoundExudate-example"/>
       </reference>
       <description value="An example of a Wound Exudate assertion"/>
@@ -788,6 +942,62 @@
         <reference value="Condition/WoundAssert-example"/>
       </reference>
       <description value="An example of a Wound assertion"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/MucousMembraneIntegrityEval-example"/>
+      </reference>
+      <description value="An example of a Mucous Membrane Integrity evaluation"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/PressurePointsExamined-example"/>
+      </reference>
+      <description value="An example of a Pressure Points Examined evaluation"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/SkinColorEval-example"/>
+      </reference>
+      <description value="An example of a Skin Color evaluation"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/SkinDegreeOfMoistureEval-example"/>
+      </reference>
+      <description value="An example of a Skin Degree of Moisture evaluation"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/SkinIntegrityEval-example"/>
+      </reference>
+      <description value="An example of a Skin Integrity evaluation"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/SkinTemperatureEval-example"/>
+      </reference>
+      <description value="An example of a Skin Temperature evaluation"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/SkinTurgorEval-example"/>
+      </reference>
+      <description value="An example of a Skin Turgor evaluation"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/SkinAssessmentPanel-example"/>
+      </reference>
+      <description value="An example of a Skin Assessment Panel"/>
       <exampleBoolean value="true"/>
     </resource>
     <page>
