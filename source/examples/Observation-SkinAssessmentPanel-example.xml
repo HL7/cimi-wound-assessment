@@ -1,0 +1,46 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="SkinAssessmentPanel-example"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/hspc/StructureDefinition/SkinAssessmentPanel"/>
+  </meta>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="exam"/>
+      <display value="Exam"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+        <system value="http://loinc.org"/>
+        <code value="72284-3"/>
+        <display value="Skin assessment panel"/>
+    </coding>
+  </code>
+  <subject>
+    <display value="Adult Male1234"/>
+  </subject>
+  <hasMember>
+    <reference value="Observation/MucousMembraneIntegrityEval-example"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/PressurePointsExamined-example"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/SkinColorEval-example"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/SkinDegreeOfMoistureEval-example"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/SkinIntegrityEval-example"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/SkinTemperatureEval-example"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/SkinTurgorEval-example"/>
+  </hasMember>
+</Observation>
+  

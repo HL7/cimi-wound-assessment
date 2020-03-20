@@ -1,0 +1,50 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="SkinColorEval-example"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/hspc/StructureDefinition/SkinColorEval"/>
+  </meta>
+  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/AssociatedPreconditionExt">
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="129861002"/>
+            <display value="Physical activity (finding)"/>
+        </coding>
+    </valueCodeableConcept>
+  </extension>      
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="exam"/>
+      <display value="Exam"/>
+    </coding>
+  </category> 
+  <code>
+    <coding>
+        <system value="http://loinc.org"/>
+        <code value="39107-8"/>
+        <display value="Color of Skin"/>
+    </coding>
+  </code>
+  <subject>
+    <display value="Adult Male1234"/>
+  </subject>
+  <encounter>
+    <display value="GP Visit"/>
+  </encounter>
+  <valueCodeableConcept>
+	<coding>
+		<system value="http://snomed.info/sct"/>
+		<code value="406128001"/>
+		<display value="Mottling of skin"/>
+	</coding>
+  </valueCodeableConcept>
+  <bodySite>
+    <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="74160004"/>
+        <display value="Skin structure of chest"/>
+    </coding>
+  </bodySite>
+</Observation>

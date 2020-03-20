@@ -1,0 +1,41 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="SkinTurgorEval-example"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/hspc/StructureDefinition/SkinTurgorEval"/>
+  </meta>      
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="exam"/>
+      <display value="Exam"/>
+    </coding>
+  </category> 
+  <code>
+    <coding>
+        <system value="http://loinc.org"/>
+        <code value="39109-4"/>
+        <display value="Turgor [Interpretation} of Skin"/>
+    </coding>
+  </code>
+  <subject>
+    <display value="Adult Male1234"/>
+  </subject>
+  <encounter>
+    <display value="GP Visit"/>
+  </encounter>
+  <valueCodeableConcept>
+	<coding>
+		<system value="http://snomed.info/sct"/>
+		<code value="425244000"/>
+		<display value="Decreased skin turgor"/>
+	</coding>
+  </valueCodeableConcept>
+  <bodySite>
+    <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="762099003"/>
+        <display value="Skin structure of left hand"/>
+    </coding>
+  </bodySite>
+</Observation>

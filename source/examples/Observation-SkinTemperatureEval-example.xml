@@ -1,0 +1,50 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="SkinTemperatureEval-example"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/hspc/StructureDefinition/SkinTemperatureEval"/>
+  </meta>  
+  <extension url="http://hl7.org/fhir/hspc/StructureDefinition/AssociatedPreconditionExt">
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="386661006"/>
+            <display value="Fever"/>
+        </coding>
+    </valueCodeableConcept>
+  </extension>    
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="exam"/>
+      <display value="Exam"/>
+    </coding>
+  </category> 
+  <code>
+    <coding>
+        <system value="http://loinc.org"/>
+        <code value="39106-0"/>
+        <display value="Temperature of Skin"/>
+    </coding>
+  </code>
+  <subject>
+    <display value="Adult Male1234"/>
+  </subject>
+  <encounter>
+    <display value="GP Visit"/>
+  </encounter>
+  <valueCodeableConcept>
+	<coding>
+		<system value="http://snomed.info/sct"/>
+		<code value="707793005"/>
+		<display value="Hot skin"/>
+	</coding>
+  </valueCodeableConcept>
+  <bodySite>
+    <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="68698007"/>
+        <display value="Skin structure of forehead"/>
+    </coding>
+  </bodySite>
+</Observation>

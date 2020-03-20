@@ -1,0 +1,41 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="SkinDegreeOfMoistureEval-example"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/hspc/StructureDefinition/SkinDegreeOfMoistureEval"/>
+  </meta>      
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="exam"/>
+      <display value="Exam"/>
+    </coding>
+  </category> 
+  <code>
+    <coding>
+        <system value="http://loinc.org"/>
+        <code value="39129-2"/>
+        <display value="Moisture of Skin"/>
+    </coding>
+  </code>
+  <subject>
+    <display value="Adult Male1234"/>
+  </subject>
+  <encounter>
+    <display value="GP Visit"/>
+  </encounter>
+  <valueCodeableConcept>
+	<coding>
+		<system value="http://snomed.info/sct"/>
+		<code value="102598000"/>
+		<display value="Clammy skin"/>
+	</coding>
+  </valueCodeableConcept>
+  <bodySite>
+    <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="371309009"/>
+        <display value="Skin structure of upper arm"/>
+    </coding>
+  </bodySite>
+</Observation>

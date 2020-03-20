@@ -1,0 +1,41 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="SkinIntegrityEval-example"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/hspc/StructureDefinition/SkinIntegrityEval"/>
+  </meta>      
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="exam"/>
+      <display value="Exam"/>
+    </coding>
+  </category> 
+  <code>
+    <coding>
+        <system value="http://loinc.org"/>
+        <code value="80344-5"/>
+        <display value="Skin integrity"/>
+    </coding>
+  </code>
+  <subject>
+    <display value="Adult Male1234"/>
+  </subject>
+  <encounter>
+    <display value="GP Visit"/>
+  </encounter>
+  <valueCodeableConcept>
+	<coding>
+		<system value="http://snomed.info/sct"/>
+		<code value="444884003"/>
+		<display value="Intact skin"/>
+	</coding>
+  </valueCodeableConcept>
+  <bodySite>
+    <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="5742000"/>
+        <display value="Skin structure of forearm"/>
+    </coding>
+  </bodySite>
+</Observation>

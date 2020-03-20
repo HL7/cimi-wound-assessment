@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="PreviousOccurrenceExt"/>
+  <url value="http://hl7.org/fhir/hspc/StructureDefinition/PreviousOccurrenceExt"/>
+  <version value="2.0.0"/>
+  <name value="PreviousOccurrenceExt"/>
+  <title value="Previous Occurrence Extension"/>
+  <status value="draft"/>
+  <date value="2020-03-20"/>
+  <publisher value="HSPC"/>
+  <description value="Previous Occurence is a reference to the most recent occurrence of an event or condition prior to the current one."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+	<type value="element"/>
+	<expression value="Condition"/>
+  </context>
+  <context>
+	<type value="element"/>
+	<expression value="StructureDefinition"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension:PreviousOccurrenceExt">
+      <path value="Extension"/>
+      <definition value="Previous Occurrence is a reference to the most recent occurrence of an event or condition prior to the current one."/>
+      <min value="0"/>
+      <max value="1"/>
+      <isModifier value="false"/>
+    </element>
+    <element id="Extension:EpiPreviousOccurrencesodeExt.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/hspc/StructureDefinition/PreviousOccurrenceExt"/>
+    </element>
+    <element id="Extension:PreviousOccurrence.valueReference">
+      <path value="Extension.valueReference"/>
+      <type>
+        <code value="Reference"/>
+        <profile value="http://hl7.org/fhir/hspc/StructureDefinition/WoundAssert"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
